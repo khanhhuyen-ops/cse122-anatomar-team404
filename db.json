@@ -1,1 +1,6436 @@
-{}
+{
+  "anatomySources": {
+    "fipat-ta2": {
+      "title": "FIPAT Terminologia Anatomica, 2nd edition, v2.07",
+      "url": "https://ifaa.net/committees/anatomical-terminology-fipat/fipat-ifaa-terminologies/",
+      "parts": {
+        "1": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-1.pdf",
+        "2": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-2.pdf",
+        "3": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-3.pdf",
+        "4": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-4.pdf",
+        "5": "https://cdn.dal.ca/content/dam/dalhousie/pdf/library/FIPAT/TA2/FIPAT-TA2-Part-5.pdf"
+      }
+    },
+    "openstax-1.2": {
+      "title": "OpenStax Anatomy and Physiology 2e §1.2",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/1-2-structural-organization-of-the-human-body"
+    },
+    "openstax-11.5": {
+      "title": "OpenStax Anatomy and Physiology 2e §11.5",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-5-muscles-of-the-pectoral-girdle-and-upper-limbs"
+    },
+    "openstax-11.6": {
+      "title": "OpenStax Anatomy and Physiology 2e §11.6",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-6-appendicular-muscles-of-the-pelvic-girdle-and-lower-limbs"
+    },
+    "openstax-12.1": {
+      "title": "OpenStax Anatomy and Physiology 2e §12.1",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/12-1-basic-structure-and-function-of-the-nervous-system"
+    },
+    "openstax-14.2": {
+      "title": "OpenStax Anatomy and Physiology 2e §14.2",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/14-2-central-processing"
+    },
+    "openstax-15.1": {
+      "title": "OpenStax Anatomy and Physiology 2e §15.1",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/15-1-divisions-of-the-autonomic-nervous-system"
+    },
+    "openstax-17.3": {
+      "title": "OpenStax Anatomy and Physiology 2e §17.3",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/17-3-the-pituitary-gland-and-hypothalamus"
+    },
+    "openstax-17.9": {
+      "title": "OpenStax Anatomy and Physiology 2e §17.9",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/17-9-the-endocrine-pancreas"
+    },
+    "openstax-17.10": {
+      "title": "OpenStax Anatomy and Physiology 2e §17.10",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/17-10-organs-with-secondary-endocrine-functions"
+    },
+    "openstax-19.1": {
+      "title": "OpenStax Anatomy and Physiology 2e §19.1",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/19-1-heart-anatomy"
+    },
+    "openstax-20.1": {
+      "title": "OpenStax Anatomy and Physiology 2e §20.1",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/20-1-structure-and-function-of-blood-vessels"
+    },
+    "openstax-20.5": {
+      "title": "OpenStax Anatomy and Physiology 2e §20.5",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/20-5-circulatory-pathways"
+    },
+    "openstax-21.1": {
+      "title": "OpenStax Anatomy and Physiology 2e §21.1",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/21-1-anatomy-of-the-lymphatic-and-immune-systems"
+    },
+    "openstax-22.1": {
+      "title": "OpenStax Anatomy and Physiology 2e §22.1",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/22-1-organs-and-structures-of-the-respiratory-system"
+    },
+    "openstax-22.3": {
+      "title": "OpenStax Anatomy and Physiology 2e §22.3",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/22-3-the-process-of-breathing"
+    },
+    "openstax-23.3": {
+      "title": "OpenStax Anatomy and Physiology 2e §23.3",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-3-the-mouth-pharynx-and-esophagus"
+    },
+    "openstax-23.5": {
+      "title": "OpenStax Anatomy and Physiology 2e §23.5",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-5-the-small-and-large-intestines"
+    },
+    "openstax-23.6": {
+      "title": "OpenStax Anatomy and Physiology 2e §23.6",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-6-accessory-organs-in-digestion-the-liver-pancreas-and-gallbladder"
+    },
+    "openstax-25.2": {
+      "title": "OpenStax Anatomy and Physiology 2e §25.2",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/25-2-gross-anatomy-of-urine-transport"
+    },
+    "openstax-27.1": {
+      "title": "OpenStax Anatomy and Physiology 2e §27.1",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/27-1-anatomy-and-physiology-of-the-testicular-reproductive-system"
+    },
+    "openstax-27.2": {
+      "title": "OpenStax Anatomy and Physiology 2e §27.2",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/27-2-anatomy-and-physiology-of-the-ovarian-reproductive-system"
+    },
+    "openstax-ch5": {
+      "title": "OpenStax Anatomy and Physiology 2e · Chapter 5",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/5-introduction"
+    },
+    "openstax-ch6": {
+      "title": "OpenStax Anatomy and Physiology 2e · Chapter 6",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/6-introduction"
+    },
+    "openstax-ch8": {
+      "title": "OpenStax Anatomy and Physiology 2e · Chapter 8",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/8-introduction"
+    },
+    "openstax-ch9": {
+      "title": "OpenStax Anatomy and Physiology 2e · Chapter 9",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/9-introduction"
+    },
+    "openstax-ch10": {
+      "title": "OpenStax Anatomy and Physiology 2e · Chapter 10",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/10-introduction"
+    },
+    "openstax-ch11": {
+      "title": "OpenStax Anatomy and Physiology 2e · Chapter 11",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-introduction"
+    },
+    "openstax-ch12": {
+      "title": "OpenStax Anatomy and Physiology 2e · Chapter 12",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/12-introduction"
+    },
+    "openstax-ch17": {
+      "title": "OpenStax Anatomy and Physiology 2e · Chapter 17",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/17-introduction"
+    },
+    "openstax-ch18": {
+      "title": "OpenStax Anatomy and Physiology 2e · Chapter 18",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/18-introduction"
+    },
+    "openstax-ch19": {
+      "title": "OpenStax Anatomy and Physiology 2e · Chapter 19",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/19-introduction"
+    },
+    "openstax-ch20": {
+      "title": "OpenStax Anatomy and Physiology 2e · Chapter 20",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/20-introduction"
+    },
+    "openstax-ch21": {
+      "title": "OpenStax Anatomy and Physiology 2e · Chapter 21",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/21-introduction"
+    },
+    "openstax-ch22": {
+      "title": "OpenStax Anatomy and Physiology 2e · Chapter 22",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/22-introduction"
+    },
+    "openstax-ch23": {
+      "title": "OpenStax Anatomy and Physiology 2e · Chapter 23",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-introduction"
+    },
+    "openstax-ch25": {
+      "title": "OpenStax Anatomy and Physiology 2e · Chapter 25",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/25-introduction"
+    },
+    "openstax-ch27": {
+      "title": "OpenStax Anatomy and Physiology 2e · Chapter 27",
+      "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/27-introduction"
+    }
+  },
+  "bodySystems": [
+    {
+      "id": "integumentary",
+      "nameVi": "Hệ da",
+      "nameEn": "Integumentary system",
+      "order": 1,
+      "sourceIds": [
+        "openstax-1.2",
+        "openstax-ch5"
+      ]
+    },
+    {
+      "id": "skeletal",
+      "nameVi": "Hệ xương",
+      "nameEn": "Skeletal system",
+      "order": 2,
+      "sourceIds": [
+        "openstax-1.2",
+        "openstax-ch6",
+        "openstax-ch8",
+        "openstax-ch9"
+      ]
+    },
+    {
+      "id": "muscular",
+      "nameVi": "Hệ cơ",
+      "nameEn": "Muscular system",
+      "order": 3,
+      "sourceIds": [
+        "openstax-1.2",
+        "openstax-ch10",
+        "openstax-ch11"
+      ]
+    },
+    {
+      "id": "nervous",
+      "nameVi": "Hệ thần kinh",
+      "nameEn": "Nervous system",
+      "order": 4,
+      "sourceIds": [
+        "openstax-1.2",
+        "openstax-ch12"
+      ]
+    },
+    {
+      "id": "endocrine",
+      "nameVi": "Hệ nội tiết",
+      "nameEn": "Endocrine system",
+      "order": 5,
+      "sourceIds": [
+        "openstax-1.2",
+        "openstax-ch17"
+      ]
+    },
+    {
+      "id": "circulatory",
+      "nameVi": "Hệ tuần hoàn",
+      "nameEn": "Cardiovascular system",
+      "order": 6,
+      "sourceIds": [
+        "openstax-1.2",
+        "openstax-ch18",
+        "openstax-ch19",
+        "openstax-ch20"
+      ]
+    },
+    {
+      "id": "lymphatic",
+      "nameVi": "Hệ bạch huyết và miễn dịch",
+      "nameEn": "Lymphatic and immune system",
+      "order": 7,
+      "sourceIds": [
+        "openstax-1.2",
+        "openstax-ch21"
+      ]
+    },
+    {
+      "id": "respiratory",
+      "nameVi": "Hệ hô hấp",
+      "nameEn": "Respiratory system",
+      "order": 8,
+      "sourceIds": [
+        "openstax-1.2",
+        "openstax-ch22"
+      ]
+    },
+    {
+      "id": "digestive",
+      "nameVi": "Hệ tiêu hóa",
+      "nameEn": "Digestive system",
+      "order": 9,
+      "sourceIds": [
+        "openstax-1.2",
+        "openstax-ch23"
+      ]
+    },
+    {
+      "id": "urinary",
+      "nameVi": "Hệ tiết niệu",
+      "nameEn": "Urinary system",
+      "order": 10,
+      "sourceIds": [
+        "openstax-1.2",
+        "openstax-ch25"
+      ]
+    },
+    {
+      "id": "reproductive",
+      "nameVi": "Hệ sinh dục",
+      "nameEn": "Reproductive system",
+      "order": 11,
+      "sourceIds": [
+        "openstax-1.2",
+        "openstax-ch27"
+      ]
+    }
+  ],
+  "systemSubdivisions": [
+    {
+      "id": "integumentary.skin",
+      "systemId": "integumentary",
+      "nameVi": "Da"
+    },
+    {
+      "id": "integumentary.appendages",
+      "systemId": "integumentary",
+      "nameVi": "Lông, tóc và móng"
+    },
+    {
+      "id": "integumentary.glands",
+      "systemId": "integumentary",
+      "nameVi": "Tuyến da"
+    },
+    {
+      "id": "skeletal.axial",
+      "systemId": "skeletal",
+      "nameVi": "Bộ xương trục"
+    },
+    {
+      "id": "skeletal.appendicular",
+      "systemId": "skeletal",
+      "nameVi": "Bộ xương chi"
+    },
+    {
+      "id": "skeletal.joints",
+      "systemId": "skeletal",
+      "nameVi": "Khớp và dây chằng"
+    },
+    {
+      "id": "skeletal.cartilage",
+      "systemId": "skeletal",
+      "nameVi": "Sụn của bộ xương"
+    },
+    {
+      "id": "muscular.axial",
+      "systemId": "muscular",
+      "nameVi": "Cơ vân vùng đầu và thân"
+    },
+    {
+      "id": "muscular.appendicular",
+      "systemId": "muscular",
+      "nameVi": "Cơ vân của chi"
+    },
+    {
+      "id": "muscular.connective",
+      "systemId": "muscular",
+      "nameVi": "Gân, cân và mạc cơ"
+    },
+    {
+      "id": "nervous.cns",
+      "systemId": "nervous",
+      "nameVi": "Hệ thần kinh trung ương",
+      "ta2": {
+        "id": 5364,
+        "part": 5,
+        "page": 2,
+        "latin": "SYSTEMA NERVOSUM CENTRALE",
+        "en": "CENTRAL NERVOUS SYSTEM",
+        "us": "CENTRAL NERVOUS SYSTEM"
+      }
+    },
+    {
+      "id": "nervous.cns.brain",
+      "systemId": "nervous",
+      "nameVi": "Não bộ",
+      "parentId": "nervous.cns"
+    },
+    {
+      "id": "nervous.cns.spinal",
+      "systemId": "nervous",
+      "nameVi": "Tủy sống",
+      "parentId": "nervous.cns"
+    },
+    {
+      "id": "nervous.pns",
+      "systemId": "nervous",
+      "nameVi": "Hệ thần kinh ngoại biên",
+      "ta2": {
+        "id": 6129,
+        "part": 5,
+        "page": 26,
+        "latin": "SYSTEMA NERVOSUM PERIPHERICUM",
+        "en": "PERIPHERAL NERVOUS SYSTEM",
+        "us": "PERIPHERAL NERVOUS SYSTEM"
+      }
+    },
+    {
+      "id": "nervous.pns.cranial",
+      "systemId": "nervous",
+      "nameVi": "Dây thần kinh sọ",
+      "parentId": "nervous.pns"
+    },
+    {
+      "id": "nervous.pns.spinal",
+      "systemId": "nervous",
+      "nameVi": "Thần kinh tủy và các đám rối",
+      "parentId": "nervous.pns"
+    },
+    {
+      "id": "nervous.pns.autonomic",
+      "systemId": "nervous",
+      "nameVi": "Phần ngoại biên của hệ thần kinh tự chủ",
+      "parentId": "nervous.pns",
+      "ta2": {
+        "id": 6600,
+        "part": 5,
+        "page": 43,
+        "latin": "Divisio autonomica systematis nervosi peripherici",
+        "en": "Autonomic division of peripheral nervous system",
+        "us": "Autonomic division of peripheral nervous system"
+      }
+    },
+    {
+      "id": "nervous.pns.autonomic.sympathetic",
+      "systemId": "nervous",
+      "nameVi": "Giao cảm",
+      "parentId": "nervous.pns.autonomic",
+      "ta2": {
+        "id": 6601,
+        "part": 5,
+        "page": 44,
+        "latin": "PARS THORACOLUMBALIS DIVISIONIS AUTONOMICAE",
+        "en": "THORACOLUMBAR PART OF AUTONOMIC DIVISION",
+        "us": "THORACOLUMBAR PART OF AUTONOMIC DIVISION"
+      }
+    },
+    {
+      "id": "nervous.pns.autonomic.parasympathetic",
+      "systemId": "nervous",
+      "nameVi": "Đối giao cảm",
+      "parentId": "nervous.pns.autonomic",
+      "ta2": {
+        "id": 6661,
+        "part": 5,
+        "page": 45,
+        "latin": "PARS CRANIOSACRALIS DIVISIONIS AUTONOMICAE",
+        "en": "CRANIOSACRAL PART OF AUTONOMIC DIVISION",
+        "us": "CRANIOSACRAL PART OF AUTONOMIC DIVISION"
+      }
+    },
+    {
+      "id": "nervous.pns.autonomic.enteric",
+      "systemId": "nervous",
+      "nameVi": "Thần kinh ruột",
+      "parentId": "nervous.pns.autonomic",
+      "ta2": {
+        "id": 6726,
+        "part": 5,
+        "page": 48,
+        "latin": "Plexus entericus",
+        "en": "Enteric plexus",
+        "us": "Enteric plexus"
+      }
+    },
+    {
+      "id": "nervous.senses",
+      "systemId": "nervous",
+      "nameVi": "Cơ quan giác quan liên quan",
+      "ta2": {
+        "id": 6729,
+        "part": 5,
+        "page": 49,
+        "latin": "Organa sensuum",
+        "en": "Sense organs",
+        "us": "Sense organs"
+      }
+    },
+    {
+      "id": "endocrine.hypothalamic",
+      "systemId": "endocrine",
+      "nameVi": "Vùng dưới đồi và tuyến yên"
+    },
+    {
+      "id": "endocrine.glands",
+      "systemId": "endocrine",
+      "nameVi": "Tuyến nội tiết riêng"
+    },
+    {
+      "id": "endocrine.mixed",
+      "systemId": "endocrine",
+      "nameVi": "Thành phần nội tiết của cơ quan khác"
+    },
+    {
+      "id": "circulatory.heart",
+      "systemId": "circulatory",
+      "nameVi": "Tim"
+    },
+    {
+      "id": "circulatory.arteries",
+      "systemId": "circulatory",
+      "nameVi": "Động mạch"
+    },
+    {
+      "id": "circulatory.veins",
+      "systemId": "circulatory",
+      "nameVi": "Tĩnh mạch"
+    },
+    {
+      "id": "circulatory.microvascular",
+      "systemId": "circulatory",
+      "nameVi": "Vi tuần hoàn"
+    },
+    {
+      "id": "circulatory.blood",
+      "systemId": "circulatory",
+      "nameVi": "Máu"
+    },
+    {
+      "id": "lymphatic.vessels",
+      "systemId": "lymphatic",
+      "nameVi": "Mạch và ống bạch huyết"
+    },
+    {
+      "id": "lymphatic.primary",
+      "systemId": "lymphatic",
+      "nameVi": "Cơ quan lympho nguyên phát"
+    },
+    {
+      "id": "lymphatic.secondary",
+      "systemId": "lymphatic",
+      "nameVi": "Cơ quan và mô lympho thứ phát"
+    },
+    {
+      "id": "respiratory.nasal",
+      "systemId": "respiratory",
+      "nameVi": "Mũi và xoang cạnh mũi"
+    },
+    {
+      "id": "respiratory.pharyngolaryngeal",
+      "systemId": "respiratory",
+      "nameVi": "Hầu và thanh quản"
+    },
+    {
+      "id": "respiratory.airways",
+      "systemId": "respiratory",
+      "nameVi": "Khí quản và cây phế quản"
+    },
+    {
+      "id": "respiratory.lungs",
+      "systemId": "respiratory",
+      "nameVi": "Phổi và màng phổi"
+    },
+    {
+      "id": "respiratory.ventilation",
+      "systemId": "respiratory",
+      "nameVi": "Cơ tham gia thông khí"
+    },
+    {
+      "id": "digestive.oral",
+      "systemId": "digestive",
+      "nameVi": "Miệng và hầu"
+    },
+    {
+      "id": "digestive.tract",
+      "systemId": "digestive",
+      "nameVi": "Ống tiêu hóa"
+    },
+    {
+      "id": "digestive.accessory",
+      "systemId": "digestive",
+      "nameVi": "Cơ quan và tuyến tiêu hóa phụ"
+    },
+    {
+      "id": "urinary.kidneys",
+      "systemId": "urinary",
+      "nameVi": "Thận"
+    },
+    {
+      "id": "urinary.tract",
+      "systemId": "urinary",
+      "nameVi": "Niệu quản và đường tiểu dưới"
+    },
+    {
+      "id": "reproductive.male",
+      "systemId": "reproductive",
+      "nameVi": "Cơ quan sinh dục nam"
+    },
+    {
+      "id": "reproductive.female",
+      "systemId": "reproductive",
+      "nameVi": "Cơ quan sinh dục nữ"
+    },
+    {
+      "id": "reproductive.mammary",
+      "systemId": "reproductive",
+      "nameVi": "Tuyến vú"
+    }
+  ],
+  "organs": [
+    {
+      "id": "tissue.skin",
+      "kind": "organ",
+      "nameVi": "Da",
+      "nameEn": "Skin",
+      "ta2": {
+        "id": 7041,
+        "part": 5,
+        "page": 58,
+        "latin": "Cutis",
+        "en": "Skin",
+        "us": "Skin"
+      },
+      "systemId": "integumentary",
+      "systemIds": [
+        "integumentary"
+      ],
+      "memberships": [
+        {
+          "systemId": "integumentary",
+          "subdivisionId": "integumentary.skin",
+          "role": "primary"
+        }
+      ]
+    },
+    {
+      "id": "tissue.epidermis",
+      "kind": "layer",
+      "nameVi": "Biểu bì",
+      "nameEn": "Epidermis",
+      "ta2": {
+        "id": 7046,
+        "part": 5,
+        "page": 58,
+        "latin": "Epidermis",
+        "en": "Epidermis",
+        "us": "Epidermis"
+      },
+      "systemId": "integumentary",
+      "systemIds": [
+        "integumentary"
+      ],
+      "memberships": [
+        {
+          "systemId": "integumentary",
+          "subdivisionId": "integumentary.skin",
+          "role": "primary"
+        }
+      ],
+      "parentId": "tissue.skin"
+    },
+    {
+      "id": "tissue.dermis",
+      "kind": "layer",
+      "nameVi": "Trung bì",
+      "nameEn": "Dermis",
+      "ta2": {
+        "id": 7047,
+        "part": 5,
+        "page": 58,
+        "latin": "Dermis",
+        "en": "Dermis",
+        "us": "Dermis"
+      },
+      "systemId": "integumentary",
+      "systemIds": [
+        "integumentary"
+      ],
+      "memberships": [
+        {
+          "systemId": "integumentary",
+          "subdivisionId": "integumentary.skin",
+          "role": "primary"
+        }
+      ],
+      "parentId": "tissue.skin"
+    },
+    {
+      "id": "tissue.subcutis",
+      "kind": "layer",
+      "nameVi": "Mô dưới da",
+      "nameEn": "Subcutaneous tissue",
+      "ta2": {
+        "id": 7083,
+        "part": 5,
+        "page": 59,
+        "latin": "Tela subcutanea",
+        "en": "Subcutaneous tissue",
+        "us": "Subcutaneous tissue"
+      },
+      "systemId": "integumentary",
+      "systemIds": [
+        "integumentary"
+      ],
+      "memberships": [
+        {
+          "systemId": "integumentary",
+          "subdivisionId": "integumentary.skin",
+          "role": "primary"
+        }
+      ]
+    },
+    {
+      "id": "structure.hair",
+      "kind": "appendage",
+      "nameVi": "Lông và tóc",
+      "nameEn": "Hairs",
+      "ta2": {
+        "id": 7053,
+        "part": 5,
+        "page": 58,
+        "latin": "Pili",
+        "en": "Hairs",
+        "us": "Hairs"
+      },
+      "systemId": "integumentary",
+      "systemIds": [
+        "integumentary"
+      ],
+      "memberships": [
+        {
+          "systemId": "integumentary",
+          "subdivisionId": "integumentary.appendages",
+          "role": "primary"
+        }
+      ]
+    },
+    {
+      "id": "structure.nail",
+      "kind": "appendage",
+      "nameVi": "Móng",
+      "nameEn": "Nail",
+      "ta2": {
+        "id": 7065,
+        "part": 5,
+        "page": 58,
+        "latin": "Unguis",
+        "en": "Nail",
+        "us": "Nail"
+      },
+      "systemId": "integumentary",
+      "systemIds": [
+        "integumentary"
+      ],
+      "memberships": [
+        {
+          "systemId": "integumentary",
+          "subdivisionId": "integumentary.appendages",
+          "role": "primary"
+        }
+      ]
+    },
+    {
+      "id": "structure.nail-plate",
+      "kind": "part",
+      "nameVi": "Bản móng",
+      "nameEn": "Nail plate",
+      "ta2": {
+        "id": 7066,
+        "part": 5,
+        "page": 58,
+        "latin": "Lamina unguis",
+        "en": "Nail plate",
+        "us": "Nail plate"
+      },
+      "systemId": "integumentary",
+      "systemIds": [
+        "integumentary"
+      ],
+      "memberships": [
+        {
+          "systemId": "integumentary",
+          "subdivisionId": "integumentary.appendages",
+          "role": "primary"
+        }
+      ],
+      "parentId": "structure.nail"
+    },
+    {
+      "id": "organ.sweat-gland",
+      "kind": "gland",
+      "nameVi": "Tuyến mồ hôi",
+      "nameEn": "Sweat glands",
+      "ta2": {
+        "id": 7079,
+        "part": 5,
+        "page": 59,
+        "latin": "Glandulae sudoriferae",
+        "en": "Sweat glands",
+        "us": "Sweat glands"
+      },
+      "systemId": "integumentary",
+      "systemIds": [
+        "integumentary"
+      ],
+      "memberships": [
+        {
+          "systemId": "integumentary",
+          "subdivisionId": "integumentary.glands",
+          "role": "primary"
+        }
+      ]
+    },
+    {
+      "id": "organ.sebaceous-gland",
+      "kind": "gland",
+      "nameVi": "Tuyến bã",
+      "nameEn": "Sebaceous gland",
+      "ta2": {
+        "id": 7082,
+        "part": 5,
+        "page": 59,
+        "latin": "Glandula sebacea",
+        "en": "Sebaceous gland",
+        "us": "Sebaceous gland"
+      },
+      "systemId": "integumentary",
+      "systemIds": [
+        "integumentary"
+      ],
+      "memberships": [
+        {
+          "systemId": "integumentary",
+          "subdivisionId": "integumentary.glands",
+          "role": "primary"
+        }
+      ]
+    },
+    {
+      "id": "bone.cranium",
+      "kind": "group",
+      "nameVi": "Sọ",
+      "nameEn": "CRANIUM",
+      "ta2": {
+        "id": 406,
+        "part": 2,
+        "page": 3,
+        "latin": "CRANIUM",
+        "en": "CRANIUM",
+        "us": "CRANIUM"
+      },
+      "systemId": "skeletal",
+      "systemIds": [
+        "skeletal"
+      ],
+      "memberships": [
+        {
+          "systemId": "skeletal",
+          "subdivisionId": "skeletal.axial",
+          "role": "primary"
+        }
+      ]
+    },
+    {
+      "id": "bone.frontal",
+      "kind": "bone",
+      "nameVi": "Xương trán",
+      "nameEn": "Frontal bone",
+      "ta2": {
+        "id": 520,
+        "part": 2,
+        "page": 6,
+        "latin": "Os frontale",
+        "en": "Frontal bone",
+        "us": "Frontal bone"
+      },
+      "systemId": "skeletal",
+      "systemIds": [
+        "skeletal"
+      ],
+      "memberships": [
+        {
+          "systemId": "skeletal",
+          "subdivisionId": "skeletal.axial",
+          "role": "primary"
+        }
+      ],
+      "parentId": "bone.cranium"
+    },
+    {
+      "id": "bone.parietal",
+      "kind": "bone",
+      "nameVi": "Xương đỉnh",
+      "nameEn": "Parietal bone",
+      "ta2": {
+        "id": 504,
+        "part": 2,
+        "page": 6,
+        "latin": "Os parietale",
+        "en": "Parietal bone",
+        "us": "Parietal bone"
+      },
+      "systemId": "skeletal",
+      "systemIds": [
+        "skeletal"
+      ],
+      "memberships": [
+        {
+          "systemId": "skeletal",
+          "subdivisionId": "skeletal.axial",
+          "role": "primary"
+        }
+      ],
+      "parentId": "bone.cranium",
+      "laterality": "paired"
+    },
+    {
+      "id": "bone.sphenoid",
+      "kind": "bone",
+      "nameVi": "Xương bướm",
+      "nameEn": "Sphenoid bone",
+      "ta2": {
+        "id": 584,
+        "part": 2,
+        "page": 8,
+        "latin": "Os sphenoideum",
+        "en": "Sphenoid bone",
+        "us": "Sphenoid bone"
+      },
+      "systemId": "skeletal",
+      "systemIds": [
+        "skeletal"
+      ],
+      "memberships": [
+        {
+          "systemId": "skeletal",
+          "subdivisionId": "skeletal.axial",
+          "role": "primary"
+        }
+      ],
+      "parentId": "bone.cranium"
+    },
+    {
+      "id": "bone.mandible",
+      "kind": "bone",
+      "nameVi": "Xương hàm dưới",
+      "nameEn": "Mandible",
+      "ta2": {
+        "id": 835,
+        "part": 2,
+        "page": 16,
+        "latin": "Mandibula",
+        "en": "Mandible",
+        "us": "Mandible"
+      },
+      "systemId": "skeletal",
+      "systemIds": [
+        "skeletal"
+      ],
+      "memberships": [
+        {
+          "systemId": "skeletal",
+          "subdivisionId": "skeletal.axial",
+          "role": "primary"
+        }
+      ],
+      "parentId": "bone.cranium"
+    },
+    {
+      "id": "bone.hyoid",
+      "kind": "bone",
+      "nameVi": "Xương móng",
+      "nameEn": "Hyoid bone",
+      "ta2": {
+        "id": 876,
+        "part": 2,
+        "page": 17,
+        "latin": "Os hyoideum",
+        "en": "Hyoid bone",
+        "us": "Hyoid bone"
+      },
+      "systemId": "skeletal",
+      "systemIds": [
+        "skeletal"
+      ],
+      "memberships": [
+        {
+          "systemId": "skeletal",
+          "subdivisionId": "skeletal.axial",
+          "role": "primary"
+        }
+      ]
+    },
+    {
+      "id": "bone.vertebral-column",
+      "kind": "group",
+      "nameVi": "Cột sống",
+      "nameEn": "VERTEBRAL COLUMN",
+      "ta2": {
+        "id": 1001,
+        "part": 2,
+        "page": 21,
+        "latin": "COLUMNA VERTEBRALIS",
+        "en": "VERTEBRAL COLUMN",
+        "us": "VERTEBRAL COLUMN"
+      },
+      "systemId": "skeletal",
+      "systemIds": [
+        "skeletal"
+      ],
+      "memberships": [
+        {
+          "systemId": "skeletal",
+          "subdivisionId": "skeletal.axial",
+          "role": "primary"
+        }
+      ]
+    },
+    {
+      "id": "bone.atlas",
+      "kind": "bone",
+      "nameVi": "Đốt đội (C1)",
+      "nameEn": "Atlas",
+      "ta2": {
+        "id": 1038,
+        "part": 2,
+        "page": 22,
+        "latin": "Atlas",
+        "en": "Atlas",
+        "us": "Atlas"
+      },
+      "systemId": "skeletal",
+      "systemIds": [
+        "skeletal"
+      ],
+      "memberships": [
+        {
+          "systemId": "skeletal",
+          "subdivisionId": "skeletal.axial",
+          "role": "primary"
+        }
+      ],
+      "parentId": "bone.vertebral-column"
+    },
+    {
+      "id": "bone.axis",
+      "kind": "bone",
+      "nameVi": "Đốt trục (C2)",
+      "nameEn": "Axis",
+      "ta2": {
+        "id": 1050,
+        "part": 2,
+        "page": 22,
+        "latin": "Axis",
+        "en": "Axis",
+        "us": "Axis"
+      },
+      "systemId": "skeletal",
+      "systemIds": [
+        "skeletal"
+      ],
+      "memberships": [
+        {
+          "systemId": "skeletal",
+          "subdivisionId": "skeletal.axial",
+          "role": "primary"
+        }
+      ],
+      "parentId": "bone.vertebral-column"
+    },
+    {
+      "id": "bone.sacrum",
+      "kind": "bone",
+      "nameVi": "Xương cùng",
+      "nameEn": "SACRUM",
+      "ta2": {
+        "id": 1071,
+        "part": 2,
+        "page": 23,
+        "latin": "OS SACRUM",
+        "en": "SACRUM",
+        "us": "SACRUM"
+      },
+      "systemId": "skeletal",
+      "systemIds": [
+        "skeletal"
+      ],
+      "memberships": [
+        {
+          "systemId": "skeletal",
+          "subdivisionId": "skeletal.axial",
+          "role": "primary"
+        }
+      ],
+      "parentId": "bone.vertebral-column"
+    },
+    {
+      "id": "bone.coccyx",
+      "kind": "bone",
+      "nameVi": "Xương cụt",
+      "nameEn": "COCCYX",
+      "ta2": {
+        "id": 1092,
+        "part": 2,
+        "page": 23,
+        "latin": "OS COCCYGIS",
+        "en": "COCCYX",
+        "us": "COCCYX"
+      },
+      "systemId": "skeletal",
+      "systemIds": [
+        "skeletal"
+      ],
+      "memberships": [
+        {
+          "systemId": "skeletal",
+          "subdivisionId": "skeletal.axial",
+          "role": "primary"
+        }
+      ],
+      "parentId": "bone.vertebral-column"
+    },
+    {
+      "id": "bone.sternum",
+      "kind": "bone",
+      "nameVi": "Xương ức",
+      "nameEn": "STERNUM",
+      "ta2": {
+        "id": 1129,
+        "part": 2,
+        "page": 24,
+        "latin": "STERNUM",
+        "en": "STERNUM",
+        "us": "STERNUM"
+      },
+      "systemId": "skeletal",
+      "systemIds": [
+        "skeletal"
+      ],
+      "memberships": [
+        {
+          "systemId": "skeletal",
+          "subdivisionId": "skeletal.axial",
+          "role": "primary"
+        }
+      ]
+    },
+    {
+      "id": "bone.sternum-body",
+      "kind": "part",
+      "nameVi": "Thân xương ức",
+      "nameEn": "Body of sternum",
+      "ta2": {
+        "id": 1134,
+        "part": 2,
+        "page": 25,
+        "latin": "Corpus sterni",
+        "en": "Body of sternum",
+        "us": "Body of sternum"
+      },
+      "systemId": "skeletal",
+      "systemIds": [
+        "skeletal"
+      ],
+      "memberships": [
+        {
+          "systemId": "skeletal",
+          "subdivisionId": "skeletal.axial",
+          "role": "primary"
+        }
+      ],
+      "parentId": "bone.sternum"
+    },
+    {
+      "id": "bone.rib",
+      "kind": "bone",
+      "nameVi": "Xương sườn",
+      "nameEn": "Rib",
+      "ta2": {
+        "id": 1118,
+        "part": 2,
+        "page": 24,
+        "latin": "Costa",
+        "en": "Rib",
+        "us": "Rib"
+      },
+      "systemId": "skeletal",
+      "systemIds": [
+        "skeletal"
+      ],
+      "memberships": [
+        {
+          "systemId": "skeletal",
+          "subdivisionId": "skeletal.axial",
+          "role": "primary"
+        }
+      ],
+      "laterality": "paired"
+    },
+    {
+      "id": "bone.clavicle",
+      "kind": "bone",
+      "nameVi": "Xương đòn",
+      "nameEn": "CLAVICLE",
+      "ta2": {
+        "id": 1168,
+        "part": 2,
+        "page": 26,
+        "latin": "CLAVICULA",
+        "en": "CLAVICLE",
+        "us": "CLAVICLE"
+      },
+      "systemId": "skeletal",
+      "systemIds": [
+        "skeletal"
+      ],
+      "memberships": [
+        {
+          "systemId": "skeletal",
+          "subdivisionId": "skeletal.appendicular",
+          "role": "primary"
+        }
+      ],
+      "laterality": "paired"
+    },
+    {
+      "id": "bone.scapula",
+      "kind": "bone",
+      "nameVi": "Xương vai",
+      "nameEn": "SCAPULA",
+      "ta2": {
+        "id": 1143,
+        "part": 2,
+        "page": 25,
+        "latin": "SCAPULA",
+        "en": "SCAPULA",
+        "us": "SCAPULA"
+      },
+      "systemId": "skeletal",
+      "systemIds": [
+        "skeletal"
+      ],
+      "memberships": [
+        {
+          "systemId": "skeletal",
+          "subdivisionId": "skeletal.appendicular",
+          "role": "primary"
+        }
+      ],
+      "laterality": "paired"
+    },
+    {
+      "id": "bone.humerus",
+      "kind": "bone",
+      "nameVi": "Xương cánh tay",
+      "nameEn": "HUMERUS",
+      "ta2": {
+        "id": 1180,
+        "part": 2,
+        "page": 26,
+        "latin": "HUMERUS",
+        "en": "HUMERUS",
+        "us": "HUMERUS"
+      },
+      "systemId": "skeletal",
+      "systemIds": [
+        "skeletal"
+      ],
+      "memberships": [
+        {
+          "systemId": "skeletal",
+          "subdivisionId": "skeletal.appendicular",
+          "role": "primary"
+        }
+      ],
+      "laterality": "paired"
+    },
+    {
+      "id": "bone.radius",
+      "kind": "bone",
+      "nameVi": "Xương quay",
+      "nameEn": "RADIUS",
+      "ta2": {
+        "id": 1210,
+        "part": 2,
+        "page": 27,
+        "latin": "RADIUS",
+        "en": "RADIUS",
+        "us": "RADIUS"
+      },
+      "systemId": "skeletal",
+      "systemIds": [
+        "skeletal"
+      ],
+      "memberships": [
+        {
+          "systemId": "skeletal",
+          "subdivisionId": "skeletal.appendicular",
+          "role": "primary"
+        }
+      ],
+      "laterality": "paired"
+    },
+    {
+      "id": "bone.ulna",
+      "kind": "bone",
+      "nameVi": "Xương trụ",
+      "nameEn": "ULNA",
+      "ta2": {
+        "id": 1230,
+        "part": 2,
+        "page": 27,
+        "latin": "ULNA",
+        "en": "ULNA",
+        "us": "ULNA"
+      },
+      "systemId": "skeletal",
+      "systemIds": [
+        "skeletal"
+      ],
+      "memberships": [
+        {
+          "systemId": "skeletal",
+          "subdivisionId": "skeletal.appendicular",
+          "role": "primary"
+        }
+      ],
+      "laterality": "paired"
+    },
+    {
+      "id": "bone.hip",
+      "kind": "bone",
+      "nameVi": "Xương hông",
+      "nameEn": "HIP BONE",
+      "ta2": {
+        "id": 1307,
+        "part": 2,
+        "page": 29,
+        "latin": "OS COXAE",
+        "en": "HIP BONE",
+        "us": "HIP BONE"
+      },
+      "systemId": "skeletal",
+      "systemIds": [
+        "skeletal"
+      ],
+      "memberships": [
+        {
+          "systemId": "skeletal",
+          "subdivisionId": "skeletal.appendicular",
+          "role": "primary"
+        }
+      ],
+      "laterality": "paired"
+    },
+    {
+      "id": "bone.femur",
+      "kind": "bone",
+      "nameVi": "Xương đùi",
+      "nameEn": "FEMUR",
+      "ta2": {
+        "id": 1360,
+        "part": 2,
+        "page": 31,
+        "latin": "OS FEMORIS",
+        "en": "FEMUR",
+        "us": "FEMUR"
+      },
+      "systemId": "skeletal",
+      "systemIds": [
+        "skeletal"
+      ],
+      "memberships": [
+        {
+          "systemId": "skeletal",
+          "subdivisionId": "skeletal.appendicular",
+          "role": "primary"
+        }
+      ],
+      "laterality": "paired"
+    },
+    {
+      "id": "bone.tibia",
+      "kind": "bone",
+      "nameVi": "Xương chày",
+      "nameEn": "TIBIA",
+      "ta2": {
+        "id": 1397,
+        "part": 2,
+        "page": 32,
+        "latin": "TIBIA",
+        "en": "TIBIA",
+        "us": "TIBIA"
+      },
+      "systemId": "skeletal",
+      "systemIds": [
+        "skeletal"
+      ],
+      "memberships": [
+        {
+          "systemId": "skeletal",
+          "subdivisionId": "skeletal.appendicular",
+          "role": "primary"
+        }
+      ],
+      "laterality": "paired"
+    },
+    {
+      "id": "bone.fibula",
+      "kind": "bone",
+      "nameVi": "Xương mác",
+      "nameEn": "FIBULA",
+      "ta2": {
+        "id": 1427,
+        "part": 2,
+        "page": 33,
+        "latin": "FIBULA",
+        "en": "FIBULA",
+        "us": "FIBULA"
+      },
+      "systemId": "skeletal",
+      "systemIds": [
+        "skeletal"
+      ],
+      "memberships": [
+        {
+          "systemId": "skeletal",
+          "subdivisionId": "skeletal.appendicular",
+          "role": "primary"
+        }
+      ],
+      "laterality": "paired"
+    },
+    {
+      "id": "bone.patella",
+      "kind": "bone",
+      "nameVi": "Xương bánh chè",
+      "nameEn": "Patella",
+      "ta2": {
+        "id": 1390,
+        "part": 2,
+        "page": 32,
+        "latin": "Patella",
+        "en": "Patella",
+        "us": "Patella"
+      },
+      "systemId": "skeletal",
+      "systemIds": [
+        "skeletal"
+      ],
+      "memberships": [
+        {
+          "systemId": "skeletal",
+          "subdivisionId": "skeletal.appendicular",
+          "role": "primary"
+        }
+      ],
+      "laterality": "paired"
+    },
+    {
+      "id": "joint.knee",
+      "kind": "joint",
+      "nameVi": "Khớp gối",
+      "nameEn": "Knee joint",
+      "ta2": {
+        "id": 1883,
+        "part": 2,
+        "page": 48,
+        "latin": "Articulatio genus",
+        "en": "Knee joint",
+        "us": "Knee joint"
+      },
+      "systemId": "skeletal",
+      "systemIds": [
+        "skeletal"
+      ],
+      "memberships": [
+        {
+          "systemId": "skeletal",
+          "subdivisionId": "skeletal.joints",
+          "role": "primary"
+        }
+      ],
+      "laterality": "paired"
+    },
+    {
+      "id": "joint.hip",
+      "kind": "joint",
+      "nameVi": "Khớp háng",
+      "nameEn": "Hip joint",
+      "ta2": {
+        "id": 1873,
+        "part": 2,
+        "page": 48,
+        "latin": "Articulatio coxae",
+        "en": "Hip joint",
+        "us": "Hip joint"
+      },
+      "systemId": "skeletal",
+      "systemIds": [
+        "skeletal"
+      ],
+      "memberships": [
+        {
+          "systemId": "skeletal",
+          "subdivisionId": "skeletal.joints",
+          "role": "primary"
+        }
+      ],
+      "laterality": "paired"
+    },
+    {
+      "id": "joint.shoulder",
+      "kind": "joint",
+      "nameVi": "Khớp ổ chảo–cánh tay",
+      "nameEn": "Glenohumeral joint",
+      "ta2": {
+        "id": 1764,
+        "part": 2,
+        "page": 44,
+        "latin": "Articulatio glenohumeralis",
+        "en": "Glenohumeral joint",
+        "us": "Glenohumeral joint"
+      },
+      "systemId": "skeletal",
+      "systemIds": [
+        "skeletal"
+      ],
+      "memberships": [
+        {
+          "systemId": "skeletal",
+          "subdivisionId": "skeletal.joints",
+          "role": "primary"
+        }
+      ],
+      "laterality": "paired"
+    },
+    {
+      "id": "cartilage.costal",
+      "kind": "cartilage",
+      "nameVi": "Sụn sườn",
+      "nameEn": "Costal cartilage",
+      "ta2": {
+        "id": 1140,
+        "part": 2,
+        "page": 25,
+        "latin": "Cartilago costalis",
+        "en": "Costal cartilage",
+        "us": "Costal cartilage"
+      },
+      "systemId": "skeletal",
+      "systemIds": [
+        "skeletal"
+      ],
+      "memberships": [
+        {
+          "systemId": "skeletal",
+          "subdivisionId": "skeletal.cartilage",
+          "role": "primary"
+        }
+      ],
+      "laterality": "paired"
+    },
+    {
+      "id": "cartilage.articular",
+      "kind": "cartilage",
+      "nameVi": "Sụn khớp",
+      "nameEn": "Articular cartilage",
+      "ta2": {
+        "id": 382,
+        "part": 2,
+        "page": 3,
+        "latin": "Cartilago articularis",
+        "en": "Articular cartilage",
+        "us": "Articular cartilage"
+      },
+      "systemId": "skeletal",
+      "systemIds": [
+        "skeletal"
+      ],
+      "memberships": [
+        {
+          "systemId": "skeletal",
+          "subdivisionId": "skeletal.cartilage",
+          "role": "primary"
+        }
+      ]
+    },
+    {
+      "id": "muscle.diaphragm",
+      "kind": "muscle",
+      "nameVi": "Cơ hoành",
+      "nameEn": "DIAPHRAGM",
+      "ta2": {
+        "id": 2327,
+        "part": 2,
+        "page": 64,
+        "latin": "DIAPHRAGMA",
+        "en": "DIAPHRAGM",
+        "us": "DIAPHRAGM"
+      },
+      "systemId": "muscular",
+      "systemIds": [
+        "muscular",
+        "respiratory"
+      ],
+      "memberships": [
+        {
+          "systemId": "muscular",
+          "subdivisionId": "muscular.axial",
+          "role": "primary"
+        },
+        {
+          "systemId": "respiratory",
+          "subdivisionId": "respiratory.ventilation",
+          "role": "functional",
+          "sourceId": "openstax-22.3"
+        }
+      ]
+    },
+    {
+      "id": "muscle.deltoid",
+      "kind": "muscle",
+      "nameVi": "Cơ delta",
+      "nameEn": "Deltoid muscle",
+      "ta2": {
+        "id": 2452,
+        "part": 2,
+        "page": 69,
+        "latin": "Musculus deltoideus",
+        "en": "Deltoid muscle",
+        "us": "Deltoid muscle"
+      },
+      "systemId": "muscular",
+      "systemIds": [
+        "muscular"
+      ],
+      "memberships": [
+        {
+          "systemId": "muscular",
+          "subdivisionId": "muscular.appendicular",
+          "role": "primary"
+        }
+      ],
+      "laterality": "paired"
+    },
+    {
+      "id": "muscle.biceps-brachii",
+      "kind": "muscle",
+      "nameVi": "Cơ nhị đầu cánh tay",
+      "nameEn": "Biceps brachii muscle",
+      "ta2": {
+        "id": 2464,
+        "part": 2,
+        "page": 69,
+        "latin": "Musculus biceps brachii",
+        "en": "Biceps brachii muscle",
+        "us": "Biceps brachii muscle"
+      },
+      "systemId": "muscular",
+      "systemIds": [
+        "muscular"
+      ],
+      "memberships": [
+        {
+          "systemId": "muscular",
+          "subdivisionId": "muscular.appendicular",
+          "role": "primary"
+        }
+      ],
+      "laterality": "paired"
+    },
+    {
+      "id": "muscle.triceps-brachii",
+      "kind": "muscle",
+      "nameVi": "Cơ tam đầu cánh tay",
+      "nameEn": "Triceps brachii muscle",
+      "ta2": {
+        "id": 2471,
+        "part": 2,
+        "page": 69,
+        "latin": "Musculus triceps brachii",
+        "en": "Triceps brachii muscle",
+        "us": "Triceps brachii muscle"
+      },
+      "systemId": "muscular",
+      "systemIds": [
+        "muscular"
+      ],
+      "memberships": [
+        {
+          "systemId": "muscular",
+          "subdivisionId": "muscular.appendicular",
+          "role": "primary"
+        }
+      ],
+      "laterality": "paired"
+    },
+    {
+      "id": "muscle.rectus-abdominis",
+      "kind": "muscle",
+      "nameVi": "Cơ thẳng bụng",
+      "nameEn": "Rectus abdominis muscle",
+      "ta2": {
+        "id": 2357,
+        "part": 2,
+        "page": 65,
+        "latin": "Musculus rectus abdominis",
+        "en": "Rectus abdominis muscle",
+        "us": "Rectus abdominis muscle"
+      },
+      "systemId": "muscular",
+      "systemIds": [
+        "muscular"
+      ],
+      "memberships": [
+        {
+          "systemId": "muscular",
+          "subdivisionId": "muscular.axial",
+          "role": "primary"
+        }
+      ],
+      "laterality": "paired"
+    },
+    {
+      "id": "muscle.trapezius",
+      "kind": "muscle",
+      "nameVi": "Cơ thang",
+      "nameEn": "Trapezius muscle",
+      "ta2": {
+        "id": 2226,
+        "part": 2,
+        "page": 61,
+        "latin": "Musculus trapezius",
+        "en": "Trapezius muscle",
+        "us": "Trapezius muscle"
+      },
+      "systemId": "muscular",
+      "systemIds": [
+        "muscular"
+      ],
+      "memberships": [
+        {
+          "systemId": "muscular",
+          "subdivisionId": "muscular.axial",
+          "role": "primary"
+        },
+        {
+          "systemId": "muscular",
+          "subdivisionId": "muscular.appendicular",
+          "role": "functional",
+          "sourceId": "openstax-11.5"
+        }
+      ],
+      "laterality": "paired"
+    },
+    {
+      "id": "muscle.gluteus-maximus",
+      "kind": "muscle",
+      "nameVi": "Cơ mông lớn",
+      "nameEn": "Gluteus maximus muscle",
+      "ta2": {
+        "id": 2598,
+        "part": 2,
+        "page": 74,
+        "latin": "Musculus gluteus maximus",
+        "en": "Gluteus maximus muscle",
+        "us": "Gluteus maximus muscle"
+      },
+      "systemId": "muscular",
+      "systemIds": [
+        "muscular"
+      ],
+      "memberships": [
+        {
+          "systemId": "muscular",
+          "subdivisionId": "muscular.appendicular",
+          "role": "primary"
+        }
+      ],
+      "laterality": "paired"
+    },
+    {
+      "id": "muscle.quadriceps",
+      "kind": "muscle",
+      "nameVi": "Cơ tứ đầu đùi",
+      "nameEn": "Quadriceps femoris muscle",
+      "ta2": {
+        "id": 2613,
+        "part": 2,
+        "page": 74,
+        "latin": "Musculus quadriceps femoris",
+        "en": "Quadriceps femoris muscle",
+        "us": "Quadriceps femoris muscle"
+      },
+      "systemId": "muscular",
+      "systemIds": [
+        "muscular"
+      ],
+      "memberships": [
+        {
+          "systemId": "muscular",
+          "subdivisionId": "muscular.appendicular",
+          "role": "primary"
+        }
+      ],
+      "laterality": "paired"
+    },
+    {
+      "id": "muscle.gastrocnemius",
+      "kind": "muscle",
+      "nameVi": "Cơ bụng chân",
+      "nameEn": "Gastrocnemius muscle",
+      "ta2": {
+        "id": 2657,
+        "part": 2,
+        "page": 76,
+        "latin": "Musculus gastrocnemius",
+        "en": "Gastrocnemius muscle",
+        "us": "Gastrocnemius muscle"
+      },
+      "systemId": "muscular",
+      "systemIds": [
+        "muscular"
+      ],
+      "memberships": [
+        {
+          "systemId": "muscular",
+          "subdivisionId": "muscular.appendicular",
+          "role": "primary"
+        }
+      ],
+      "laterality": "paired"
+    },
+    {
+      "id": "structure.calcaneal-tendon",
+      "kind": "tendon",
+      "nameVi": "Gân gót",
+      "nameEn": "Calcaneal tendon",
+      "ta2": {
+        "id": 2662,
+        "part": 2,
+        "page": 76,
+        "latin": "Tendo calcaneus",
+        "en": "Calcaneal tendon",
+        "us": "Calcaneal tendon"
+      },
+      "systemId": "muscular",
+      "systemIds": [
+        "muscular"
+      ],
+      "memberships": [
+        {
+          "systemId": "muscular",
+          "subdivisionId": "muscular.connective",
+          "role": "primary"
+        }
+      ],
+      "laterality": "paired"
+    },
+    {
+      "id": "organ.brain",
+      "kind": "organ",
+      "nameVi": "Não bộ",
+      "nameEn": "Brain",
+      "ta2": {
+        "id": 5415,
+        "part": 5,
+        "page": 3,
+        "latin": "Encephalon",
+        "en": "Brain",
+        "us": "Brain"
+      },
+      "systemId": "nervous",
+      "systemIds": [
+        "nervous"
+      ],
+      "memberships": [
+        {
+          "systemId": "nervous",
+          "subdivisionId": "nervous.cns.brain",
+          "role": "primary"
+        }
+      ]
+    },
+    {
+      "id": "structure.cerebrum",
+      "kind": "group",
+      "nameVi": "Đoan não",
+      "nameEn": "Telencephalon",
+      "ta2": {
+        "id": 5430,
+        "part": 5,
+        "page": 4,
+        "latin": "Telencephalon",
+        "en": "Telencephalon",
+        "us": "Telencephalon"
+      },
+      "systemId": "nervous",
+      "systemIds": [
+        "nervous"
+      ],
+      "memberships": [
+        {
+          "systemId": "nervous",
+          "subdivisionId": "nervous.cns.brain",
+          "role": "primary"
+        }
+      ],
+      "parentId": "organ.brain"
+    },
+    {
+      "id": "structure.diencephalon",
+      "kind": "group",
+      "nameVi": "Gian não",
+      "nameEn": "Diencephalon",
+      "ta2": {
+        "id": 5661,
+        "part": 5,
+        "page": 10,
+        "latin": "Diencephalon",
+        "en": "Diencephalon",
+        "us": "Diencephalon"
+      },
+      "systemId": "nervous",
+      "systemIds": [
+        "nervous"
+      ],
+      "memberships": [
+        {
+          "systemId": "nervous",
+          "subdivisionId": "nervous.cns.brain",
+          "role": "primary"
+        }
+      ],
+      "parentId": "organ.brain"
+    },
+    {
+      "id": "structure.hypothalamus",
+      "kind": "region",
+      "nameVi": "Vùng dưới đồi",
+      "nameEn": "Hypothalamus",
+      "ta2": {
+        "id": 5714,
+        "part": 5,
+        "page": 11,
+        "latin": "Hypothalamus",
+        "en": "Hypothalamus",
+        "us": "Hypothalamus"
+      },
+      "systemId": "nervous",
+      "systemIds": [
+        "nervous",
+        "endocrine"
+      ],
+      "memberships": [
+        {
+          "systemId": "nervous",
+          "subdivisionId": "nervous.cns.brain",
+          "role": "primary"
+        },
+        {
+          "systemId": "endocrine",
+          "subdivisionId": "endocrine.hypothalamic",
+          "role": "functional",
+          "sourceId": "openstax-17.3"
+        }
+      ],
+      "parentId": "structure.diencephalon"
+    },
+    {
+      "id": "structure.cerebellum",
+      "kind": "group",
+      "nameVi": "Tiểu não",
+      "nameEn": "CEREBELLUM",
+      "ta2": {
+        "id": 5788,
+        "part": 5,
+        "page": 14,
+        "latin": "CEREBELLUM",
+        "en": "CEREBELLUM",
+        "us": "CEREBELLUM"
+      },
+      "systemId": "nervous",
+      "systemIds": [
+        "nervous"
+      ],
+      "memberships": [
+        {
+          "systemId": "nervous",
+          "subdivisionId": "nervous.cns.brain",
+          "role": "primary"
+        }
+      ],
+      "parentId": "organ.brain"
+    },
+    {
+      "id": "structure.brainstem",
+      "kind": "group",
+      "nameVi": "Thân não",
+      "nameEn": "BRAINSTEM",
+      "ta2": {
+        "id": 5856,
+        "part": 5,
+        "page": 16,
+        "latin": "TRUNCUS ENCEPHALI",
+        "en": "BRAINSTEM",
+        "us": "BRAINSTEM"
+      },
+      "systemId": "nervous",
+      "systemIds": [
+        "nervous"
+      ],
+      "memberships": [
+        {
+          "systemId": "nervous",
+          "subdivisionId": "nervous.cns.brain",
+          "role": "primary"
+        }
+      ],
+      "parentId": "organ.brain"
+    },
+    {
+      "id": "structure.midbrain",
+      "kind": "part",
+      "nameVi": "Trung não",
+      "nameEn": "Midbrain",
+      "ta2": {
+        "id": 5874,
+        "part": 5,
+        "page": 16,
+        "latin": "Mesencephalon",
+        "en": "Midbrain",
+        "us": "Midbrain"
+      },
+      "systemId": "nervous",
+      "systemIds": [
+        "nervous"
+      ],
+      "memberships": [
+        {
+          "systemId": "nervous",
+          "subdivisionId": "nervous.cns.brain",
+          "role": "primary"
+        }
+      ],
+      "parentId": "structure.brainstem"
+    },
+    {
+      "id": "structure.pons",
+      "kind": "part",
+      "nameVi": "Cầu não",
+      "nameEn": "Pons",
+      "ta2": {
+        "id": 5921,
+        "part": 5,
+        "page": 18,
+        "latin": "Pons",
+        "en": "Pons",
+        "us": "Pons"
+      },
+      "systemId": "nervous",
+      "systemIds": [
+        "nervous"
+      ],
+      "memberships": [
+        {
+          "systemId": "nervous",
+          "subdivisionId": "nervous.cns.brain",
+          "role": "primary"
+        }
+      ],
+      "parentId": "structure.brainstem"
+    },
+    {
+      "id": "structure.medulla-oblongata",
+      "kind": "part",
+      "nameVi": "Hành não",
+      "nameEn": "Medulla oblongata",
+      "ta2": {
+        "id": 5983,
+        "part": 5,
+        "page": 20,
+        "latin": "Medulla oblongata",
+        "en": "Medulla oblongata",
+        "us": "Medulla oblongata"
+      },
+      "systemId": "nervous",
+      "systemIds": [
+        "nervous"
+      ],
+      "memberships": [
+        {
+          "systemId": "nervous",
+          "subdivisionId": "nervous.cns.brain",
+          "role": "primary"
+        }
+      ],
+      "parentId": "structure.brainstem"
+    },
+    {
+      "id": "structure.spinal-cord",
+      "kind": "organ",
+      "nameVi": "Tủy sống",
+      "nameEn": "Spinal cord",
+      "ta2": {
+        "id": 6049,
+        "part": 5,
+        "page": 23,
+        "latin": "Medulla spinalis",
+        "en": "Spinal cord",
+        "us": "Spinal cord"
+      },
+      "systemId": "nervous",
+      "systemIds": [
+        "nervous"
+      ],
+      "memberships": [
+        {
+          "systemId": "nervous",
+          "subdivisionId": "nervous.cns.spinal",
+          "role": "primary"
+        }
+      ]
+    },
+    {
+      "id": "structure.optic-chiasm",
+      "kind": "tract",
+      "nameVi": "Giao thoa thị giác",
+      "nameEn": "Optic chiasm",
+      "ta2": {
+        "id": 5668,
+        "part": 5,
+        "page": 10,
+        "latin": "Chiasma opticum",
+        "en": "Optic chiasm",
+        "us": "Optic chiasm"
+      },
+      "systemId": "nervous",
+      "systemIds": [
+        "nervous"
+      ],
+      "memberships": [
+        {
+          "systemId": "nervous",
+          "subdivisionId": "nervous.cns.brain",
+          "role": "primary"
+        }
+      ],
+      "parentId": "structure.diencephalon",
+      "laterality": "unpaired"
+    },
+    {
+      "id": "structure.optic-tract",
+      "kind": "tract",
+      "nameVi": "Dải thị giác",
+      "nameEn": "Optic tract",
+      "ta2": {
+        "id": 5669,
+        "part": 5,
+        "page": 10,
+        "latin": "Tractus opticus",
+        "en": "Optic tract",
+        "us": "Optic tract"
+      },
+      "systemId": "nervous",
+      "systemIds": [
+        "nervous"
+      ],
+      "memberships": [
+        {
+          "systemId": "nervous",
+          "subdivisionId": "nervous.cns.brain",
+          "role": "primary"
+        }
+      ],
+      "parentId": "structure.diencephalon",
+      "laterality": "paired"
+    },
+    {
+      "id": "structure.stria-terminalis",
+      "kind": "tract",
+      "nameVi": "Dải tận cùng",
+      "nameEn": "Stria terminalis",
+      "ta2": {
+        "id": 5592,
+        "part": 5,
+        "page": 8,
+        "latin": "Stria terminalis",
+        "en": "Stria terminalis",
+        "us": "Stria terminalis"
+      },
+      "systemId": "nervous",
+      "systemIds": [
+        "nervous"
+      ],
+      "memberships": [
+        {
+          "systemId": "nervous",
+          "subdivisionId": "nervous.cns.brain",
+          "role": "primary"
+        }
+      ],
+      "parentId": "structure.cerebrum",
+      "laterality": "paired"
+    },
+    {
+      "id": "structure.cauda-equina",
+      "kind": "group",
+      "nameVi": "Đuôi ngựa",
+      "nameEn": "Cauda equina",
+      "ta2": {
+        "id": 6163,
+        "part": 5,
+        "page": 27,
+        "latin": "Cauda equina",
+        "en": "Cauda equina",
+        "us": "Cauda equina"
+      },
+      "systemId": "nervous",
+      "systemIds": [
+        "nervous"
+      ],
+      "memberships": [
+        {
+          "systemId": "nervous",
+          "subdivisionId": "nervous.pns.spinal",
+          "role": "primary"
+        }
+      ]
+    },
+    {
+      "id": "structure.spinal-ganglion",
+      "kind": "ganglion",
+      "nameVi": "Hạch thần kinh tủy",
+      "nameEn": "Spinal ganglion",
+      "ta2": {
+        "id": 6167,
+        "part": 5,
+        "page": 27,
+        "latin": "Ganglion spinale",
+        "en": "Spinal ganglion",
+        "us": "Spinal ganglion"
+      },
+      "systemId": "nervous",
+      "systemIds": [
+        "nervous"
+      ],
+      "memberships": [
+        {
+          "systemId": "nervous",
+          "subdivisionId": "nervous.pns.spinal",
+          "role": "primary"
+        }
+      ],
+      "laterality": "paired"
+    },
+    {
+      "id": "nerve.olfactory",
+      "kind": "nerve",
+      "nameVi": "Dây thần kinh khứu giác (I)",
+      "nameEn": "Olfactory nerve",
+      "ta2": {
+        "id": 6181,
+        "part": 5,
+        "page": 27,
+        "latin": "Nervus olfactorius",
+        "en": "Olfactory nerve",
+        "us": "Olfactory nerve"
+      },
+      "systemId": "nervous",
+      "systemIds": [
+        "nervous"
+      ],
+      "memberships": [
+        {
+          "systemId": "nervous",
+          "subdivisionId": "nervous.pns.cranial",
+          "role": "primary"
+        }
+      ],
+      "laterality": "paired"
+    },
+    {
+      "id": "nerve.optic",
+      "kind": "nerve",
+      "nameVi": "Dây thần kinh thị giác (II)",
+      "nameEn": "Optic nerve",
+      "ta2": {
+        "id": 6183,
+        "part": 5,
+        "page": 27,
+        "latin": "Nervus opticus",
+        "en": "Optic nerve",
+        "us": "Optic nerve"
+      },
+      "systemId": "nervous",
+      "systemIds": [
+        "nervous"
+      ],
+      "memberships": [
+        {
+          "systemId": "nervous",
+          "subdivisionId": "nervous.pns.cranial",
+          "role": "primary"
+        },
+        {
+          "systemId": "nervous",
+          "subdivisionId": "nervous.cns.brain",
+          "role": "context",
+          "sourceId": "openstax-12.1"
+        }
+      ],
+      "laterality": "paired",
+      "classificationNoteVi": "Dây sọ II theo danh mục TA2. Có đặc điểm mô học và phát triển của đường dẫn truyền trung ương."
+    },
+    {
+      "id": "nerve.oculomotor",
+      "kind": "nerve",
+      "nameVi": "Dây thần kinh vận nhãn (III)",
+      "nameEn": "Oculomotor nerve",
+      "ta2": {
+        "id": 6187,
+        "part": 5,
+        "page": 27,
+        "latin": "Nervus oculomotorius",
+        "en": "Oculomotor nerve",
+        "us": "Oculomotor nerve"
+      },
+      "systemId": "nervous",
+      "systemIds": [
+        "nervous"
+      ],
+      "memberships": [
+        {
+          "systemId": "nervous",
+          "subdivisionId": "nervous.pns.cranial",
+          "role": "primary"
+        }
+      ],
+      "laterality": "paired"
+    },
+    {
+      "id": "nerve.trochlear",
+      "kind": "nerve",
+      "nameVi": "Dây thần kinh ròng rọc (IV)",
+      "nameEn": "Trochlear nerve",
+      "ta2": {
+        "id": 6191,
+        "part": 5,
+        "page": 28,
+        "latin": "Nervus trochlearis",
+        "en": "Trochlear nerve",
+        "us": "Trochlear nerve"
+      },
+      "systemId": "nervous",
+      "systemIds": [
+        "nervous"
+      ],
+      "memberships": [
+        {
+          "systemId": "nervous",
+          "subdivisionId": "nervous.pns.cranial",
+          "role": "primary"
+        }
+      ],
+      "laterality": "paired"
+    },
+    {
+      "id": "nerve.trigeminal",
+      "kind": "nerve",
+      "nameVi": "Dây thần kinh sinh ba (V)",
+      "nameEn": "Trigeminal nerve",
+      "ta2": {
+        "id": 6192,
+        "part": 5,
+        "page": 28,
+        "latin": "Nervus trigeminus",
+        "en": "Trigeminal nerve",
+        "us": "Trigeminal nerve"
+      },
+      "systemId": "nervous",
+      "systemIds": [
+        "nervous"
+      ],
+      "memberships": [
+        {
+          "systemId": "nervous",
+          "subdivisionId": "nervous.pns.cranial",
+          "role": "primary"
+        }
+      ],
+      "laterality": "paired"
+    },
+    {
+      "id": "nerve.abducens",
+      "kind": "nerve",
+      "nameVi": "Dây thần kinh vận nhãn ngoài (VI)",
+      "nameEn": "Abducens nerve",
+      "ta2": {
+        "id": 6283,
+        "part": 5,
+        "page": 31,
+        "latin": "Nervus abducens",
+        "en": "Abducens nerve",
+        "us": "Abducens nerve"
+      },
+      "systemId": "nervous",
+      "systemIds": [
+        "nervous"
+      ],
+      "memberships": [
+        {
+          "systemId": "nervous",
+          "subdivisionId": "nervous.pns.cranial",
+          "role": "primary"
+        }
+      ],
+      "laterality": "paired"
+    },
+    {
+      "id": "nerve.facial",
+      "kind": "nerve",
+      "nameVi": "Dây thần kinh mặt (VII)",
+      "nameEn": "Facial nerve",
+      "ta2": {
+        "id": 6284,
+        "part": 5,
+        "page": 31,
+        "latin": "Nervus facialis",
+        "en": "Facial nerve",
+        "us": "Facial nerve"
+      },
+      "systemId": "nervous",
+      "systemIds": [
+        "nervous"
+      ],
+      "memberships": [
+        {
+          "systemId": "nervous",
+          "subdivisionId": "nervous.pns.cranial",
+          "role": "primary"
+        }
+      ],
+      "laterality": "paired"
+    },
+    {
+      "id": "nerve.vestibulocochlear",
+      "kind": "nerve",
+      "nameVi": "Dây thần kinh tiền đình–ốc tai (VIII)",
+      "nameEn": "Vestibulocochlear nerve",
+      "ta2": {
+        "id": 6307,
+        "part": 5,
+        "page": 32,
+        "latin": "Nervus vestibulocochlearis",
+        "en": "Vestibulocochlear nerve",
+        "us": "Vestibulocochlear nerve"
+      },
+      "systemId": "nervous",
+      "systemIds": [
+        "nervous"
+      ],
+      "memberships": [
+        {
+          "systemId": "nervous",
+          "subdivisionId": "nervous.pns.cranial",
+          "role": "primary"
+        }
+      ],
+      "laterality": "paired"
+    },
+    {
+      "id": "nerve.glossopharyngeal",
+      "kind": "nerve",
+      "nameVi": "Dây thần kinh thiệt hầu (IX)",
+      "nameEn": "Glossopharyngeal nerve",
+      "ta2": {
+        "id": 6320,
+        "part": 5,
+        "page": 33,
+        "latin": "Nervus glossopharyngeus",
+        "en": "Glossopharyngeal nerve",
+        "us": "Glossopharyngeal nerve"
+      },
+      "systemId": "nervous",
+      "systemIds": [
+        "nervous"
+      ],
+      "memberships": [
+        {
+          "systemId": "nervous",
+          "subdivisionId": "nervous.pns.cranial",
+          "role": "primary"
+        }
+      ],
+      "laterality": "paired"
+    },
+    {
+      "id": "nerve.vagus",
+      "kind": "nerve",
+      "nameVi": "Dây thần kinh lang thang (X)",
+      "nameEn": "Vagus nerve",
+      "ta2": {
+        "id": 6332,
+        "part": 5,
+        "page": 33,
+        "latin": "Nervus vagus",
+        "en": "Vagus nerve",
+        "us": "Vagus nerve"
+      },
+      "systemId": "nervous",
+      "systemIds": [
+        "nervous"
+      ],
+      "memberships": [
+        {
+          "systemId": "nervous",
+          "subdivisionId": "nervous.pns.cranial",
+          "role": "primary"
+        },
+        {
+          "systemId": "nervous",
+          "subdivisionId": "nervous.pns.autonomic.parasympathetic",
+          "role": "functional",
+          "sourceId": "openstax-15.1"
+        }
+      ],
+      "laterality": "paired"
+    },
+    {
+      "id": "nerve.accessory",
+      "kind": "nerve",
+      "nameVi": "Dây thần kinh phụ (XI)",
+      "nameEn": "Accessory nerve",
+      "ta2": {
+        "id": 6352,
+        "part": 5,
+        "page": 34,
+        "latin": "Nervus accessorius",
+        "en": "Accessory nerve",
+        "us": "Accessory nerve"
+      },
+      "systemId": "nervous",
+      "systemIds": [
+        "nervous"
+      ],
+      "memberships": [
+        {
+          "systemId": "nervous",
+          "subdivisionId": "nervous.pns.cranial",
+          "role": "primary"
+        }
+      ],
+      "laterality": "paired"
+    },
+    {
+      "id": "nerve.hypoglossal",
+      "kind": "nerve",
+      "nameVi": "Dây thần kinh hạ thiệt (XII)",
+      "nameEn": "Hypoglossal nerve",
+      "ta2": {
+        "id": 6357,
+        "part": 5,
+        "page": 34,
+        "latin": "Nervus hypoglossus",
+        "en": "Hypoglossal nerve",
+        "us": "Hypoglossal nerve"
+      },
+      "systemId": "nervous",
+      "systemIds": [
+        "nervous"
+      ],
+      "memberships": [
+        {
+          "systemId": "nervous",
+          "subdivisionId": "nervous.pns.cranial",
+          "role": "primary"
+        }
+      ],
+      "laterality": "paired"
+    },
+    {
+      "id": "nerve.phrenic",
+      "kind": "nerve",
+      "nameVi": "Dây thần kinh hoành",
+      "nameEn": "Phrenic nerve",
+      "ta2": {
+        "id": 6380,
+        "part": 5,
+        "page": 35,
+        "latin": "Nervus phrenicus",
+        "en": "Phrenic nerve",
+        "us": "Phrenic nerve"
+      },
+      "systemId": "nervous",
+      "systemIds": [
+        "nervous"
+      ],
+      "memberships": [
+        {
+          "systemId": "nervous",
+          "subdivisionId": "nervous.pns.spinal",
+          "role": "primary"
+        }
+      ],
+      "laterality": "paired"
+    },
+    {
+      "id": "nerve.median",
+      "kind": "nerve",
+      "nameVi": "Dây thần kinh giữa",
+      "nameEn": "Median nerve",
+      "ta2": {
+        "id": 6459,
+        "part": 5,
+        "page": 38,
+        "latin": "Nervus medianus",
+        "en": "Median nerve",
+        "us": "Median nerve"
+      },
+      "systemId": "nervous",
+      "systemIds": [
+        "nervous"
+      ],
+      "memberships": [
+        {
+          "systemId": "nervous",
+          "subdivisionId": "nervous.pns.spinal",
+          "role": "primary"
+        }
+      ],
+      "laterality": "paired"
+    },
+    {
+      "id": "nerve.ulnar",
+      "kind": "nerve",
+      "nameVi": "Dây thần kinh trụ",
+      "nameEn": "Ulnar nerve",
+      "ta2": {
+        "id": 6449,
+        "part": 5,
+        "page": 38,
+        "latin": "Nervus ulnaris",
+        "en": "Ulnar nerve",
+        "us": "Ulnar nerve"
+      },
+      "systemId": "nervous",
+      "systemIds": [
+        "nervous"
+      ],
+      "memberships": [
+        {
+          "systemId": "nervous",
+          "subdivisionId": "nervous.pns.spinal",
+          "role": "primary"
+        }
+      ],
+      "laterality": "paired"
+    },
+    {
+      "id": "nerve.sciatic",
+      "kind": "nerve",
+      "nameVi": "Dây thần kinh tọa",
+      "nameEn": "Sciatic nerve",
+      "ta2": {
+        "id": 6569,
+        "part": 5,
+        "page": 42,
+        "latin": "Nervus ischiadicus",
+        "en": "Sciatic nerve",
+        "us": "Sciatic nerve"
+      },
+      "systemId": "nervous",
+      "systemIds": [
+        "nervous"
+      ],
+      "memberships": [
+        {
+          "systemId": "nervous",
+          "subdivisionId": "nervous.pns.spinal",
+          "role": "primary"
+        }
+      ],
+      "laterality": "paired"
+    },
+    {
+      "id": "structure.brachial-plexus",
+      "kind": "plexus",
+      "nameVi": "Đám rối thần kinh cánh tay",
+      "nameEn": "BRACHIAL PLEXUS",
+      "ta2": {
+        "id": 6395,
+        "part": 5,
+        "page": 36,
+        "latin": "PLEXUS BRACHIALIS",
+        "en": "BRACHIAL PLEXUS",
+        "us": "BRACHIAL PLEXUS"
+      },
+      "systemId": "nervous",
+      "systemIds": [
+        "nervous"
+      ],
+      "memberships": [
+        {
+          "systemId": "nervous",
+          "subdivisionId": "nervous.pns.spinal",
+          "role": "primary"
+        }
+      ],
+      "laterality": "paired"
+    },
+    {
+      "id": "structure.sympathetic-trunk",
+      "kind": "group",
+      "nameVi": "Thân giao cảm",
+      "nameEn": "Sympathetic trunk",
+      "ta2": {
+        "id": 6602,
+        "part": 5,
+        "page": 44,
+        "latin": "Truncus sympathicus",
+        "en": "Sympathetic trunk",
+        "us": "Sympathetic trunk"
+      },
+      "systemId": "nervous",
+      "systemIds": [
+        "nervous"
+      ],
+      "memberships": [
+        {
+          "systemId": "nervous",
+          "subdivisionId": "nervous.pns.autonomic.sympathetic",
+          "role": "primary"
+        }
+      ],
+      "laterality": "paired"
+    },
+    {
+      "id": "structure.enteric-plexus",
+      "kind": "plexus",
+      "nameVi": "Đám rối thần kinh ruột",
+      "nameEn": "Enteric plexus",
+      "ta2": {
+        "id": 6726,
+        "part": 5,
+        "page": 48,
+        "latin": "Plexus entericus",
+        "en": "Enteric plexus",
+        "us": "Enteric plexus"
+      },
+      "systemId": "nervous",
+      "systemIds": [
+        "nervous"
+      ],
+      "memberships": [
+        {
+          "systemId": "nervous",
+          "subdivisionId": "nervous.pns.autonomic.enteric",
+          "role": "primary"
+        }
+      ]
+    },
+    {
+      "id": "organ.eyeball",
+      "kind": "organ",
+      "nameVi": "Nhãn cầu",
+      "nameEn": "Eyeball",
+      "ta2": {
+        "id": 6735,
+        "part": 5,
+        "page": 49,
+        "latin": "Bulbus oculi",
+        "en": "Eyeball",
+        "us": "Eyeball"
+      },
+      "systemId": "nervous",
+      "systemIds": [
+        "nervous"
+      ],
+      "memberships": [
+        {
+          "systemId": "nervous",
+          "subdivisionId": "nervous.senses",
+          "role": "primary"
+        }
+      ],
+      "laterality": "paired"
+    },
+    {
+      "id": "structure.cornea",
+      "kind": "part",
+      "nameVi": "Giác mạc",
+      "nameEn": "Cornea",
+      "ta2": {
+        "id": 6744,
+        "part": 5,
+        "page": 49,
+        "latin": "Cornea",
+        "en": "Cornea",
+        "us": "Cornea"
+      },
+      "systemId": "nervous",
+      "systemIds": [
+        "nervous"
+      ],
+      "memberships": [
+        {
+          "systemId": "nervous",
+          "subdivisionId": "nervous.senses",
+          "role": "primary"
+        }
+      ],
+      "parentId": "organ.eyeball",
+      "laterality": "paired"
+    },
+    {
+      "id": "structure.sclera",
+      "kind": "part",
+      "nameVi": "Củng mạc",
+      "nameEn": "Sclera",
+      "ta2": {
+        "id": 6750,
+        "part": 5,
+        "page": 49,
+        "latin": "Sclera",
+        "en": "Sclera",
+        "us": "Sclera"
+      },
+      "systemId": "nervous",
+      "systemIds": [
+        "nervous"
+      ],
+      "memberships": [
+        {
+          "systemId": "nervous",
+          "subdivisionId": "nervous.senses",
+          "role": "primary"
+        }
+      ],
+      "parentId": "organ.eyeball",
+      "laterality": "paired"
+    },
+    {
+      "id": "structure.iris",
+      "kind": "part",
+      "nameVi": "Mống mắt",
+      "nameEn": "Iris",
+      "ta2": {
+        "id": 6753,
+        "part": 5,
+        "page": 49,
+        "latin": "Iris",
+        "en": "Iris",
+        "us": "Iris"
+      },
+      "systemId": "nervous",
+      "systemIds": [
+        "nervous"
+      ],
+      "memberships": [
+        {
+          "systemId": "nervous",
+          "subdivisionId": "nervous.senses",
+          "role": "primary"
+        }
+      ],
+      "parentId": "organ.eyeball",
+      "laterality": "paired"
+    },
+    {
+      "id": "structure.retina",
+      "kind": "part",
+      "nameVi": "Võng mạc",
+      "nameEn": "Retina",
+      "ta2": {
+        "id": 6776,
+        "part": 5,
+        "page": 50,
+        "latin": "Retina",
+        "en": "Retina",
+        "us": "Retina"
+      },
+      "systemId": "nervous",
+      "systemIds": [
+        "nervous"
+      ],
+      "memberships": [
+        {
+          "systemId": "nervous",
+          "subdivisionId": "nervous.senses",
+          "role": "primary"
+        }
+      ],
+      "parentId": "organ.eyeball",
+      "laterality": "paired"
+    },
+    {
+      "id": "organ.ear",
+      "kind": "organ",
+      "nameVi": "Tai",
+      "nameEn": "EAR",
+      "ta2": {
+        "id": 6861,
+        "part": 5,
+        "page": 53,
+        "latin": "AURIS",
+        "en": "EAR",
+        "us": "EAR"
+      },
+      "systemId": "nervous",
+      "systemIds": [
+        "nervous"
+      ],
+      "memberships": [
+        {
+          "systemId": "nervous",
+          "subdivisionId": "nervous.senses",
+          "role": "primary"
+        }
+      ],
+      "laterality": "paired"
+    },
+    {
+      "id": "structure.auricle-ear",
+      "kind": "part",
+      "nameVi": "Vành tai",
+      "nameEn": "Auricle",
+      "ta2": {
+        "id": 6863,
+        "part": 5,
+        "page": 53,
+        "latin": "Auricula",
+        "en": "Auricle",
+        "us": "Auricle"
+      },
+      "systemId": "nervous",
+      "systemIds": [
+        "nervous"
+      ],
+      "memberships": [
+        {
+          "systemId": "nervous",
+          "subdivisionId": "nervous.senses",
+          "role": "primary"
+        }
+      ],
+      "parentId": "organ.ear",
+      "laterality": "paired"
+    },
+    {
+      "id": "bone.malleus",
+      "kind": "bone",
+      "nameVi": "Xương búa",
+      "nameEn": "Malleus",
+      "ta2": {
+        "id": 881,
+        "part": 2,
+        "page": 17,
+        "latin": "Malleus",
+        "en": "Malleus",
+        "us": "Malleus"
+      },
+      "systemId": "skeletal",
+      "systemIds": [
+        "skeletal",
+        "nervous"
+      ],
+      "memberships": [
+        {
+          "systemId": "skeletal",
+          "subdivisionId": "skeletal.axial",
+          "role": "primary"
+        },
+        {
+          "systemId": "nervous",
+          "subdivisionId": "nervous.senses",
+          "role": "context"
+        }
+      ],
+      "laterality": "paired"
+    },
+    {
+      "id": "bone.incus",
+      "kind": "bone",
+      "nameVi": "Xương đe",
+      "nameEn": "Incus",
+      "ta2": {
+        "id": 888,
+        "part": 2,
+        "page": 17,
+        "latin": "Incus",
+        "en": "Incus",
+        "us": "Incus"
+      },
+      "systemId": "skeletal",
+      "systemIds": [
+        "skeletal",
+        "nervous"
+      ],
+      "memberships": [
+        {
+          "systemId": "skeletal",
+          "subdivisionId": "skeletal.axial",
+          "role": "primary"
+        },
+        {
+          "systemId": "nervous",
+          "subdivisionId": "nervous.senses",
+          "role": "context"
+        }
+      ],
+      "laterality": "paired"
+    },
+    {
+      "id": "bone.stapes",
+      "kind": "bone",
+      "nameVi": "Xương bàn đạp",
+      "nameEn": "Stapes",
+      "ta2": {
+        "id": 895,
+        "part": 2,
+        "page": 17,
+        "latin": "Stapes",
+        "en": "Stapes",
+        "us": "Stapes"
+      },
+      "systemId": "skeletal",
+      "systemIds": [
+        "skeletal",
+        "nervous"
+      ],
+      "memberships": [
+        {
+          "systemId": "skeletal",
+          "subdivisionId": "skeletal.axial",
+          "role": "primary"
+        },
+        {
+          "systemId": "nervous",
+          "subdivisionId": "nervous.senses",
+          "role": "context"
+        }
+      ],
+      "laterality": "paired"
+    },
+    {
+      "id": "organ.pituitary",
+      "kind": "gland",
+      "nameVi": "Tuyến yên",
+      "nameEn": "Pituitary gland",
+      "ta2": {
+        "id": 3854,
+        "part": 4,
+        "page": 2,
+        "latin": "Glandula pituitaria",
+        "en": "Pituitary gland",
+        "us": "Pituitary gland"
+      },
+      "systemId": "endocrine",
+      "systemIds": [
+        "endocrine"
+      ],
+      "memberships": [
+        {
+          "systemId": "endocrine",
+          "subdivisionId": "endocrine.hypothalamic",
+          "role": "primary"
+        }
+      ]
+    },
+    {
+      "id": "structure.adenohypophysis",
+      "kind": "part",
+      "nameVi": "Phần tuyến của tuyến yên",
+      "nameEn": "Adenohypophysis",
+      "ta2": {
+        "id": 3855,
+        "part": 4,
+        "page": 2,
+        "latin": "Adenohypophysis",
+        "en": "Adenohypophysis",
+        "us": "Adenohypophysis"
+      },
+      "systemId": "endocrine",
+      "systemIds": [
+        "endocrine"
+      ],
+      "memberships": [
+        {
+          "systemId": "endocrine",
+          "subdivisionId": "endocrine.hypothalamic",
+          "role": "primary"
+        }
+      ],
+      "parentId": "organ.pituitary"
+    },
+    {
+      "id": "structure.neurohypophysis",
+      "kind": "part",
+      "nameVi": "Phần thần kinh của tuyến yên",
+      "nameEn": "Neurohypophysis",
+      "ta2": {
+        "id": 3859,
+        "part": 4,
+        "page": 2,
+        "latin": "Neurohypophysis",
+        "en": "Neurohypophysis",
+        "us": "Neurohypophysis"
+      },
+      "systemId": "endocrine",
+      "systemIds": [
+        "endocrine"
+      ],
+      "memberships": [
+        {
+          "systemId": "endocrine",
+          "subdivisionId": "endocrine.hypothalamic",
+          "role": "primary"
+        }
+      ],
+      "parentId": "organ.pituitary"
+    },
+    {
+      "id": "organ.pineal",
+      "kind": "gland",
+      "nameVi": "Tuyến tùng",
+      "nameEn": "Pineal gland",
+      "ta2": {
+        "id": 3862,
+        "part": 4,
+        "page": 2,
+        "latin": "Glandula pinealis",
+        "en": "Pineal gland",
+        "us": "Pineal gland"
+      },
+      "systemId": "endocrine",
+      "systemIds": [
+        "endocrine"
+      ],
+      "memberships": [
+        {
+          "systemId": "endocrine",
+          "subdivisionId": "endocrine.glands",
+          "role": "primary"
+        }
+      ]
+    },
+    {
+      "id": "organ.thyroid",
+      "kind": "gland",
+      "nameVi": "Tuyến giáp",
+      "nameEn": "Thyroid gland",
+      "ta2": {
+        "id": 3863,
+        "part": 4,
+        "page": 2,
+        "latin": "Glandula thyreoidea",
+        "en": "Thyroid gland",
+        "us": "Thyroid gland"
+      },
+      "systemId": "endocrine",
+      "systemIds": [
+        "endocrine"
+      ],
+      "memberships": [
+        {
+          "systemId": "endocrine",
+          "subdivisionId": "endocrine.glands",
+          "role": "primary"
+        }
+      ]
+    },
+    {
+      "id": "organ.parathyroid",
+      "kind": "group",
+      "nameVi": "Tuyến cận giáp",
+      "nameEn": "Parathyroid glands",
+      "ta2": {
+        "id": 3870,
+        "part": 4,
+        "page": 2,
+        "latin": "Glandulae parathyreoideae",
+        "en": "Parathyroid glands",
+        "us": "Parathyroid glands"
+      },
+      "systemId": "endocrine",
+      "systemIds": [
+        "endocrine"
+      ],
+      "memberships": [
+        {
+          "systemId": "endocrine",
+          "subdivisionId": "endocrine.glands",
+          "role": "primary"
+        }
+      ]
+    },
+    {
+      "id": "organ.adrenal",
+      "kind": "gland",
+      "nameVi": "Tuyến thượng thận",
+      "nameEn": "Suprarenal gland",
+      "ta2": {
+        "id": 3874,
+        "part": 4,
+        "page": 3,
+        "latin": "Glandula suprarenalis",
+        "en": "Suprarenal gland",
+        "us": "Suprarenal gland"
+      },
+      "systemId": "endocrine",
+      "systemIds": [
+        "endocrine"
+      ],
+      "memberships": [
+        {
+          "systemId": "endocrine",
+          "subdivisionId": "endocrine.glands",
+          "role": "primary"
+        }
+      ],
+      "laterality": "paired"
+    },
+    {
+      "id": "organ.heart",
+      "kind": "organ",
+      "nameVi": "Tim",
+      "nameEn": "HEART",
+      "ta2": {
+        "id": 3932,
+        "part": 4,
+        "page": 5,
+        "latin": "COR",
+        "en": "HEART",
+        "us": "HEART"
+      },
+      "systemId": "circulatory",
+      "systemIds": [
+        "circulatory"
+      ],
+      "memberships": [
+        {
+          "systemId": "circulatory",
+          "subdivisionId": "circulatory.heart",
+          "role": "primary"
+        }
+      ],
+      "laterality": "unpaired"
+    },
+    {
+      "id": "structure.right-atrium",
+      "kind": "chamber",
+      "nameVi": "Tâm nhĩ phải",
+      "nameEn": "RIGHT ATRIUM",
+      "ta2": {
+        "id": 4022,
+        "part": 4,
+        "page": 8,
+        "latin": "ATRIUM DEXTRUM",
+        "en": "RIGHT ATRIUM",
+        "us": "RIGHT ATRIUM"
+      },
+      "systemId": "circulatory",
+      "systemIds": [
+        "circulatory"
+      ],
+      "memberships": [
+        {
+          "systemId": "circulatory",
+          "subdivisionId": "circulatory.heart",
+          "role": "primary"
+        }
+      ],
+      "parentId": "organ.heart"
+    },
+    {
+      "id": "structure.left-atrium",
+      "kind": "chamber",
+      "nameVi": "Tâm nhĩ trái",
+      "nameEn": "LEFT ATRIUM",
+      "ta2": {
+        "id": 4054,
+        "part": 4,
+        "page": 10,
+        "latin": "ATRIUM SINISTRUM",
+        "en": "LEFT ATRIUM",
+        "us": "LEFT ATRIUM"
+      },
+      "systemId": "circulatory",
+      "systemIds": [
+        "circulatory"
+      ],
+      "memberships": [
+        {
+          "systemId": "circulatory",
+          "subdivisionId": "circulatory.heart",
+          "role": "primary"
+        }
+      ],
+      "parentId": "organ.heart"
+    },
+    {
+      "id": "structure.right-ventricle",
+      "kind": "chamber",
+      "nameVi": "Tâm thất phải",
+      "nameEn": "RIGHT VENTRICLE",
+      "ta2": {
+        "id": 4038,
+        "part": 4,
+        "page": 9,
+        "latin": "VENTRICULUS DEXTER",
+        "en": "RIGHT VENTRICLE",
+        "us": "RIGHT VENTRICLE"
+      },
+      "systemId": "circulatory",
+      "systemIds": [
+        "circulatory"
+      ],
+      "memberships": [
+        {
+          "systemId": "circulatory",
+          "subdivisionId": "circulatory.heart",
+          "role": "primary"
+        }
+      ],
+      "parentId": "organ.heart"
+    },
+    {
+      "id": "structure.left-ventricle",
+      "kind": "chamber",
+      "nameVi": "Tâm thất trái",
+      "nameEn": "LEFT VENTRICLE",
+      "ta2": {
+        "id": 4062,
+        "part": 4,
+        "page": 10,
+        "latin": "VENTRICULUS SINISTER",
+        "en": "LEFT VENTRICLE",
+        "us": "LEFT VENTRICLE"
+      },
+      "systemId": "circulatory",
+      "systemIds": [
+        "circulatory"
+      ],
+      "memberships": [
+        {
+          "systemId": "circulatory",
+          "subdivisionId": "circulatory.heart",
+          "role": "primary"
+        }
+      ],
+      "parentId": "organ.heart"
+    },
+    {
+      "id": "structure.tricuspid-valve",
+      "kind": "valve",
+      "nameVi": "Van ba lá",
+      "nameEn": "Right atrioventricular valve",
+      "ta2": {
+        "id": 3982,
+        "part": 4,
+        "page": 6,
+        "latin": "Valva atrioventricularis dextra",
+        "en": "Right atrioventricular valve",
+        "us": "Right atrioventricular valve"
+      },
+      "systemId": "circulatory",
+      "systemIds": [
+        "circulatory"
+      ],
+      "memberships": [
+        {
+          "systemId": "circulatory",
+          "subdivisionId": "circulatory.heart",
+          "role": "primary"
+        }
+      ],
+      "parentId": "organ.heart"
+    },
+    {
+      "id": "structure.mitral-valve",
+      "kind": "valve",
+      "nameVi": "Van hai lá",
+      "nameEn": "Left atrioventricular valve",
+      "ta2": {
+        "id": 3987,
+        "part": 4,
+        "page": 7,
+        "latin": "Valva atrioventricularis sinistra",
+        "en": "Left atrioventricular valve",
+        "us": "Left atrioventricular valve"
+      },
+      "systemId": "circulatory",
+      "systemIds": [
+        "circulatory"
+      ],
+      "memberships": [
+        {
+          "systemId": "circulatory",
+          "subdivisionId": "circulatory.heart",
+          "role": "primary"
+        }
+      ],
+      "parentId": "organ.heart"
+    },
+    {
+      "id": "structure.mitral-posterior-leaflet",
+      "kind": "leaflet",
+      "nameVi": "Lá sau van hai lá",
+      "nameEn": "Posterior leaflet of left atrioventricular valve",
+      "ta2": {
+        "id": 3990,
+        "part": 4,
+        "page": 7,
+        "latin": "Cuspis posterior valvae atrioventricularis sinistrae",
+        "en": "Posterior leaflet of left atrioventricular valve",
+        "us": "Posterior leaflet of left atrioventricular valve"
+      },
+      "systemId": "circulatory",
+      "systemIds": [
+        "circulatory"
+      ],
+      "memberships": [
+        {
+          "systemId": "circulatory",
+          "subdivisionId": "circulatory.heart",
+          "role": "primary"
+        }
+      ],
+      "parentId": "structure.mitral-valve"
+    },
+    {
+      "id": "structure.pulmonary-valve",
+      "kind": "valve",
+      "nameVi": "Van động mạch phổi",
+      "nameEn": "Pulmonary valve",
+      "ta2": {
+        "id": 4008,
+        "part": 4,
+        "page": 8,
+        "latin": "Valva trunci pulmonalis",
+        "en": "Pulmonary valve",
+        "us": "Pulmonary valve"
+      },
+      "systemId": "circulatory",
+      "systemIds": [
+        "circulatory"
+      ],
+      "memberships": [
+        {
+          "systemId": "circulatory",
+          "subdivisionId": "circulatory.heart",
+          "role": "primary"
+        }
+      ],
+      "parentId": "organ.heart"
+    },
+    {
+      "id": "structure.aortic-valve",
+      "kind": "valve",
+      "nameVi": "Van động mạch chủ",
+      "nameEn": "Aortic valve",
+      "ta2": {
+        "id": 3993,
+        "part": 4,
+        "page": 7,
+        "latin": "Valva aortae",
+        "en": "Aortic valve",
+        "us": "Aortic valve"
+      },
+      "systemId": "circulatory",
+      "systemIds": [
+        "circulatory"
+      ],
+      "memberships": [
+        {
+          "systemId": "circulatory",
+          "subdivisionId": "circulatory.heart",
+          "role": "primary"
+        }
+      ],
+      "parentId": "organ.heart"
+    },
+    {
+      "id": "vessel.aorta",
+      "kind": "artery",
+      "nameVi": "Động mạch chủ",
+      "nameEn": "Aorta",
+      "ta2": {
+        "id": 4175,
+        "part": 4,
+        "page": 14,
+        "latin": "Aorta",
+        "en": "Aorta",
+        "us": "Aorta"
+      },
+      "systemId": "circulatory",
+      "systemIds": [
+        "circulatory"
+      ],
+      "memberships": [
+        {
+          "systemId": "circulatory",
+          "subdivisionId": "circulatory.arteries",
+          "role": "primary"
+        }
+      ],
+      "laterality": "unpaired"
+    },
+    {
+      "id": "vessel.ascending-aorta",
+      "kind": "artery",
+      "nameVi": "Động mạch chủ lên",
+      "nameEn": "ASCENDING AORTA",
+      "ta2": {
+        "id": 4176,
+        "part": 4,
+        "page": 14,
+        "latin": "AORTA ASCENDENS",
+        "en": "ASCENDING AORTA",
+        "us": "ASCENDING AORTA"
+      },
+      "systemId": "circulatory",
+      "systemIds": [
+        "circulatory"
+      ],
+      "memberships": [
+        {
+          "systemId": "circulatory",
+          "subdivisionId": "circulatory.arteries",
+          "role": "primary"
+        }
+      ],
+      "parentId": "vessel.aorta"
+    },
+    {
+      "id": "vessel.pulmonary-trunk",
+      "kind": "artery",
+      "nameVi": "Thân động mạch phổi",
+      "nameEn": "Pulmonary trunk",
+      "ta2": {
+        "id": 4075,
+        "part": 4,
+        "page": 10,
+        "latin": "Truncus pulmonalis",
+        "en": "Pulmonary trunk",
+        "us": "Pulmonary trunk"
+      },
+      "systemId": "circulatory",
+      "systemIds": [
+        "circulatory"
+      ],
+      "memberships": [
+        {
+          "systemId": "circulatory",
+          "subdivisionId": "circulatory.arteries",
+          "role": "primary"
+        }
+      ],
+      "laterality": "unpaired"
+    },
+    {
+      "id": "vessel.vena-cava-superior",
+      "kind": "vein",
+      "nameVi": "Tĩnh mạch chủ trên",
+      "nameEn": "Superior vena cava",
+      "ta2": {
+        "id": 4745,
+        "part": 4,
+        "page": 35,
+        "latin": "Vena cava superior",
+        "en": "Superior vena cava",
+        "us": "Superior vena cava"
+      },
+      "systemId": "circulatory",
+      "systemIds": [
+        "circulatory"
+      ],
+      "memberships": [
+        {
+          "systemId": "circulatory",
+          "subdivisionId": "circulatory.veins",
+          "role": "primary"
+        }
+      ]
+    },
+    {
+      "id": "vessel.vena-cava-inferior",
+      "kind": "vein",
+      "nameVi": "Tĩnh mạch chủ dưới",
+      "nameEn": "Inferior vena cava",
+      "ta2": {
+        "id": 4991,
+        "part": 4,
+        "page": 42,
+        "latin": "Vena cava inferior",
+        "en": "Inferior vena cava",
+        "us": "Inferior vena cava"
+      },
+      "systemId": "circulatory",
+      "systemIds": [
+        "circulatory"
+      ],
+      "memberships": [
+        {
+          "systemId": "circulatory",
+          "subdivisionId": "circulatory.veins",
+          "role": "primary"
+        }
+      ]
+    },
+    {
+      "id": "vessel.portal-hepatic",
+      "kind": "vein",
+      "nameVi": "Tĩnh mạch cửa gan",
+      "nameEn": "Hepatic portal vein",
+      "ta2": {
+        "id": 5092,
+        "part": 4,
+        "page": 45,
+        "latin": "Vena portae hepatis",
+        "en": "Hepatic portal vein",
+        "us": "Hepatic portal vein"
+      },
+      "systemId": "circulatory",
+      "systemIds": [
+        "circulatory",
+        "digestive"
+      ],
+      "memberships": [
+        {
+          "systemId": "circulatory",
+          "subdivisionId": "circulatory.veins",
+          "role": "primary"
+        },
+        {
+          "systemId": "digestive",
+          "subdivisionId": "digestive.accessory",
+          "role": "context",
+          "sourceId": "openstax-20.5"
+        }
+      ]
+    },
+    {
+      "id": "vessel.hepatic-artery-proper",
+      "kind": "artery",
+      "nameVi": "Động mạch gan riêng",
+      "nameEn": "Proper hepatic artery",
+      "ta2": {
+        "id": 4227,
+        "part": 4,
+        "page": 16,
+        "latin": "Arteria hepatica propria",
+        "en": "Proper hepatic artery",
+        "us": "Proper hepatic artery"
+      },
+      "systemId": "circulatory",
+      "systemIds": [
+        "circulatory"
+      ],
+      "memberships": [
+        {
+          "systemId": "circulatory",
+          "subdivisionId": "circulatory.arteries",
+          "role": "primary"
+        }
+      ]
+    },
+    {
+      "id": "vessel.capillary",
+      "kind": "vessel",
+      "nameVi": "Mao mạch máu",
+      "nameEn": "Capillary",
+      "ta2": {
+        "id": 3901,
+        "part": 4,
+        "page": 4,
+        "latin": "Vas capillare",
+        "en": "Capillary",
+        "us": "Capillary"
+      },
+      "systemId": "circulatory",
+      "systemIds": [
+        "circulatory"
+      ],
+      "memberships": [
+        {
+          "systemId": "circulatory",
+          "subdivisionId": "circulatory.microvascular",
+          "role": "primary"
+        }
+      ]
+    },
+    {
+      "id": "organ.thymus",
+      "kind": "organ",
+      "nameVi": "Tuyến ức",
+      "nameEn": "Thymus",
+      "ta2": {
+        "id": 5152,
+        "part": 4,
+        "page": 48,
+        "latin": "Thymus",
+        "en": "Thymus",
+        "us": "Thymus"
+      },
+      "systemId": "lymphatic",
+      "systemIds": [
+        "lymphatic"
+      ],
+      "memberships": [
+        {
+          "systemId": "lymphatic",
+          "subdivisionId": "lymphatic.primary",
+          "role": "primary"
+        }
+      ]
+    },
+    {
+      "id": "tissue.red-bone-marrow",
+      "kind": "tissue",
+      "nameVi": "Tủy xương đỏ",
+      "nameEn": "Red bone marrow",
+      "ta2": {
+        "id": 390,
+        "part": 2,
+        "page": 3,
+        "latin": "Medulla rubra ossis",
+        "en": "Red bone marrow",
+        "us": "Red bone marrow"
+      },
+      "systemId": "lymphatic",
+      "systemIds": [
+        "lymphatic",
+        "skeletal"
+      ],
+      "memberships": [
+        {
+          "systemId": "lymphatic",
+          "subdivisionId": "lymphatic.primary",
+          "role": "primary"
+        },
+        {
+          "systemId": "skeletal",
+          "subdivisionId": "skeletal.axial",
+          "role": "context",
+          "sourceId": "openstax-21.1"
+        }
+      ]
+    },
+    {
+      "id": "organ.spleen",
+      "kind": "organ",
+      "nameVi": "Lách",
+      "nameEn": "Spleen",
+      "ta2": {
+        "id": 5159,
+        "part": 4,
+        "page": 48,
+        "latin": "Splen",
+        "en": "Spleen",
+        "us": "Spleen"
+      },
+      "systemId": "lymphatic",
+      "systemIds": [
+        "lymphatic"
+      ],
+      "memberships": [
+        {
+          "systemId": "lymphatic",
+          "subdivisionId": "lymphatic.secondary",
+          "role": "primary"
+        }
+      ]
+    },
+    {
+      "id": "structure.lymph-node",
+      "kind": "organ",
+      "nameVi": "Hạch bạch huyết",
+      "nameEn": "Lymph node",
+      "ta2": {
+        "id": 5192,
+        "part": 4,
+        "page": 49,
+        "latin": "Nodus lymphoideus",
+        "en": "Lymph node",
+        "us": "Lymph node"
+      },
+      "systemId": "lymphatic",
+      "systemIds": [
+        "lymphatic"
+      ],
+      "memberships": [
+        {
+          "systemId": "lymphatic",
+          "subdivisionId": "lymphatic.secondary",
+          "role": "primary"
+        }
+      ]
+    },
+    {
+      "id": "structure.palatine-tonsil",
+      "kind": "organ",
+      "nameVi": "Amidan khẩu cái",
+      "nameEn": "Palatine tonsil",
+      "ta2": {
+        "id": 5181,
+        "part": 4,
+        "page": 49,
+        "latin": "Tonsilla palatina",
+        "en": "Palatine tonsil",
+        "us": "Palatine tonsil"
+      },
+      "systemId": "lymphatic",
+      "systemIds": [
+        "lymphatic",
+        "digestive"
+      ],
+      "memberships": [
+        {
+          "systemId": "lymphatic",
+          "subdivisionId": "lymphatic.secondary",
+          "role": "primary"
+        },
+        {
+          "systemId": "digestive",
+          "subdivisionId": "digestive.oral",
+          "role": "context",
+          "sourceId": "openstax-21.1"
+        }
+      ],
+      "laterality": "paired"
+    },
+    {
+      "id": "structure.pharyngeal-tonsil",
+      "kind": "organ",
+      "nameVi": "Amidan hầu",
+      "nameEn": "Pharyngeal tonsil",
+      "ta2": {
+        "id": 5186,
+        "part": 4,
+        "page": 49,
+        "latin": "Tonsilla pharyngea",
+        "en": "Pharyngeal tonsil",
+        "us": "Pharyngeal tonsil"
+      },
+      "systemId": "lymphatic",
+      "systemIds": [
+        "lymphatic",
+        "respiratory"
+      ],
+      "memberships": [
+        {
+          "systemId": "lymphatic",
+          "subdivisionId": "lymphatic.secondary",
+          "role": "primary"
+        },
+        {
+          "systemId": "respiratory",
+          "subdivisionId": "respiratory.pharyngolaryngeal",
+          "role": "context",
+          "sourceId": "openstax-21.1"
+        }
+      ]
+    },
+    {
+      "id": "vessel.thoracic-duct",
+      "kind": "duct",
+      "nameVi": "Ống ngực",
+      "nameEn": "Thoracic duct",
+      "ta2": {
+        "id": 5137,
+        "part": 4,
+        "page": 47,
+        "latin": "Ductus thoracicus",
+        "en": "Thoracic duct",
+        "us": "Thoracic duct"
+      },
+      "systemId": "lymphatic",
+      "systemIds": [
+        "lymphatic"
+      ],
+      "memberships": [
+        {
+          "systemId": "lymphatic",
+          "subdivisionId": "lymphatic.vessels",
+          "role": "primary"
+        }
+      ]
+    },
+    {
+      "id": "vessel.right-lymphatic-duct",
+      "kind": "duct",
+      "nameVi": "Ống bạch huyết phải",
+      "nameEn": "Right lymphatic duct",
+      "ta2": {
+        "id": 5132,
+        "part": 4,
+        "page": 47,
+        "latin": "Ductus lymphaticus dexter",
+        "en": "Right lymphatic duct",
+        "us": "Right lymphatic duct"
+      },
+      "systemId": "lymphatic",
+      "systemIds": [
+        "lymphatic"
+      ],
+      "memberships": [
+        {
+          "systemId": "lymphatic",
+          "subdivisionId": "lymphatic.vessels",
+          "role": "primary"
+        }
+      ]
+    },
+    {
+      "id": "structure.nasal-cavity",
+      "kind": "cavity",
+      "nameVi": "Ổ mũi",
+      "nameEn": "Nasal cavity",
+      "ta2": {
+        "id": 3165,
+        "part": 3,
+        "page": 15,
+        "latin": "Cavitas nasi",
+        "en": "Nasal cavity",
+        "us": "Nasal cavity"
+      },
+      "systemId": "respiratory",
+      "systemIds": [
+        "respiratory"
+      ],
+      "memberships": [
+        {
+          "systemId": "respiratory",
+          "subdivisionId": "respiratory.nasal",
+          "role": "primary"
+        }
+      ]
+    },
+    {
+      "id": "structure.frontal-sinus",
+      "kind": "cavity",
+      "nameVi": "Xoang trán",
+      "nameEn": "Frontal sinus",
+      "ta2": {
+        "id": 3179,
+        "part": 3,
+        "page": 15,
+        "latin": "Sinus frontalis",
+        "en": "Frontal sinus",
+        "us": "Frontal sinus"
+      },
+      "systemId": "respiratory",
+      "systemIds": [
+        "respiratory",
+        "skeletal"
+      ],
+      "memberships": [
+        {
+          "systemId": "respiratory",
+          "subdivisionId": "respiratory.nasal",
+          "role": "primary"
+        },
+        {
+          "systemId": "skeletal",
+          "subdivisionId": "skeletal.axial",
+          "role": "context"
+        }
+      ],
+      "laterality": "paired"
+    },
+    {
+      "id": "structure.sphenoidal-sinus",
+      "kind": "cavity",
+      "nameVi": "Xoang bướm",
+      "nameEn": "Sphenoidal sinus",
+      "ta2": {
+        "id": 3178,
+        "part": 3,
+        "page": 15,
+        "latin": "Sinus sphenoideus",
+        "en": "Sphenoidal sinus",
+        "us": "Sphenoidal sinus"
+      },
+      "systemId": "respiratory",
+      "systemIds": [
+        "respiratory",
+        "skeletal"
+      ],
+      "memberships": [
+        {
+          "systemId": "respiratory",
+          "subdivisionId": "respiratory.nasal",
+          "role": "primary"
+        },
+        {
+          "systemId": "skeletal",
+          "subdivisionId": "skeletal.axial",
+          "role": "context"
+        }
+      ],
+      "laterality": "paired"
+    },
+    {
+      "id": "organ.pharynx",
+      "kind": "organ",
+      "nameVi": "Hầu",
+      "nameEn": "Pharynx",
+      "ta2": {
+        "id": 2855,
+        "part": 3,
+        "page": 4,
+        "latin": "Pharynx",
+        "en": "Pharynx",
+        "us": "Pharynx"
+      },
+      "systemId": "respiratory",
+      "systemIds": [
+        "respiratory",
+        "digestive"
+      ],
+      "memberships": [
+        {
+          "systemId": "respiratory",
+          "subdivisionId": "respiratory.pharyngolaryngeal",
+          "role": "primary"
+        },
+        {
+          "systemId": "digestive",
+          "subdivisionId": "digestive.oral",
+          "role": "functional",
+          "sourceId": "openstax-23.3"
+        }
+      ]
+    },
+    {
+      "id": "structure.nasopharynx",
+      "kind": "part",
+      "nameVi": "Phần mũi của hầu",
+      "nameEn": "Nasopharynx",
+      "ta2": {
+        "id": 2862,
+        "part": 3,
+        "page": 4,
+        "latin": "Pars nasalis pharyngis",
+        "en": "Nasopharynx",
+        "us": "Nasopharynx"
+      },
+      "systemId": "respiratory",
+      "systemIds": [
+        "respiratory"
+      ],
+      "memberships": [
+        {
+          "systemId": "respiratory",
+          "subdivisionId": "respiratory.pharyngolaryngeal",
+          "role": "primary"
+        }
+      ],
+      "parentId": "organ.pharynx"
+    },
+    {
+      "id": "structure.oropharynx",
+      "kind": "part",
+      "nameVi": "Phần miệng của hầu",
+      "nameEn": "Oropharynx",
+      "ta2": {
+        "id": 2875,
+        "part": 3,
+        "page": 5,
+        "latin": "Pars oralis pharyngis",
+        "en": "Oropharynx",
+        "us": "Oropharynx"
+      },
+      "systemId": "respiratory",
+      "systemIds": [
+        "respiratory",
+        "digestive"
+      ],
+      "memberships": [
+        {
+          "systemId": "respiratory",
+          "subdivisionId": "respiratory.pharyngolaryngeal",
+          "role": "primary"
+        },
+        {
+          "systemId": "digestive",
+          "subdivisionId": "digestive.oral",
+          "role": "functional",
+          "sourceId": "openstax-23.3"
+        }
+      ],
+      "parentId": "organ.pharynx"
+    },
+    {
+      "id": "structure.laryngopharynx",
+      "kind": "part",
+      "nameVi": "Phần thanh quản của hầu",
+      "nameEn": "Laryngopharynx",
+      "ta2": {
+        "id": 2879,
+        "part": 3,
+        "page": 5,
+        "latin": "Pars laryngea pharyngis",
+        "en": "Laryngopharynx",
+        "us": "Laryngopharynx"
+      },
+      "systemId": "respiratory",
+      "systemIds": [
+        "respiratory",
+        "digestive"
+      ],
+      "memberships": [
+        {
+          "systemId": "respiratory",
+          "subdivisionId": "respiratory.pharyngolaryngeal",
+          "role": "primary"
+        },
+        {
+          "systemId": "digestive",
+          "subdivisionId": "digestive.oral",
+          "role": "functional",
+          "sourceId": "openstax-23.3"
+        }
+      ],
+      "parentId": "organ.pharynx"
+    },
+    {
+      "id": "organ.larynx",
+      "kind": "organ",
+      "nameVi": "Thanh quản",
+      "nameEn": "Larynx",
+      "ta2": {
+        "id": 3184,
+        "part": 3,
+        "page": 15,
+        "latin": "Larynx",
+        "en": "Larynx",
+        "us": "Larynx"
+      },
+      "systemId": "respiratory",
+      "systemIds": [
+        "respiratory"
+      ],
+      "memberships": [
+        {
+          "systemId": "respiratory",
+          "subdivisionId": "respiratory.pharyngolaryngeal",
+          "role": "primary"
+        }
+      ]
+    },
+    {
+      "id": "structure.epiglottis",
+      "kind": "cartilage",
+      "nameVi": "Nắp thanh quản",
+      "nameEn": "Epiglottis",
+      "ta2": {
+        "id": 3190,
+        "part": 3,
+        "page": 15,
+        "latin": "Epiglottis",
+        "en": "Epiglottis",
+        "us": "Epiglottis"
+      },
+      "systemId": "respiratory",
+      "systemIds": [
+        "respiratory"
+      ],
+      "memberships": [
+        {
+          "systemId": "respiratory",
+          "subdivisionId": "respiratory.pharyngolaryngeal",
+          "role": "primary"
+        }
+      ],
+      "parentId": "organ.larynx"
+    },
+    {
+      "id": "cartilage.thyroid",
+      "kind": "cartilage",
+      "nameVi": "Sụn giáp",
+      "nameEn": "Thyroid cartilage",
+      "ta2": {
+        "id": 967,
+        "part": 2,
+        "page": 20,
+        "latin": "Cartilago thyreoidea",
+        "en": "Thyroid cartilage",
+        "us": "Thyroid cartilage"
+      },
+      "systemId": "respiratory",
+      "systemIds": [
+        "respiratory"
+      ],
+      "memberships": [
+        {
+          "systemId": "respiratory",
+          "subdivisionId": "respiratory.pharyngolaryngeal",
+          "role": "primary"
+        }
+      ],
+      "parentId": "organ.larynx"
+    },
+    {
+      "id": "cartilage.cricoid",
+      "kind": "cartilage",
+      "nameVi": "Sụn nhẫn",
+      "nameEn": "Cricoid cartilage",
+      "ta2": {
+        "id": 978,
+        "part": 2,
+        "page": 20,
+        "latin": "Cartilago cricoidea",
+        "en": "Cricoid cartilage",
+        "us": "Cricoid cartilage"
+      },
+      "systemId": "respiratory",
+      "systemIds": [
+        "respiratory"
+      ],
+      "memberships": [
+        {
+          "systemId": "respiratory",
+          "subdivisionId": "respiratory.pharyngolaryngeal",
+          "role": "primary"
+        }
+      ],
+      "parentId": "organ.larynx"
+    },
+    {
+      "id": "organ.trachea",
+      "kind": "organ",
+      "nameVi": "Khí quản",
+      "nameEn": "TRACHEA",
+      "ta2": {
+        "id": 3213,
+        "part": 3,
+        "page": 16,
+        "latin": "TRACHEA",
+        "en": "TRACHEA",
+        "us": "TRACHEA"
+      },
+      "systemId": "respiratory",
+      "systemIds": [
+        "respiratory"
+      ],
+      "memberships": [
+        {
+          "systemId": "respiratory",
+          "subdivisionId": "respiratory.airways",
+          "role": "primary"
+        }
+      ]
+    },
+    {
+      "id": "structure.left-main-bronchus",
+      "kind": "airway",
+      "nameVi": "Phế quản chính trái",
+      "nameEn": "Left main bronchus",
+      "ta2": {
+        "id": 3252,
+        "part": 3,
+        "page": 17,
+        "latin": "Bronchus principalis sinister",
+        "en": "Left main bronchus",
+        "us": "Left main bronchus"
+      },
+      "systemId": "respiratory",
+      "systemIds": [
+        "respiratory"
+      ],
+      "memberships": [
+        {
+          "systemId": "respiratory",
+          "subdivisionId": "respiratory.airways",
+          "role": "primary"
+        }
+      ],
+      "laterality": "left"
+    },
+    {
+      "id": "structure.right-main-bronchus",
+      "kind": "airway",
+      "nameVi": "Phế quản chính phải",
+      "nameEn": "Right main bronchus",
+      "ta2": {
+        "id": 3237,
+        "part": 3,
+        "page": 17,
+        "latin": "Bronchus principalis dexter",
+        "en": "Right main bronchus",
+        "us": "Right main bronchus"
+      },
+      "systemId": "respiratory",
+      "systemIds": [
+        "respiratory"
+      ],
+      "memberships": [
+        {
+          "systemId": "respiratory",
+          "subdivisionId": "respiratory.airways",
+          "role": "primary"
+        }
+      ],
+      "laterality": "right"
+    },
+    {
+      "id": "structure.intermediate-bronchus",
+      "kind": "airway",
+      "nameVi": "Phế quản trung gian",
+      "nameEn": "Intermediate bronchus",
+      "ta2": {
+        "id": 3242,
+        "part": 3,
+        "page": 17,
+        "latin": "Bronchus intermedius",
+        "en": "Intermediate bronchus",
+        "us": "Intermediate bronchus"
+      },
+      "systemId": "respiratory",
+      "systemIds": [
+        "respiratory"
+      ],
+      "memberships": [
+        {
+          "systemId": "respiratory",
+          "subdivisionId": "respiratory.airways",
+          "role": "primary"
+        }
+      ],
+      "laterality": "right"
+    },
+    {
+      "id": "organ.lung-left",
+      "kind": "organ",
+      "nameVi": "Phổi trái",
+      "nameEn": "Left lung",
+      "ta2": {
+        "id": 3299,
+        "part": 3,
+        "page": 19,
+        "latin": "Pulmo sinister",
+        "en": "Left lung",
+        "us": "Left lung"
+      },
+      "systemId": "respiratory",
+      "systemIds": [
+        "respiratory"
+      ],
+      "memberships": [
+        {
+          "systemId": "respiratory",
+          "subdivisionId": "respiratory.lungs",
+          "role": "primary"
+        }
+      ],
+      "laterality": "left"
+    },
+    {
+      "id": "organ.lung-right",
+      "kind": "organ",
+      "nameVi": "Phổi phải",
+      "nameEn": "Right lung",
+      "ta2": {
+        "id": 3283,
+        "part": 3,
+        "page": 18,
+        "latin": "Pulmo dexter",
+        "en": "Right lung",
+        "us": "Right lung"
+      },
+      "systemId": "respiratory",
+      "systemIds": [
+        "respiratory"
+      ],
+      "memberships": [
+        {
+          "systemId": "respiratory",
+          "subdivisionId": "respiratory.lungs",
+          "role": "primary"
+        }
+      ],
+      "laterality": "right"
+    },
+    {
+      "id": "structure.left-lung-superior-lobe",
+      "kind": "part",
+      "nameVi": "Thùy trên phổi trái",
+      "nameEn": "Superior lobe of left lung",
+      "ta2": {
+        "id": 3300,
+        "part": 3,
+        "page": 19,
+        "latin": "Lobus superior pulmonis sinistri",
+        "en": "Superior lobe of left lung",
+        "us": "Superior lobe of left lung"
+      },
+      "systemId": "respiratory",
+      "systemIds": [
+        "respiratory"
+      ],
+      "memberships": [
+        {
+          "systemId": "respiratory",
+          "subdivisionId": "respiratory.lungs",
+          "role": "primary"
+        }
+      ],
+      "parentId": "organ.lung-left",
+      "laterality": "left"
+    },
+    {
+      "id": "structure.left-lung-inferior-lobe",
+      "kind": "part",
+      "nameVi": "Thùy dưới phổi trái",
+      "nameEn": "Inferior lobe of left lung",
+      "ta2": {
+        "id": 3308,
+        "part": 3,
+        "page": 19,
+        "latin": "Lobus inferior pulmonis sinistri",
+        "en": "Inferior lobe of left lung",
+        "us": "Inferior lobe of left lung"
+      },
+      "systemId": "respiratory",
+      "systemIds": [
+        "respiratory"
+      ],
+      "memberships": [
+        {
+          "systemId": "respiratory",
+          "subdivisionId": "respiratory.lungs",
+          "role": "primary"
+        }
+      ],
+      "parentId": "organ.lung-left",
+      "laterality": "left"
+    },
+    {
+      "id": "structure.right-lung-superior-lobe",
+      "kind": "part",
+      "nameVi": "Thùy trên phổi phải",
+      "nameEn": "Superior lobe of right lung",
+      "ta2": {
+        "id": 3284,
+        "part": 3,
+        "page": 18,
+        "latin": "Lobus superior pulmonis dextri",
+        "en": "Superior lobe of right lung",
+        "us": "Superior lobe of right lung"
+      },
+      "systemId": "respiratory",
+      "systemIds": [
+        "respiratory"
+      ],
+      "memberships": [
+        {
+          "systemId": "respiratory",
+          "subdivisionId": "respiratory.lungs",
+          "role": "primary"
+        }
+      ],
+      "parentId": "organ.lung-right",
+      "laterality": "right"
+    },
+    {
+      "id": "structure.right-lung-middle-lobe",
+      "kind": "part",
+      "nameVi": "Thùy giữa phổi phải",
+      "nameEn": "Middle lobe of right lung",
+      "ta2": {
+        "id": 3289,
+        "part": 3,
+        "page": 18,
+        "latin": "Lobus medius pulmonis dextri",
+        "en": "Middle lobe of right lung",
+        "us": "Middle lobe of right lung"
+      },
+      "systemId": "respiratory",
+      "systemIds": [
+        "respiratory"
+      ],
+      "memberships": [
+        {
+          "systemId": "respiratory",
+          "subdivisionId": "respiratory.lungs",
+          "role": "primary"
+        }
+      ],
+      "parentId": "organ.lung-right",
+      "laterality": "right"
+    },
+    {
+      "id": "structure.right-lung-inferior-lobe",
+      "kind": "part",
+      "nameVi": "Thùy dưới phổi phải",
+      "nameEn": "Inferior lobe of right lung",
+      "ta2": {
+        "id": 3293,
+        "part": 3,
+        "page": 19,
+        "latin": "Lobus inferior pulmonis dextri",
+        "en": "Inferior lobe of right lung",
+        "us": "Inferior lobe of right lung"
+      },
+      "systemId": "respiratory",
+      "systemIds": [
+        "respiratory"
+      ],
+      "memberships": [
+        {
+          "systemId": "respiratory",
+          "subdivisionId": "respiratory.lungs",
+          "role": "primary"
+        }
+      ],
+      "parentId": "organ.lung-right",
+      "laterality": "right"
+    },
+    {
+      "id": "structure.pleura",
+      "kind": "membrane",
+      "nameVi": "Màng phổi",
+      "nameEn": "Pleura",
+      "ta2": {
+        "id": 3322,
+        "part": 3,
+        "page": 20,
+        "latin": "Pleura",
+        "en": "Pleura",
+        "us": "Pleura"
+      },
+      "systemId": "respiratory",
+      "systemIds": [
+        "respiratory"
+      ],
+      "memberships": [
+        {
+          "systemId": "respiratory",
+          "subdivisionId": "respiratory.lungs",
+          "role": "primary"
+        }
+      ],
+      "laterality": "paired"
+    },
+    {
+      "id": "structure.tooth",
+      "kind": "organ",
+      "nameVi": "Răng",
+      "nameEn": "Tooth",
+      "ta2": {
+        "id": 914,
+        "part": 2,
+        "page": 18,
+        "latin": "Dens",
+        "en": "Tooth",
+        "us": "Tooth"
+      },
+      "systemId": "digestive",
+      "systemIds": [
+        "digestive"
+      ],
+      "memberships": [
+        {
+          "systemId": "digestive",
+          "subdivisionId": "digestive.oral",
+          "role": "primary"
+        }
+      ]
+    },
+    {
+      "id": "structure.canine",
+      "kind": "organ",
+      "nameVi": "Răng nanh",
+      "nameEn": "Canine tooth",
+      "ta2": {
+        "id": 907,
+        "part": 2,
+        "page": 18,
+        "latin": "Dens caninus",
+        "en": "Canine tooth",
+        "us": "Canine tooth"
+      },
+      "systemId": "digestive",
+      "systemIds": [
+        "digestive"
+      ],
+      "memberships": [
+        {
+          "systemId": "digestive",
+          "subdivisionId": "digestive.oral",
+          "role": "primary"
+        }
+      ]
+    },
+    {
+      "id": "organ.tongue",
+      "kind": "organ",
+      "nameVi": "Lưỡi",
+      "nameEn": "Tongue",
+      "ta2": {
+        "id": 2820,
+        "part": 3,
+        "page": 3,
+        "latin": "Lingua",
+        "en": "Tongue",
+        "us": "Tongue"
+      },
+      "systemId": "digestive",
+      "systemIds": [
+        "digestive"
+      ],
+      "memberships": [
+        {
+          "systemId": "digestive",
+          "subdivisionId": "digestive.oral",
+          "role": "primary"
+        }
+      ]
+    },
+    {
+      "id": "organ.parotid",
+      "kind": "gland",
+      "nameVi": "Tuyến nước bọt mang tai",
+      "nameEn": "Parotid gland",
+      "ta2": {
+        "id": 2800,
+        "part": 3,
+        "page": 2,
+        "latin": "Glandula parotidea",
+        "en": "Parotid gland",
+        "us": "Parotid gland"
+      },
+      "systemId": "digestive",
+      "systemIds": [
+        "digestive"
+      ],
+      "memberships": [
+        {
+          "systemId": "digestive",
+          "subdivisionId": "digestive.accessory",
+          "role": "primary"
+        }
+      ],
+      "laterality": "paired"
+    },
+    {
+      "id": "organ.submandibular",
+      "kind": "gland",
+      "nameVi": "Tuyến nước bọt dưới hàm",
+      "nameEn": "Submandibular gland",
+      "ta2": {
+        "id": 2810,
+        "part": 3,
+        "page": 3,
+        "latin": "Glandula submandibularis",
+        "en": "Submandibular gland",
+        "us": "Submandibular gland"
+      },
+      "systemId": "digestive",
+      "systemIds": [
+        "digestive"
+      ],
+      "memberships": [
+        {
+          "systemId": "digestive",
+          "subdivisionId": "digestive.accessory",
+          "role": "primary"
+        }
+      ],
+      "laterality": "paired"
+    },
+    {
+      "id": "organ.sublingual",
+      "kind": "gland",
+      "nameVi": "Tuyến nước bọt dưới lưỡi",
+      "nameEn": "Sublingual gland",
+      "ta2": {
+        "id": 2807,
+        "part": 3,
+        "page": 3,
+        "latin": "Glandula sublingualis",
+        "en": "Sublingual gland",
+        "us": "Sublingual gland"
+      },
+      "systemId": "digestive",
+      "systemIds": [
+        "digestive"
+      ],
+      "memberships": [
+        {
+          "systemId": "digestive",
+          "subdivisionId": "digestive.accessory",
+          "role": "primary"
+        }
+      ],
+      "laterality": "paired"
+    },
+    {
+      "id": "organ.esophagus",
+      "kind": "organ",
+      "nameVi": "Thực quản",
+      "nameEn": "OESOPHAGUS",
+      "ta2": {
+        "id": 2887,
+        "part": 3,
+        "page": 5,
+        "latin": "OESOPHAGUS",
+        "en": "OESOPHAGUS",
+        "us": "ESOPHAGUS"
+      },
+      "systemId": "digestive",
+      "systemIds": [
+        "digestive"
+      ],
+      "memberships": [
+        {
+          "systemId": "digestive",
+          "subdivisionId": "digestive.tract",
+          "role": "primary"
+        }
+      ]
+    },
+    {
+      "id": "organ.stomach",
+      "kind": "organ",
+      "nameVi": "Dạ dày",
+      "nameEn": "STOMACH",
+      "ta2": {
+        "id": 2901,
+        "part": 3,
+        "page": 5,
+        "latin": "GASTER",
+        "en": "STOMACH",
+        "us": "STOMACH"
+      },
+      "systemId": "digestive",
+      "systemIds": [
+        "digestive"
+      ],
+      "memberships": [
+        {
+          "systemId": "digestive",
+          "subdivisionId": "digestive.tract",
+          "role": "primary"
+        }
+      ]
+    },
+    {
+      "id": "organ.small-intestine",
+      "kind": "organ",
+      "nameVi": "Ruột non",
+      "nameEn": "SMALL INTESTINE",
+      "ta2": {
+        "id": 2933,
+        "part": 3,
+        "page": 6,
+        "latin": "INTESTINUM TENUE",
+        "en": "SMALL INTESTINE",
+        "us": "SMALL INTESTINE"
+      },
+      "systemId": "digestive",
+      "systemIds": [
+        "digestive"
+      ],
+      "memberships": [
+        {
+          "systemId": "digestive",
+          "subdivisionId": "digestive.tract",
+          "role": "primary"
+        }
+      ]
+    },
+    {
+      "id": "structure.duodenum",
+      "kind": "part",
+      "nameVi": "Tá tràng",
+      "nameEn": "Duodenum",
+      "ta2": {
+        "id": 2944,
+        "part": 3,
+        "page": 7,
+        "latin": "Duodenum",
+        "en": "Duodenum",
+        "us": "Duodenum"
+      },
+      "systemId": "digestive",
+      "systemIds": [
+        "digestive"
+      ],
+      "memberships": [
+        {
+          "systemId": "digestive",
+          "subdivisionId": "digestive.tract",
+          "role": "primary"
+        }
+      ],
+      "parentId": "organ.small-intestine"
+    },
+    {
+      "id": "structure.jejunum",
+      "kind": "part",
+      "nameVi": "Hỗng tràng",
+      "nameEn": "Jejunum",
+      "ta2": {
+        "id": 2958,
+        "part": 3,
+        "page": 7,
+        "latin": "Jejunum",
+        "en": "Jejunum",
+        "us": "Jejunum"
+      },
+      "systemId": "digestive",
+      "systemIds": [
+        "digestive"
+      ],
+      "memberships": [
+        {
+          "systemId": "digestive",
+          "subdivisionId": "digestive.tract",
+          "role": "primary"
+        }
+      ],
+      "parentId": "organ.small-intestine"
+    },
+    {
+      "id": "structure.ileum",
+      "kind": "part",
+      "nameVi": "Hồi tràng",
+      "nameEn": "Ileum",
+      "ta2": {
+        "id": 2959,
+        "part": 3,
+        "page": 7,
+        "latin": "Ileum",
+        "en": "Ileum",
+        "us": "Ileum"
+      },
+      "systemId": "digestive",
+      "systemIds": [
+        "digestive"
+      ],
+      "memberships": [
+        {
+          "systemId": "digestive",
+          "subdivisionId": "digestive.tract",
+          "role": "primary"
+        }
+      ],
+      "parentId": "organ.small-intestine"
+    },
+    {
+      "id": "organ.large-intestine",
+      "kind": "organ",
+      "nameVi": "Ruột già",
+      "nameEn": "LARGE INTESTINE",
+      "ta2": {
+        "id": 2963,
+        "part": 3,
+        "page": 7,
+        "latin": "INTESTINUM CRASSUM",
+        "en": "LARGE INTESTINE",
+        "us": "LARGE INTESTINE"
+      },
+      "systemId": "digestive",
+      "systemIds": [
+        "digestive"
+      ],
+      "memberships": [
+        {
+          "systemId": "digestive",
+          "subdivisionId": "digestive.tract",
+          "role": "primary"
+        }
+      ]
+    },
+    {
+      "id": "structure.cecum",
+      "kind": "part",
+      "nameVi": "Manh tràng",
+      "nameEn": "Caecum",
+      "ta2": {
+        "id": 2970,
+        "part": 3,
+        "page": 8,
+        "latin": "Caecum",
+        "en": "Caecum",
+        "us": "Cecum"
+      },
+      "systemId": "digestive",
+      "systemIds": [
+        "digestive"
+      ],
+      "memberships": [
+        {
+          "systemId": "digestive",
+          "subdivisionId": "digestive.tract",
+          "role": "primary"
+        }
+      ],
+      "parentId": "organ.large-intestine"
+    },
+    {
+      "id": "structure.appendix",
+      "kind": "part",
+      "nameVi": "Ruột thừa",
+      "nameEn": "Vermiform appendix",
+      "ta2": {
+        "id": 2976,
+        "part": 3,
+        "page": 8,
+        "latin": "Appendix vermiformis",
+        "en": "Vermiform appendix",
+        "us": "Vermiform appendix"
+      },
+      "systemId": "digestive",
+      "systemIds": [
+        "digestive",
+        "lymphatic"
+      ],
+      "memberships": [
+        {
+          "systemId": "digestive",
+          "subdivisionId": "digestive.tract",
+          "role": "primary"
+        },
+        {
+          "systemId": "lymphatic",
+          "subdivisionId": "lymphatic.secondary",
+          "role": "functional",
+          "sourceId": "openstax-21.1"
+        }
+      ],
+      "parentId": "structure.cecum"
+    },
+    {
+      "id": "structure.colon",
+      "kind": "part",
+      "nameVi": "Kết tràng",
+      "nameEn": "Colon",
+      "ta2": {
+        "id": 2981,
+        "part": 3,
+        "page": 8,
+        "latin": "Colon",
+        "en": "Colon",
+        "us": "Colon"
+      },
+      "systemId": "digestive",
+      "systemIds": [
+        "digestive"
+      ],
+      "memberships": [
+        {
+          "systemId": "digestive",
+          "subdivisionId": "digestive.tract",
+          "role": "primary"
+        }
+      ],
+      "parentId": "organ.large-intestine"
+    },
+    {
+      "id": "structure.rectum",
+      "kind": "part",
+      "nameVi": "Trực tràng",
+      "nameEn": "Rectum",
+      "ta2": {
+        "id": 2998,
+        "part": 3,
+        "page": 9,
+        "latin": "Rectum",
+        "en": "Rectum",
+        "us": "Rectum"
+      },
+      "systemId": "digestive",
+      "systemIds": [
+        "digestive"
+      ],
+      "memberships": [
+        {
+          "systemId": "digestive",
+          "subdivisionId": "digestive.tract",
+          "role": "primary"
+        }
+      ],
+      "parentId": "organ.large-intestine"
+    },
+    {
+      "id": "organ.liver",
+      "kind": "organ",
+      "nameVi": "Gan",
+      "nameEn": "Liver",
+      "ta2": {
+        "id": 3023,
+        "part": 3,
+        "page": 9,
+        "latin": "Hepar",
+        "en": "Liver",
+        "us": "Liver"
+      },
+      "systemId": "digestive",
+      "systemIds": [
+        "digestive"
+      ],
+      "memberships": [
+        {
+          "systemId": "digestive",
+          "subdivisionId": "digestive.accessory",
+          "role": "primary"
+        }
+      ]
+    },
+    {
+      "id": "organ.gallbladder",
+      "kind": "organ",
+      "nameVi": "Túi mật",
+      "nameEn": "Gallbladder",
+      "ta2": {
+        "id": 3081,
+        "part": 3,
+        "page": 11,
+        "latin": "Vesica biliaris",
+        "en": "Gallbladder",
+        "us": "Gallbladder"
+      },
+      "systemId": "digestive",
+      "systemIds": [
+        "digestive"
+      ],
+      "memberships": [
+        {
+          "systemId": "digestive",
+          "subdivisionId": "digestive.accessory",
+          "role": "primary"
+        }
+      ]
+    },
+    {
+      "id": "organ.pancreas",
+      "kind": "organ",
+      "nameVi": "Tụy",
+      "nameEn": "Pancreas",
+      "ta2": {
+        "id": 3114,
+        "part": 3,
+        "page": 12,
+        "latin": "Pancreas",
+        "en": "Pancreas",
+        "us": "Pancreas"
+      },
+      "systemId": "digestive",
+      "systemIds": [
+        "digestive",
+        "endocrine"
+      ],
+      "memberships": [
+        {
+          "systemId": "digestive",
+          "subdivisionId": "digestive.accessory",
+          "role": "primary"
+        },
+        {
+          "systemId": "endocrine",
+          "subdivisionId": "endocrine.mixed",
+          "role": "functional",
+          "sourceId": "openstax-17.9"
+        }
+      ],
+      "laterality": "unpaired"
+    },
+    {
+      "id": "structure.pancreatic-islet",
+      "kind": "part",
+      "nameVi": "Đảo tụy",
+      "nameEn": "Pancreatic islets",
+      "ta2": {
+        "id": 3128,
+        "part": 3,
+        "page": 13,
+        "latin": "Insulae pancreaticae",
+        "en": "Pancreatic islets",
+        "us": "Pancreatic islets"
+      },
+      "systemId": "endocrine",
+      "systemIds": [
+        "endocrine"
+      ],
+      "memberships": [
+        {
+          "systemId": "endocrine",
+          "subdivisionId": "endocrine.mixed",
+          "role": "primary"
+        }
+      ],
+      "parentId": "organ.pancreas"
+    },
+    {
+      "id": "structure.pancreatic-duct",
+      "kind": "duct",
+      "nameVi": "Ống tụy",
+      "nameEn": "Pancreatic duct",
+      "ta2": {
+        "id": 3129,
+        "part": 3,
+        "page": 13,
+        "latin": "Ductus pancreaticus",
+        "en": "Pancreatic duct",
+        "us": "Pancreatic duct"
+      },
+      "systemId": "digestive",
+      "systemIds": [
+        "digestive"
+      ],
+      "memberships": [
+        {
+          "systemId": "digestive",
+          "subdivisionId": "digestive.accessory",
+          "role": "primary"
+        }
+      ],
+      "parentId": "organ.pancreas"
+    },
+    {
+      "id": "structure.bile-duct",
+      "kind": "duct",
+      "nameVi": "Ống mật chủ",
+      "nameEn": "Bile duct",
+      "ta2": {
+        "id": 3103,
+        "part": 3,
+        "page": 12,
+        "latin": "Ductus biliaris",
+        "en": "Bile duct",
+        "us": "Bile duct"
+      },
+      "systemId": "digestive",
+      "systemIds": [
+        "digestive"
+      ],
+      "memberships": [
+        {
+          "systemId": "digestive",
+          "subdivisionId": "digestive.accessory",
+          "role": "primary"
+        }
+      ]
+    },
+    {
+      "id": "organ.kidney",
+      "kind": "type",
+      "nameVi": "Thận",
+      "nameEn": "Kidney",
+      "ta2": {
+        "id": 3358,
+        "part": 3,
+        "page": 22,
+        "latin": "Ren",
+        "en": "Kidney",
+        "us": "Kidney"
+      },
+      "systemId": "urinary",
+      "systemIds": [
+        "urinary",
+        "endocrine"
+      ],
+      "memberships": [
+        {
+          "systemId": "urinary",
+          "subdivisionId": "urinary.kidneys",
+          "role": "primary"
+        },
+        {
+          "systemId": "endocrine",
+          "subdivisionId": "endocrine.mixed",
+          "role": "functional",
+          "sourceId": "openstax-17.10"
+        }
+      ],
+      "laterality": "paired"
+    },
+    {
+      "id": "organ.kidney-left",
+      "kind": "organ",
+      "nameVi": "Thận trái",
+      "nameEn": "Left kidney",
+      "ta2": {
+        "id": 3358,
+        "part": 3,
+        "page": 22,
+        "latin": "Ren",
+        "en": "Kidney",
+        "us": "Kidney"
+      },
+      "systemId": "urinary",
+      "systemIds": [
+        "urinary",
+        "endocrine"
+      ],
+      "memberships": [
+        {
+          "systemId": "urinary",
+          "subdivisionId": "urinary.kidneys",
+          "role": "primary"
+        },
+        {
+          "systemId": "endocrine",
+          "subdivisionId": "endocrine.mixed",
+          "role": "functional",
+          "sourceId": "openstax-17.10"
+        }
+      ],
+      "laterality": "left",
+      "variantOfId": "organ.kidney"
+    },
+    {
+      "id": "organ.kidney-right",
+      "kind": "organ",
+      "nameVi": "Thận phải",
+      "nameEn": "Right kidney",
+      "ta2": {
+        "id": 3358,
+        "part": 3,
+        "page": 22,
+        "latin": "Ren",
+        "en": "Kidney",
+        "us": "Kidney"
+      },
+      "systemId": "urinary",
+      "systemIds": [
+        "urinary",
+        "endocrine"
+      ],
+      "memberships": [
+        {
+          "systemId": "urinary",
+          "subdivisionId": "urinary.kidneys",
+          "role": "primary"
+        },
+        {
+          "systemId": "endocrine",
+          "subdivisionId": "endocrine.mixed",
+          "role": "functional",
+          "sourceId": "openstax-17.10"
+        }
+      ],
+      "laterality": "right",
+      "variantOfId": "organ.kidney"
+    },
+    {
+      "id": "structure.renal-cortex",
+      "kind": "part",
+      "nameVi": "Vỏ thận",
+      "nameEn": "Renal cortex",
+      "ta2": {
+        "id": 3368,
+        "part": 3,
+        "page": 22,
+        "latin": "Cortex renis",
+        "en": "Renal cortex",
+        "us": "Renal cortex"
+      },
+      "systemId": "urinary",
+      "systemIds": [
+        "urinary"
+      ],
+      "memberships": [
+        {
+          "systemId": "urinary",
+          "subdivisionId": "urinary.kidneys",
+          "role": "primary"
+        }
+      ],
+      "parentId": "organ.kidney",
+      "laterality": "paired"
+    },
+    {
+      "id": "structure.renal-medulla",
+      "kind": "part",
+      "nameVi": "Tủy thận",
+      "nameEn": "Renal medulla",
+      "ta2": {
+        "id": 3369,
+        "part": 3,
+        "page": 22,
+        "latin": "Medulla renis",
+        "en": "Renal medulla",
+        "us": "Renal medulla"
+      },
+      "systemId": "urinary",
+      "systemIds": [
+        "urinary"
+      ],
+      "memberships": [
+        {
+          "systemId": "urinary",
+          "subdivisionId": "urinary.kidneys",
+          "role": "primary"
+        }
+      ],
+      "parentId": "organ.kidney",
+      "laterality": "paired"
+    },
+    {
+      "id": "structure.renal-pelvis",
+      "kind": "part",
+      "nameVi": "Bể thận",
+      "nameEn": "Renal pelvis",
+      "ta2": {
+        "id": 3384,
+        "part": 3,
+        "page": 22,
+        "latin": "Pelvis renalis",
+        "en": "Renal pelvis",
+        "us": "Renal pelvis"
+      },
+      "systemId": "urinary",
+      "systemIds": [
+        "urinary"
+      ],
+      "memberships": [
+        {
+          "systemId": "urinary",
+          "subdivisionId": "urinary.kidneys",
+          "role": "primary"
+        }
+      ],
+      "parentId": "organ.kidney",
+      "laterality": "paired"
+    },
+    {
+      "id": "organ.ureter",
+      "kind": "organ",
+      "nameVi": "Niệu quản",
+      "nameEn": "Ureter",
+      "ta2": {
+        "id": 3394,
+        "part": 3,
+        "page": 23,
+        "latin": "Ureter",
+        "en": "Ureter",
+        "us": "Ureter"
+      },
+      "systemId": "urinary",
+      "systemIds": [
+        "urinary"
+      ],
+      "memberships": [
+        {
+          "systemId": "urinary",
+          "subdivisionId": "urinary.tract",
+          "role": "primary"
+        }
+      ],
+      "laterality": "paired"
+    },
+    {
+      "id": "organ.bladder",
+      "kind": "organ",
+      "nameVi": "Bàng quang",
+      "nameEn": "Urinary bladder",
+      "ta2": {
+        "id": 3401,
+        "part": 3,
+        "page": 23,
+        "latin": "Vesica urinaria",
+        "en": "Urinary bladder",
+        "us": "Urinary bladder"
+      },
+      "systemId": "urinary",
+      "systemIds": [
+        "urinary"
+      ],
+      "memberships": [
+        {
+          "systemId": "urinary",
+          "subdivisionId": "urinary.tract",
+          "role": "primary"
+        }
+      ],
+      "laterality": "unpaired"
+    },
+    {
+      "id": "structure.urethra-female",
+      "kind": "duct",
+      "nameVi": "Niệu đạo nữ",
+      "nameEn": "Female urethra ♀",
+      "ta2": {
+        "id": 3426,
+        "part": 3,
+        "page": 23,
+        "latin": "Urethra feminina ♀",
+        "en": "Female urethra ♀",
+        "us": "Female urethra ♀"
+      },
+      "systemId": "urinary",
+      "systemIds": [
+        "urinary"
+      ],
+      "memberships": [
+        {
+          "systemId": "urinary",
+          "subdivisionId": "urinary.tract",
+          "role": "primary"
+        }
+      ]
+    },
+    {
+      "id": "structure.urethra-male",
+      "kind": "duct",
+      "nameVi": "Niệu đạo nam",
+      "nameEn": "Male urethra ♂",
+      "ta2": {
+        "id": 3442,
+        "part": 3,
+        "page": 24,
+        "latin": "Urethra masculina ♂",
+        "en": "Male urethra ♂",
+        "us": "Male urethra ♂"
+      },
+      "systemId": "urinary",
+      "systemIds": [
+        "urinary",
+        "reproductive"
+      ],
+      "memberships": [
+        {
+          "systemId": "urinary",
+          "subdivisionId": "urinary.tract",
+          "role": "primary"
+        },
+        {
+          "systemId": "reproductive",
+          "subdivisionId": "reproductive.male",
+          "role": "functional",
+          "sourceId": "openstax-27.1"
+        }
+      ]
+    },
+    {
+      "id": "organ.testis",
+      "kind": "organ",
+      "nameVi": "Tinh hoàn",
+      "nameEn": "Testis",
+      "ta2": {
+        "id": 3576,
+        "part": 3,
+        "page": 29,
+        "latin": "Testis",
+        "en": "Testis",
+        "us": "Testis"
+      },
+      "systemId": "reproductive",
+      "systemIds": [
+        "reproductive",
+        "endocrine"
+      ],
+      "memberships": [
+        {
+          "systemId": "reproductive",
+          "subdivisionId": "reproductive.male",
+          "role": "primary"
+        },
+        {
+          "systemId": "endocrine",
+          "subdivisionId": "endocrine.mixed",
+          "role": "functional",
+          "sourceId": "openstax-27.1"
+        }
+      ],
+      "laterality": "paired"
+    },
+    {
+      "id": "organ.epididymis",
+      "kind": "organ",
+      "nameVi": "Mào tinh",
+      "nameEn": "Epididymis",
+      "ta2": {
+        "id": 3603,
+        "part": 3,
+        "page": 29,
+        "latin": "Epididymis",
+        "en": "Epididymis",
+        "us": "Epididymis"
+      },
+      "systemId": "reproductive",
+      "systemIds": [
+        "reproductive"
+      ],
+      "memberships": [
+        {
+          "systemId": "reproductive",
+          "subdivisionId": "reproductive.male",
+          "role": "primary"
+        }
+      ],
+      "laterality": "paired"
+    },
+    {
+      "id": "structure.ductus-deferens",
+      "kind": "duct",
+      "nameVi": "Ống dẫn tinh",
+      "nameEn": "Ductus deferens",
+      "ta2": {
+        "id": 3621,
+        "part": 3,
+        "page": 30,
+        "latin": "Ductus deferens",
+        "en": "Ductus deferens",
+        "us": "Ductus deferens"
+      },
+      "systemId": "reproductive",
+      "systemIds": [
+        "reproductive"
+      ],
+      "memberships": [
+        {
+          "systemId": "reproductive",
+          "subdivisionId": "reproductive.male",
+          "role": "primary"
+        }
+      ],
+      "laterality": "paired"
+    },
+    {
+      "id": "organ.seminal-vesicle",
+      "kind": "gland",
+      "nameVi": "Túi tinh",
+      "nameEn": "Seminal gland",
+      "ta2": {
+        "id": 3631,
+        "part": 3,
+        "page": 30,
+        "latin": "Glandula seminalis",
+        "en": "Seminal gland",
+        "us": "Seminal gland"
+      },
+      "systemId": "reproductive",
+      "systemIds": [
+        "reproductive"
+      ],
+      "memberships": [
+        {
+          "systemId": "reproductive",
+          "subdivisionId": "reproductive.male",
+          "role": "primary"
+        }
+      ],
+      "laterality": "paired"
+    },
+    {
+      "id": "organ.prostate",
+      "kind": "gland",
+      "nameVi": "Tuyến tiền liệt",
+      "nameEn": "Prostate",
+      "ta2": {
+        "id": 3637,
+        "part": 3,
+        "page": 30,
+        "latin": "Prostata",
+        "en": "Prostate",
+        "us": "Prostate"
+      },
+      "systemId": "reproductive",
+      "systemIds": [
+        "reproductive"
+      ],
+      "memberships": [
+        {
+          "systemId": "reproductive",
+          "subdivisionId": "reproductive.male",
+          "role": "primary"
+        }
+      ]
+    },
+    {
+      "id": "organ.penis",
+      "kind": "organ",
+      "nameVi": "Dương vật",
+      "nameEn": "Penis",
+      "ta2": {
+        "id": 3662,
+        "part": 3,
+        "page": 31,
+        "latin": "Penis",
+        "en": "Penis",
+        "us": "Penis"
+      },
+      "systemId": "reproductive",
+      "systemIds": [
+        "reproductive"
+      ],
+      "memberships": [
+        {
+          "systemId": "reproductive",
+          "subdivisionId": "reproductive.male",
+          "role": "primary"
+        }
+      ]
+    },
+    {
+      "id": "organ.ovary",
+      "kind": "organ",
+      "nameVi": "Buồng trứng",
+      "nameEn": "Ovary",
+      "ta2": {
+        "id": 3470,
+        "part": 3,
+        "page": 26,
+        "latin": "Ovarium",
+        "en": "Ovary",
+        "us": "Ovary"
+      },
+      "systemId": "reproductive",
+      "systemIds": [
+        "reproductive",
+        "endocrine"
+      ],
+      "memberships": [
+        {
+          "systemId": "reproductive",
+          "subdivisionId": "reproductive.female",
+          "role": "primary"
+        },
+        {
+          "systemId": "endocrine",
+          "subdivisionId": "endocrine.mixed",
+          "role": "functional",
+          "sourceId": "openstax-27.2"
+        }
+      ],
+      "laterality": "paired"
+    },
+    {
+      "id": "organ.uterine-tube",
+      "kind": "organ",
+      "nameVi": "Vòi tử cung",
+      "nameEn": "Uterine tube",
+      "ta2": {
+        "id": 3486,
+        "part": 3,
+        "page": 26,
+        "latin": "Tuba uterina",
+        "en": "Uterine tube",
+        "us": "Uterine tube"
+      },
+      "systemId": "reproductive",
+      "systemIds": [
+        "reproductive"
+      ],
+      "memberships": [
+        {
+          "systemId": "reproductive",
+          "subdivisionId": "reproductive.female",
+          "role": "primary"
+        }
+      ],
+      "laterality": "paired"
+    },
+    {
+      "id": "organ.uterus",
+      "kind": "organ",
+      "nameVi": "Tử cung",
+      "nameEn": "Uterus",
+      "ta2": {
+        "id": 3500,
+        "part": 3,
+        "page": 27,
+        "latin": "Uterus",
+        "en": "Uterus",
+        "us": "Uterus"
+      },
+      "systemId": "reproductive",
+      "systemIds": [
+        "reproductive"
+      ],
+      "memberships": [
+        {
+          "systemId": "reproductive",
+          "subdivisionId": "reproductive.female",
+          "role": "primary"
+        }
+      ]
+    },
+    {
+      "id": "structure.cervix-uterus",
+      "kind": "part",
+      "nameVi": "Cổ tử cung",
+      "nameEn": "Cervix of uterus",
+      "ta2": {
+        "id": 3508,
+        "part": 3,
+        "page": 27,
+        "latin": "Cervix uteri",
+        "en": "Cervix of uterus",
+        "us": "Cervix of uterus"
+      },
+      "systemId": "reproductive",
+      "systemIds": [
+        "reproductive"
+      ],
+      "memberships": [
+        {
+          "systemId": "reproductive",
+          "subdivisionId": "reproductive.female",
+          "role": "primary"
+        }
+      ],
+      "parentId": "organ.uterus"
+    },
+    {
+      "id": "organ.vagina",
+      "kind": "organ",
+      "nameVi": "Âm đạo",
+      "nameEn": "Vagina",
+      "ta2": {
+        "id": 3523,
+        "part": 3,
+        "page": 27,
+        "latin": "Vagina",
+        "en": "Vagina",
+        "us": "Vagina"
+      },
+      "systemId": "reproductive",
+      "systemIds": [
+        "reproductive"
+      ],
+      "memberships": [
+        {
+          "systemId": "reproductive",
+          "subdivisionId": "reproductive.female",
+          "role": "primary"
+        }
+      ]
+    },
+    {
+      "id": "structure.vulva",
+      "kind": "group",
+      "nameVi": "Âm hộ",
+      "nameEn": "Vulva",
+      "ta2": {
+        "id": 3547,
+        "part": 3,
+        "page": 28,
+        "latin": "Vulva",
+        "en": "Vulva",
+        "us": "Vulva"
+      },
+      "systemId": "reproductive",
+      "systemIds": [
+        "reproductive"
+      ],
+      "memberships": [
+        {
+          "systemId": "reproductive",
+          "subdivisionId": "reproductive.female",
+          "role": "primary"
+        }
+      ]
+    },
+    {
+      "id": "organ.mammary-gland",
+      "kind": "gland",
+      "nameVi": "Tuyến vú",
+      "nameEn": "Mammary gland",
+      "ta2": {
+        "id": 7099,
+        "part": 5,
+        "page": 59,
+        "latin": "Glandula mammaria",
+        "en": "Mammary gland",
+        "us": "Mammary gland"
+      },
+      "systemId": "reproductive",
+      "systemIds": [
+        "reproductive",
+        "integumentary"
+      ],
+      "memberships": [
+        {
+          "systemId": "reproductive",
+          "subdivisionId": "reproductive.mammary",
+          "role": "primary"
+        },
+        {
+          "systemId": "integumentary",
+          "subdivisionId": "integumentary.glands",
+          "role": "functional",
+          "sourceId": "openstax-27.2"
+        }
+      ],
+      "laterality": "paired"
+    },
+    {
+      "id": "vessel.coronary-right",
+      "kind": "artery",
+      "nameVi": "Động mạch vành phải",
+      "nameEn": "Right coronary artery",
+      "ta2": {
+        "id": 4131,
+        "part": 4,
+        "page": 12,
+        "latin": "Arteria coronaria dextra",
+        "en": "Right coronary artery",
+        "us": "Right coronary artery"
+      },
+      "systemId": "circulatory",
+      "systemIds": [
+        "circulatory"
+      ],
+      "memberships": [
+        {
+          "systemId": "circulatory",
+          "subdivisionId": "circulatory.arteries",
+          "role": "primary"
+        }
+      ],
+      "laterality": "right"
+    },
+    {
+      "id": "vessel.coronary-left",
+      "kind": "artery",
+      "nameVi": "Động mạch vành trái",
+      "nameEn": "Left coronary artery",
+      "ta2": {
+        "id": 4142,
+        "part": 4,
+        "page": 13,
+        "latin": "Arteria coronaria sinistra",
+        "en": "Left coronary artery",
+        "us": "Left coronary artery"
+      },
+      "systemId": "circulatory",
+      "systemIds": [
+        "circulatory"
+      ],
+      "memberships": [
+        {
+          "systemId": "circulatory",
+          "subdivisionId": "circulatory.arteries",
+          "role": "primary"
+        }
+      ],
+      "laterality": "left"
+    },
+    {
+      "id": "structure.thymus-lobe-left",
+      "kind": "part",
+      "nameVi": "Thùy trái tuyến ức",
+      "nameEn": "Left lobe of thymus",
+      "ta2": {
+        "id": 5153,
+        "part": 4,
+        "page": 48,
+        "latin": "Lobus thymi",
+        "en": "Lobe of thymus",
+        "us": "Lobe of thymus"
+      },
+      "systemId": "lymphatic",
+      "systemIds": [
+        "lymphatic"
+      ],
+      "memberships": [
+        {
+          "systemId": "lymphatic",
+          "subdivisionId": "lymphatic.primary",
+          "role": "primary"
+        }
+      ],
+      "parentId": "organ.thymus",
+      "laterality": "left"
+    },
+    {
+      "id": "structure.thymus-lobe-right",
+      "kind": "part",
+      "nameVi": "Thùy phải tuyến ức",
+      "nameEn": "Right lobe of thymus",
+      "ta2": {
+        "id": 5153,
+        "part": 4,
+        "page": 48,
+        "latin": "Lobus thymi",
+        "en": "Lobe of thymus",
+        "us": "Lobe of thymus"
+      },
+      "systemId": "lymphatic",
+      "systemIds": [
+        "lymphatic"
+      ],
+      "memberships": [
+        {
+          "systemId": "lymphatic",
+          "subdivisionId": "lymphatic.primary",
+          "role": "primary"
+        }
+      ],
+      "parentId": "organ.thymus",
+      "laterality": "right"
+    },
+    {
+      "id": "structure.auricular-concha",
+      "kind": "part",
+      "nameVi": "Xoăn tai",
+      "nameEn": "Concha of auricle",
+      "ta2": {
+        "id": 189,
+        "part": 1,
+        "page": 6,
+        "latin": "Concha auriculae",
+        "en": "Concha of auricle",
+        "us": "Concha of auricle"
+      },
+      "systemId": "nervous",
+      "systemIds": [
+        "nervous"
+      ],
+      "memberships": [
+        {
+          "systemId": "nervous",
+          "subdivisionId": "nervous.senses",
+          "role": "primary"
+        }
+      ],
+      "parentId": "structure.auricle-ear",
+      "laterality": "paired"
+    },
+    {
+      "id": "structure.cystic-duct",
+      "kind": "duct",
+      "nameVi": "Ống túi mật",
+      "nameEn": "Cystic duct",
+      "ta2": {
+        "id": 3101,
+        "part": 3,
+        "page": 12,
+        "latin": "Ductus cysticus",
+        "en": "Cystic duct",
+        "us": "Cystic duct"
+      },
+      "systemId": "digestive",
+      "systemIds": [
+        "digestive"
+      ],
+      "memberships": [
+        {
+          "systemId": "digestive",
+          "subdivisionId": "digestive.accessory",
+          "role": "primary"
+        }
+      ]
+    },
+    {
+      "id": "structure.hepatopancreatic-ampulla",
+      "kind": "duct",
+      "nameVi": "Bóng gan tụy",
+      "nameEn": "Hepatopancreatic ampulla",
+      "ta2": {
+        "id": 3111,
+        "part": 3,
+        "page": 12,
+        "latin": "Ampulla hepatopancreatica",
+        "en": "Hepatopancreatic ampulla",
+        "us": "Hepatopancreatic ampulla"
+      },
+      "systemId": "digestive",
+      "systemIds": [
+        "digestive"
+      ],
+      "memberships": [
+        {
+          "systemId": "digestive",
+          "subdivisionId": "digestive.accessory",
+          "role": "primary"
+        }
+      ]
+    },
+    {
+      "id": "structure.anal-canal",
+      "kind": "part",
+      "nameVi": "Ống hậu môn",
+      "nameEn": "ANAL CANAL",
+      "ta2": {
+        "id": 3009,
+        "part": 3,
+        "page": 9,
+        "latin": "CANALIS ANALIS",
+        "en": "ANAL CANAL",
+        "us": "ANAL CANAL"
+      },
+      "systemId": "digestive",
+      "systemIds": [
+        "digestive"
+      ],
+      "memberships": [
+        {
+          "systemId": "digestive",
+          "subdivisionId": "digestive.tract",
+          "role": "primary"
+        }
+      ],
+      "parentId": "organ.large-intestine"
+    },
+    {
+      "id": "tissue.blood",
+      "kind": "tissue",
+      "nameVi": "Máu",
+      "nameEn": "Blood",
+      "ta2": {
+        "id": 3892,
+        "part": 4,
+        "page": 4,
+        "latin": "Haema",
+        "en": "Blood",
+        "us": "Blood"
+      },
+      "systemId": "circulatory",
+      "systemIds": [
+        "circulatory"
+      ],
+      "memberships": [
+        {
+          "systemId": "circulatory",
+          "subdivisionId": "circulatory.blood",
+          "role": "primary"
+        }
+      ]
+    },
+    {
+      "id": "structure.scrotum",
+      "kind": "part",
+      "nameVi": "Bìu",
+      "nameEn": "Scrotum",
+      "ta2": {
+        "id": 3693,
+        "part": 3,
+        "page": 32,
+        "latin": "Scrotum",
+        "en": "Scrotum",
+        "us": "Scrotum"
+      },
+      "systemId": "reproductive",
+      "systemIds": [
+        "reproductive"
+      ],
+      "memberships": [
+        {
+          "systemId": "reproductive",
+          "subdivisionId": "reproductive.male",
+          "role": "primary"
+        }
+      ]
+    },
+    {
+      "id": "structure.clitoris",
+      "kind": "organ",
+      "nameVi": "Âm vật",
+      "nameEn": "Clitoris",
+      "ta2": {
+        "id": 3565,
+        "part": 3,
+        "page": 28,
+        "latin": "Clitoris",
+        "en": "Clitoris",
+        "us": "Clitoris"
+      },
+      "systemId": "reproductive",
+      "systemIds": [
+        "reproductive"
+      ],
+      "memberships": [
+        {
+          "systemId": "reproductive",
+          "subdivisionId": "reproductive.female",
+          "role": "primary"
+        }
+      ],
+      "parentId": "structure.vulva"
+    },
+    {
+      "id": "structure.fimbriae-uterine-tube",
+      "kind": "part",
+      "nameVi": "Tua vòi tử cung",
+      "nameEn": "Fimbriae of uterine tube",
+      "ta2": {
+        "id": 3489,
+        "part": 3,
+        "page": 26,
+        "latin": "Fimbriae tubae uterinae",
+        "en": "Fimbriae of uterine tube",
+        "us": "Fimbriae of uterine tube"
+      },
+      "systemId": "reproductive",
+      "systemIds": [
+        "reproductive"
+      ],
+      "memberships": [
+        {
+          "systemId": "reproductive",
+          "subdivisionId": "reproductive.female",
+          "role": "primary"
+        }
+      ],
+      "parentId": "organ.uterine-tube",
+      "laterality": "paired"
+    },
+    {
+      "id": "structure.uterine-endometrium",
+      "kind": "layer",
+      "nameVi": "Nội mạc tử cung",
+      "nameEn": "Endometrium",
+      "ta2": {
+        "id": 3521,
+        "part": 3,
+        "page": 27,
+        "latin": "Endometrium",
+        "en": "Endometrium",
+        "us": "Endometrium"
+      },
+      "systemId": "reproductive",
+      "systemIds": [
+        "reproductive"
+      ],
+      "memberships": [
+        {
+          "systemId": "reproductive",
+          "subdivisionId": "reproductive.female",
+          "role": "primary"
+        }
+      ],
+      "parentId": "organ.uterus"
+    },
+    {
+      "id": "structure.prostatic-urethra",
+      "kind": "part",
+      "nameVi": "Phần tiền liệt của niệu đạo nam",
+      "nameEn": "Prostatic urethra",
+      "ta2": {
+        "id": 3445,
+        "part": 3,
+        "page": 24,
+        "latin": "Pars prostatica urethrae",
+        "en": "Prostatic urethra",
+        "us": "Prostatic urethra"
+      },
+      "systemId": "urinary",
+      "systemIds": [
+        "urinary",
+        "reproductive"
+      ],
+      "memberships": [
+        {
+          "systemId": "urinary",
+          "subdivisionId": "urinary.tract",
+          "role": "primary"
+        },
+        {
+          "systemId": "reproductive",
+          "subdivisionId": "reproductive.male",
+          "role": "functional",
+          "sourceId": "openstax-27.1"
+        }
+      ],
+      "parentId": "structure.urethra-male"
+    },
+    {
+      "id": "structure.umbilicus",
+      "kind": "landmark",
+      "nameVi": "Rốn",
+      "nameEn": "Umbilicus",
+      "ta2": {
+        "id": 261,
+        "part": 1,
+        "page": 8,
+        "latin": "Umbilicus",
+        "en": "Umbilicus",
+        "us": "Umbilicus"
+      },
+      "systemId": null,
+      "systemIds": [],
+      "memberships": [],
+      "laterality": "unpaired"
+    }
+  ],
+  "anatomicalRelationships": [
+    {
+      "fromId": "structure.tricuspid-valve",
+      "type": "connectsTo",
+      "toId": "structure.right-atrium",
+      "sourceId": "openstax-19.1"
+    },
+    {
+      "fromId": "structure.tricuspid-valve",
+      "type": "connectsTo",
+      "toId": "structure.right-ventricle",
+      "sourceId": "openstax-19.1"
+    },
+    {
+      "fromId": "structure.mitral-valve",
+      "type": "connectsTo",
+      "toId": "structure.left-atrium",
+      "sourceId": "openstax-19.1"
+    },
+    {
+      "fromId": "structure.mitral-valve",
+      "type": "connectsTo",
+      "toId": "structure.left-ventricle",
+      "sourceId": "openstax-19.1"
+    },
+    {
+      "fromId": "structure.pulmonary-valve",
+      "type": "connectsTo",
+      "toId": "structure.right-ventricle",
+      "sourceId": "openstax-19.1"
+    },
+    {
+      "fromId": "structure.pulmonary-valve",
+      "type": "connectsTo",
+      "toId": "vessel.pulmonary-trunk",
+      "sourceId": "openstax-19.1"
+    },
+    {
+      "fromId": "structure.aortic-valve",
+      "type": "connectsTo",
+      "toId": "structure.left-ventricle",
+      "sourceId": "openstax-19.1"
+    },
+    {
+      "fromId": "structure.aortic-valve",
+      "type": "connectsTo",
+      "toId": "vessel.ascending-aorta",
+      "sourceId": "openstax-19.1"
+    },
+    {
+      "fromId": "vessel.portal-hepatic",
+      "type": "conveysBloodTo",
+      "toId": "organ.liver",
+      "sourceId": "openstax-20.5"
+    },
+    {
+      "fromId": "organ.gallbladder",
+      "type": "drainsVia",
+      "toId": "structure.cystic-duct",
+      "sourceId": "openstax-23.6"
+    },
+    {
+      "fromId": "structure.bile-duct",
+      "type": "typicallyJoinsAt",
+      "toId": "structure.hepatopancreatic-ampulla",
+      "sourceId": "openstax-23.6"
+    },
+    {
+      "fromId": "structure.pancreatic-duct",
+      "type": "typicallyJoinsAt",
+      "toId": "structure.hepatopancreatic-ampulla",
+      "sourceId": "openstax-23.6"
+    },
+    {
+      "fromId": "structure.hepatopancreatic-ampulla",
+      "type": "opensInto",
+      "toId": "structure.duodenum",
+      "sourceId": "openstax-23.6"
+    },
+    {
+      "fromId": "structure.appendix",
+      "type": "opensInto",
+      "toId": "structure.cecum",
+      "sourceId": "openstax-23.5"
+    },
+    {
+      "fromId": "structure.laryngopharynx",
+      "type": "continuousWith",
+      "toId": "organ.esophagus",
+      "sourceId": "openstax-23.3"
+    },
+    {
+      "fromId": "organ.trachea",
+      "type": "branchesInto",
+      "toId": "structure.left-main-bronchus",
+      "sourceId": "openstax-22.1"
+    },
+    {
+      "fromId": "organ.trachea",
+      "type": "branchesInto",
+      "toId": "structure.right-main-bronchus",
+      "sourceId": "openstax-22.1"
+    },
+    {
+      "fromId": "organ.ureter",
+      "type": "opensInto",
+      "toId": "organ.bladder",
+      "sourceId": "openstax-25.2"
+    },
+    {
+      "fromId": "organ.bladder",
+      "type": "drainsVia",
+      "toId": "structure.urethra-female",
+      "sourceId": "openstax-25.2"
+    },
+    {
+      "fromId": "organ.bladder",
+      "type": "drainsVia",
+      "toId": "structure.urethra-male",
+      "sourceId": "openstax-25.2"
+    },
+    {
+      "fromId": "structure.prostatic-urethra",
+      "type": "passesThrough",
+      "toId": "organ.prostate",
+      "sourceId": "openstax-27.1"
+    }
+  ],
+  "visualLayers": [
+    {
+      "id": "skeleton",
+      "nameVi": "Xương và sụn"
+    },
+    {
+      "id": "organs",
+      "nameVi": "Nội tạng"
+    },
+    {
+      "id": "muscles",
+      "nameVi": "Cơ vân và gân"
+    },
+    {
+      "id": "nerves",
+      "nameVi": "Cấu trúc thần kinh"
+    },
+    {
+      "id": "arteries",
+      "nameVi": "Động mạch"
+    },
+    {
+      "id": "veins",
+      "nameVi": "Tĩnh mạch"
+    },
+    {
+      "id": "skin",
+      "nameVi": "Da"
+    }
+  ],
+  "anatomyReferenceAssets": [
+    {
+      "id": "atlas.arteries",
+      "path": "third-part/3d-human-body-anatomy/web/public/models/arteries.glb",
+      "sha256": "05360f03f9bf36c2fc7b42d6c112f5b4e70c36f573cc2bc1133773704663df25",
+      "meshNodes": 417,
+      "visualLayerId": "arteries"
+    },
+    {
+      "id": "atlas.muscles",
+      "path": "third-part/3d-human-body-anatomy/web/public/models/muscles.glb",
+      "sha256": "f290a69f84b899f1b9f2dc60c771f4e1cb12194f5bfb2be697d26de2c505ace9",
+      "meshNodes": 476,
+      "visualLayerId": "muscles"
+    },
+    {
+      "id": "atlas.nerves",
+      "path": "third-part/3d-human-body-anatomy/web/public/models/nerves.glb",
+      "sha256": "4c84983f06202c8f0c0f1f362dd9e01bc13d8f6b3394c7f58ba1983890afd483",
+      "meshNodes": 255,
+      "visualLayerId": "nerves"
+    },
+    {
+      "id": "atlas.organs",
+      "path": "third-part/3d-human-body-anatomy/web/public/models/organs.glb",
+      "sha256": "c30dc26806cd3a380bc625dd1407c3a08d8cbe3808c6c3d1d79d13c697cfe304",
+      "meshNodes": 297,
+      "visualLayerId": "organs"
+    },
+    {
+      "id": "atlas.skeleton",
+      "path": "third-part/3d-human-body-anatomy/web/public/models/skeleton.glb",
+      "sha256": "2d159eddbc12de45d84195fc56957b274e7086b00224c245f22ea9d8ea6409eb",
+      "meshNodes": 271,
+      "visualLayerId": "skeleton"
+    },
+    {
+      "id": "atlas.skin",
+      "path": "third-part/3d-human-body-anatomy/web/public/models/skin.glb",
+      "sha256": "829dc9d782b66c0d0cf40b07c70070b31e82d446507b1f52410705b508e2a639",
+      "meshNodes": 256,
+      "visualLayerId": "skin"
+    },
+    {
+      "id": "atlas.veins",
+      "path": "third-part/3d-human-body-anatomy/web/public/models/veins.glb",
+      "sha256": "9f72980fcaa074fb5d83eb6f9bbbff03216161e7c6afb4890e625a21422614bb",
+      "meshNodes": 226,
+      "visualLayerId": "veins"
+    },
+    {
+      "id": "demo.divide_within_-_medical",
+      "path": "third-part/Human-Organ3D/models/divide_within_-_medical.glb",
+      "sha256": "c02f2ed43b8139923e480d10a8fb9e0def35c07255a66e872abb13145943d058",
+      "meshNodes": 10
+    },
+    {
+      "id": "demo.heart",
+      "path": "third-part/Human-Organ3D/models/heart.glb",
+      "sha256": "5ca211d7ced50856a70cdd0df58e38e1ba3091b2007676d62b5f393ba5629ab7",
+      "meshNodes": 1
+    },
+    {
+      "id": "demo.kidney",
+      "path": "third-part/Human-Organ3D/models/kidney.glb",
+      "sha256": "2a4ce03f800d8b356096c8a67dddc026ddf176432a1cd4dd5188d786a4e52302",
+      "meshNodes": 12
+    },
+    {
+      "id": "demo.liver",
+      "path": "third-part/Human-Organ3D/models/liver.glb",
+      "sha256": "a722b4a1c95f51b12500716850e3f90a0e7f935af373068ca89fb9cb7f907ccf",
+      "meshNodes": 5
+    },
+    {
+      "id": "demo.lung",
+      "path": "third-part/Human-Organ3D/models/lung.glb",
+      "sha256": "66ed0f50b8ac6cc7fe648642e7b090dbc42b6beae9d0faee44bf8556e601a22e",
+      "meshNodes": 2
+    },
+    {
+      "id": "demo.stomach",
+      "path": "third-part/Human-Organ3D/models/stomach.glb",
+      "sha256": "4fd6020d716ec0cb39edcb666acb3b15b8d399050d8f68a90c492cc6f110fa1e",
+      "meshNodes": 1
+    }
+  ],
+  "anatomyReferenceAuditPath": "assets/data/anatomy-source-audit.csv",
+  "anatomyPrototypeBindings": [
+    {
+      "surfaces": [
+        "X01 Atlas 3D",
+        "S02 Atlas 3D",
+        "S02 Sơ đồ SVG",
+        "P02",
+        "S03"
+      ],
+      "organId": "organ.heart",
+      "status": "prototype"
+    },
+    {
+      "surfaces": [
+        "X01 Atlas 3D",
+        "S02 Atlas 3D",
+        "S02 Sơ đồ SVG"
+      ],
+      "organId": "organ.lung-left",
+      "status": "prototype"
+    },
+    {
+      "surfaces": [
+        "S03 Danh sách cấu trúc"
+      ],
+      "organId": "vessel.aorta",
+      "status": "prototype"
+    },
+    {
+      "surfaces": [
+        "S03 Danh sách cấu trúc"
+      ],
+      "organId": "vessel.pulmonary-trunk",
+      "status": "prototype"
+    },
+    {
+      "surfaces": [
+        "S03 Danh sách cấu trúc"
+      ],
+      "organId": "vessel.vena-cava-superior",
+      "status": "prototype"
+    }
+  ]
+}

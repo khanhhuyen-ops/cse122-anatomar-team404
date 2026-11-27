@@ -2,6 +2,18 @@
 
 Các mã màn hình trỏ đến [bảng kiểm kê](screen-list.md). Phạm vi chức năng theo [yêu cầu dự án §§06–13, 22](../.agents/skills/AnatomAR-project-requirements.md). Phân công người duyệt, phạm vi lớp, chính sách mock và cách tính tiến độ là quy tắc thiết kế đề xuất. [Trạng thái và dữ liệu](../.agents/skills/anatomar-design/references/mock-data.md).
 
+## Sitemap
+
+| Phạm vi | Điểm vào và trang trực thuộc |
+| --- | --- |
+| Công khai | X01 → P01 hệ cơ quan, P02 mô hình mẫu, P03 gửi hoặc tra cứu đề xuất. X02 đăng nhập → X03 đăng ký hoặc X04 đặt lại mật khẩu. |
+| Sinh viên | S01 → S02 học theo hệ. Atlas 3D mở thông tin nhanh tại chỗ. Sơ đồ SVG → chọn hệ và cơ quan → S03 mô hình chi tiết hoặc hộp thoại đề xuất → X07 Thông báo. S01/S02 → S04 → S06. S01/S03 → S05. |
+| Giảng viên | T01 → T02 cơ quan và mô hình → T06 biên tập. T01 → T03 câu hỏi, T05 sơ đồ SVG, T08 thẻ, T07 lớp → T04 tiến độ. Hộp thoại Đề xuất học liệu mở từ T01 hoặc X07. |
+| Quản trị viên | A01 → A02 tài khoản, A03 hệ cơ quan, A04 thư viện, A05 hàng đợi, A06 cấu hình công khai. A05 dùng ngăn chi tiết cho học liệu và đề xuất. |
+| Sau đăng nhập | Menu của phiên → X05 hồ sơ, X06 cài đặt, X07 thông báo, xác nhận đăng xuất → X01. X08 thiếu quyền hoặc hết phiên. X09 nội dung không còn truy cập được. |
+
+Các bước đặt lại mật khẩu, kết quả tra cứu, CRUD ngắn, xem trước, chỉnh chú thích và xác nhận nằm trong trang mở chúng. Desktop và Mobile dùng cùng mã màn hình và cùng đích nghiệp vụ. Mobile đưa các đích vào menu chạm và mở ngăn chi tiết gần toàn màn hình.
+
 ## F01 · Khám phá khóa học và học liệu mẫu
 
 **Khách · X01 → P01 → P02.** Từ trang chủ chọn «Khám phá các hệ cơ quan». Xem tổng quan, lọc theo tên hoặc hệ rồi chọn mô hình công khai, ví dụ tim hoặc xương. P02 hiển thị tên, phần học mẫu, nguồn và điều khiển mô hình. Từ đây có thể mở mô hình mẫu khác, trở lại danh sách hoặc đăng ký bằng X03 để học sâu hơn.
@@ -10,16 +22,18 @@ Nếu lọc không có kết quả, «Xóa bộ lọc» khôi phục danh sách 
 
 Tại X01, khách có thể khám phá mô hình 3D toàn thân ngay trên trang chủ. Mỗi lớp giải phẫu có điều khiển riêng để quan sát một lớp hoặc chồng nhiều lớp.
 
-Người học kéo để xoay tự do quanh cơ thể. Trên desktop, rê trên hình học hợp lệ để đọc tên, click để xem chi tiết và cuộn khi đang điều khiển để thu phóng. Trên mobile, chạm ngắn để chọn, kéo một ngón để xoay và chụm hai ngón để thu phóng. Các cử chỉ giữ lựa chọn đang đọc.
+Người học kéo để xoay quanh cơ thể và dùng điều khiển thu phóng. Trên desktop, rê trên bề mặt cơ quan để làm nổi và xem thông tin nhanh. Trên mobile, chạm cơ quan để mở thông tin ngay trong vùng xem, kéo một ngón để xoay và chụm hai ngón để thu phóng.
 
 ## F02 · Định vị cơ quan và khám phá mô hình
 
-**Khách · P02. Sinh viên · S02 → S03 hoặc F03.** P02 mở mô hình mẫu. Tại S02, sinh viên chọn hệ hoặc bật lớp giải phẫu. Rê chuột hiện một tooltip tên và viền nhẹ trên cơ quan hợp lệ gần nhất đang thấy. Khi rời cơ quan hoặc bắt đầu cử chỉ camera, tooltip và viền hover biến mất. Click hoặc chạm ngắn thay ID đang chọn bằng ID của hit mới nhất. Thẻ hiển thị tên, hệ, mô tả và tình trạng học liệu của bộ phận đang học. Chọn bằng danh sách mở cùng thẻ. Trên mobile, chi tiết nằm dưới vùng xem và chạm không giữ tooltip.
+**Khách · P02. Sinh viên · S02.** P02 mở mô hình mẫu. S02 có hai chế độ cùng điều hướng.
 
-- **Có mô hình 3D đã xuất bản và được phép xem.** «Xem mô hình» mở S03 đúng cơ quan. Quay lại atlas khôi phục góc nhìn, lớp đang hiện, hệ và cơ quan đã chọn.
-- **Chưa có học liệu.** Thẻ hiện «Chưa có học liệu» và nút «Gửi đề xuất học liệu». Nút mở biểu mẫu tại S02 với tên cơ quan, hệ và người nhận được điền sẵn. Xem F03 để gửi và theo dõi phản hồi.
+- **Atlas 3D.** Xoay, thu phóng, đặt lại góc nhìn và bật/tắt lớp. Rê vào bề mặt cơ quan đang thấy để phủ xanh ngọc bán trong suốt và mở tooltip theo vị trí cơ quan, gồm tên, hệ, vị trí và chức năng. Rời vùng hợp lệ ẩn cả hai. Trên Mobile, chạm cơ quan để mở, chạm lại hoặc bấm đóng để ẩn. Chọn trong bảng «Thông tin nhanh» là đường thay thế để đọc nội dung.
+- **Sơ đồ SVG.** Chọn hệ. Bấm hoặc chạm hotspot neo vào `viewBox` của sơ đồ, hoặc chọn cơ quan tương ứng trong danh sách. Cả hai mở cùng ID, vị trí, chức năng và tình trạng học liệu. Desktop dùng hover để báo vùng tương tác. Chạm chọn trực tiếp trên Mobile. Chuyển hệ đưa về sơ đồ mặc định của hệ mới.
+- **Có mô hình 3D đã xuất bản và được phép xem.** Từ chi tiết trên SVG, «Xem mô hình 3D» mở S03 cho cơ quan tương ứng. Quay lại S02 ở sơ đồ và cơ quan đang học.
+- **Chưa có học liệu.** Từ chi tiết trên SVG, «Gửi đề xuất học liệu» mở form hiện có với cơ quan, hệ và người nhận. Bản ghi đang chờ đưa người dùng đến Thông báo. Xem F03.
 
-Atlas mở trực tiếp ở 3D để xoay 360°, thu phóng và bật/tắt từng lớp. Nếu đang kiểm tra học liệu, hiện «Đang kiểm tra học liệu…». Khi kiểm tra lỗi, cho thử lại và giữ lựa chọn.
+Khi triển khai, lưu hệ và lựa chọn học liệu cho chế độ SVG. Atlas giữ camera, zoom và lớp trong phiên. Tooltip chỉ tồn tại trong chế độ Atlas. Trong SVG, hiện «Đang kiểm tra học liệu…» khi chờ. Khi kiểm tra lỗi, giữ cơ quan đã chọn và cho thử lại.
 
 Ở P02/S03, người dùng chọn một cấu trúc từ danh sách hoặc hình học đã ánh xạ. Sau xoay, dịch, zoom, reset hoặc thay lớp, hover tính theo hình đang thấy. Khi phát hoạt ảnh, hover được kiểm tra theo pose hiện tại ngay cả khi con trỏ đứng yên. Khi lớp chứa ID đang chọn bị ẩn, thẻ chi tiết giữ ID và cho «Hiện lớp». Khi WebGL hoặc GLB lỗi, danh sách và chi tiết bằng văn bản giữ bộ phận đang học. [Điều khiển và trạng thái 3D](../.agents/skills/anatomar-design/references/viewer-3d.md).
 
@@ -27,7 +41,7 @@ Atlas mở trực tiếp ở 3D để xoay 360°, thu phóng và bật/tắt t�
 
 **Khách · P01 → P03.** Chọn «Đề xuất chủ đề». Chọn loại «Hệ cơ quan» hoặc «Cơ quan», nhập tên chủ đề và lý do. Kiểm tra các trường rồi «Gửi đề xuất». Thành công hiển thị mã tra cứu và trạng thái «Đang chờ». Khách dùng mã ở phần «Tra cứu đề xuất» để đọc trạng thái và phản hồi hiển thị công khai cho chính đề xuất đó.
 
-**Sinh viên · S02 → X07.** Từ cơ quan chưa có học liệu, mở biểu mẫu, xem người nhận, nhập nội dung rồi xác nhận gửi. Theo cách phân công đề xuất, hệ thống ưu tiên giảng viên phụ trách trong phạm vi lớp hoặc hệ. Nếu không xác định được giảng viên phụ trách, đề xuất đến hàng đợi quản trị viên. Sau khi gửi, S02 hiện «Đã gửi đề xuất» và «Đang chờ phản hồi». Sinh viên xem phản hồi trong Thông báo. Nếu đã có đề xuất đang chờ cho cơ quan này của cùng sinh viên, hiển thị trạng thái hiện tại và giữ lựa chọn trên atlas.
+**Sinh viên · S02 Sơ đồ SVG → X07.** Từ cơ quan chưa có học liệu, mở biểu mẫu, xem người nhận, nhập nội dung và xác nhận gửi. Form điền giảng viên phụ trách theo lớp hoặc hệ. Khi chưa có người phụ trách, form điền «Quản trị viên» và gửi vào hàng đợi quản trị. Thành công hiện «Đã gửi đề xuất», «Đang chờ phản hồi» và liên kết Thông báo. «Quay lại sơ đồ» giữ cơ quan đã chọn và hiện nút «Mở Thông báo». Nếu đã có đề xuất đang chờ của cùng sinh viên và cơ quan, dùng trạng thái đang chờ.
 
 Khi ghi lỗi, giữ nội dung rồi «Thử gửi lại». Chặn tạo bản ghi trùng nếu người dùng gửi lại cùng yêu cầu đang xử lý. Mã sai có hướng dẫn kiểm tra lại. Sau F13, P03 hiển thị «Đã chấp nhận» hoặc «Bị từ chối» cùng lý do phù hợp. Chấp nhận ghi nhận đề xuất cho danh mục cần bổ sung.
 
@@ -38,12 +52,12 @@ Khi ghi lỗi, giữ nội dung rồi «Thử gửi lại». Chặn tạo bản 
 1. **Đăng nhập.** Nhập email và mật khẩu mẫu. Phiên hợp lệ đưa người dùng về dashboard theo vai trò, hoặc về đường dẫn nội bộ đã yêu cầu nếu hiện có quyền. Với thông tin sai, báo tại form. Tài khoản bị vô hiệu hóa được hướng dẫn liên hệ quản trị viên.
 2. **Đăng ký.** Nhập tên, email, mật khẩu và xác nhận. Email trùng có lối về X02. Tạo tài khoản sinh viên thành công chuyển về X02 với email mẫu đã điền.
 3. **Quên mật khẩu.** X04 thực hiện yêu cầu → nhập mã demo → đặt mật khẩu mẫu mới. Dùng cơ chế mô phỏng hiển thị và giải thích mã ngay trong demo. Mã đã dùng hoặc hết hạn có lối «Tạo mã mới». Đổi xong quay về X02.
-4. **Sau đăng nhập.** X05 sửa tên hiển thị. X06 lưu lựa chọn giảm chuyển động. X07 xem thông báo, đánh dấu đã đọc và mở bản ghi còn được phép. «Đăng xuất» xóa phiên và về X01.
+4. **Sau đăng nhập.** X05 sửa tên hiển thị, email và vai trò ở chế độ chỉ đọc. X06 lưu lựa chọn giảm chuyển động. X07 xem thông báo, đánh dấu đã đọc và mở bản ghi còn được phép. X05–X07 giữ điều hướng của vai trò đang dùng. «Đăng xuất» mở xác nhận, xóa phiên mô phỏng và về X01.
 5. **Truy cập.** Hết phiên tại trang riêng thì mở X08 với «Đăng nhập lại». Chọn đích quay lại từ trang nội bộ được phép. Thiếu quyền có «Về khu vực của tôi». X09 dùng cho bản ghi mất, nội dung đã ẩn hoặc bản ghi riêng ngoài phạm vi mà không cần tiết lộ sự tồn tại. Lỗi kết nối ưu tiên thông báo tại vùng nội dung và nút thử lại.
 
 ## F05 · Học theo hệ và cập nhật mức ghi nhớ
 
-**Sinh viên · S01 → S02 → S03 → S01.** Mở hệ cần học từ bảng điều khiển. Chọn cơ quan và đọc hoặc xem mô hình theo F02. Nút «Đánh dấu đã thuộc» tạo dấu ghi nhớ cho sinh viên và cơ quan hiện tại. Thành công đổi trạng thái thành «Đã thuộc», đồng thời cho phép «Bỏ đánh dấu» nếu chọn nhầm.
+**Sinh viên · S01 → S02 Sơ đồ SVG → S03 → S01.** Mở hệ cần học từ bảng điều khiển. Chọn cơ quan trên sơ đồ và mở mô hình đã xuất bản theo F02. Tại S03, xem cấu tạo, điều khiển hoạt ảnh rồi dùng «Đánh dấu đã thuộc» để tạo dấu ghi nhớ. Thành công đổi trạng thái thành «Đã thuộc» và cho phép «Bỏ đánh dấu».
 
 Khi quay về S01, từng hệ hiện số cơ quan đã đánh dấu trên tổng cơ quan đang xuất bản của hệ. Hiển thị «Chưa học», «Đang học» hoặc «Hoàn thành» theo số đếm. Hệ chưa có cơ quan hiển thị «Chưa có học liệu». Khi ghi thất bại, giữ trạng thái đã xác nhận trước đó và cho phép thử lại. S01 và T04 dùng cùng cách tính.
 
@@ -74,8 +88,8 @@ T04 yêu cầu giảng viên chọn một lớp mình quản lý, một sinh vi�
 | Loại | Trình tự | Kiểm tra trước khi gửi duyệt |
 | --- | --- | --- |
 | Cơ quan và mô hình | T02 lọc theo hệ/trạng thái → T06 tạo/sửa → chọn hệ, vị trí trên sơ đồ và tệp mẫu từ thư viện → đặt góc mặc định, lớp hiển thị và kiểm tra ánh xạ 3D → xem trước | Tên, hệ hợp lệ, vị trí, chức năng, nguồn và ID khớp hình học đã duyệt |
-| Trắc nghiệm | T03 tạo bản nháp theo hệ → thêm câu/lựa chọn → chọn đáp án đúng, nhập giải thích → xem thử | Ít nhất một câu, mỗi câu có ít nhất hai lựa chọn khác nhau, đúng một đáp án và có giải thích |
-| Học liệu SVG | T05 chọn mẫu sơ đồ và hệ → thêm cơ quan → đặt điểm chú thích và chọn mô hình nếu có → xem trước desktop/mobile | Điểm nằm trong vùng vẽ, có nhãn tiếng Việt và cơ quan tương ứng, có danh sách có thể dùng bằng bàn phím |
+| Trắc nghiệm | T03 tạo bản nháp theo hệ → thêm, sửa hoặc xóa từng câu → nhập A, B, C, D → chọn một đáp án đúng, nhập giải thích → xem thử từ cùng bản nháp | Ít nhất một câu, bốn lựa chọn có nội dung khác nhau, đúng một đáp án và có giải thích |
+| Học liệu SVG | T05 chọn mẫu và hệ → thêm nhiều chú thích theo cơ quan → kéo điểm hoặc sửa x/y → xóa từng mục sau xác nhận → xem trước desktop/mobile từ cùng danh sách | Điểm nằm trong vùng vẽ, có nhãn tiếng Việt, cơ quan tương ứng và điều khiển bằng bàn phím |
 | Thẻ ghi nhớ | T08 chọn hệ → soạn mặt gợi nhớ và mặt đáp án → sắp thứ tự, xem trước hai mặt | Có mặt gợi nhớ, đáp án và mô tả văn bản phù hợp nếu dùng hình |
 
 Mỗi form có «Lưu bản nháp» và «Xem trước». «Gửi duyệt» kiểm tra dữ liệu và đưa phiên bản vừa gửi sang «Đang chờ». Bản nháp chưa xuất bản có thể lưu trữ. Muốn sửa mục đã xuất bản thì tạo bản nháp mới. Rời trang khi chưa lưu có «Ở lại» hoặc «Rời trang». Dữ liệu vừa nhập được giữ nếu gửi lỗi.
@@ -104,7 +118,7 @@ Xác nhận trước khi lưu trữ hệ hoặc tài nguyên đã dùng. Khi cò
 
 **Quản trị viên · A01 → A05. Khách · P03.** Mở nhóm «Đề xuất chủ đề», lọc đang chờ và đọc tên, loại, lý do. «Chấp nhận đề xuất» ghi nhận phạm vi cần bổ sung. «Từ chối đề xuất» yêu cầu lý do hiển thị cho người gửi. Quản trị viên đọc kết quả trong hàng đợi. Khách xem kết quả ở P03 bằng mã tra cứu. Nếu một quản trị viên khác đã xử lý, tải lại trạng thái trước khi thao tác tiếp.
 
-**Đề xuất từ atlas · S02 → X07 → T01/T06 hoặc A05.** Giảng viên nhận đề xuất được phân công qua Thông báo và có thể mở cơ quan để soạn học liệu ở T06. Quản trị viên nhận các đề xuất chuyển đến A05 và xử lý theo trạng thái hiện có. Giảng viên gửi bản soạn qua F10 để duyệt. Sinh viên nhận phản hồi qua X07 và thấy nút «Xem mô hình» trên S02 khi mô hình được xuất bản và được phép xem.
+**Đề xuất từ Sơ đồ SVG · S02 → X07 → T01/T06 hoặc A05.** Giảng viên nhận đề xuất được phân công qua Thông báo và mở danh sách «Đề xuất học liệu» tại T01. Xem người gửi, cơ quan, hệ và nội dung. Tiếp nhận, nhập phản hồi và mở T06 để soạn nếu phù hợp. Quản trị viên xử lý đề xuất thiếu người phụ trách tại A05. Sinh viên xem phản hồi qua X07. Chấp nhận đề xuất cập nhật trạng thái xử lý. Nút «Xem mô hình 3D» xuất hiện ở chi tiết SVG sau khi mô hình được duyệt theo F10 và đã được xuất bản.
 
 ## AI-1 đến AI-3 · Nhánh tùy chọn (§12)
 

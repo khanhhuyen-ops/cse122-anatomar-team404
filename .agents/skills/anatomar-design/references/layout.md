@@ -15,7 +15,7 @@ Khung thông thường rộng tối đa 1280 px. Atlas tối đa 1440 px. Auth r
 
 ## Public và Auth
 
-X01 mở bằng tiêu đề, mô tả ngắn, nút «Khám phá các hệ cơ quan» và atlas 3D. Trên desktop, atlas cạnh nội dung. Trên mobile, tiêu đề và nút đứng trước atlas. Tooltip nằm trong vùng xem khi có hover hợp lệ, chi tiết khi chạm nằm bên dưới vùng xem. P01 đặt bộ lọc trước danh sách. P03 đặt «Gửi đề xuất» và «Tra cứu đề xuất» thành hai vùng có tiêu đề để có thể đến trực tiếp bằng liên kết. Trang xác thực giữ cùng khung logo, tiêu đề, form, thông báo và liên kết chuyển bước.
+X01 mở bằng tiêu đề, mô tả ngắn, nút «Khám phá các hệ cơ quan» và atlas 3D. Trên desktop, atlas cạnh nội dung. Trên mobile, tiêu đề và nút đứng trước atlas. Tooltip xem nhanh neo trong vùng xem khi có hover hoặc tap hợp lệ. P01 đặt bộ lọc trước danh sách. P03 đặt «Gửi đề xuất» và «Tra cứu đề xuất» thành hai vùng có tiêu đề để có thể đến trực tiếp bằng liên kết. Trang xác thực giữ cùng khung logo, tiêu đề, form, thông báo và liên kết chuyển bước.
 
 ```text
 X01 desktop                   X01 mobile / X02–X04
@@ -27,23 +27,22 @@ X01 desktop                   X01 mobile / X02–X04
 
 ## Atlas và mô hình
 
-S02 mở mô hình 3D toàn thân. P02 và S03 mở mô hình cơ quan. Header có tên hệ/cơ quan và hành động học liên quan. Thanh điều khiển nằm ngay dưới hoặc bên cạnh vùng xem. Mobile đưa bảng lớp, danh sách và một thẻ chi tiết xuống dưới vùng xem. Desktop đặt thẻ cạnh vùng xem. Khi xóa lựa chọn hoặc hủy biểu mẫu, trả focus về mục tương ứng trong danh sách nếu còn khả dụng. Khi bật bàn phím ảo, trang vẫn có thể cuộn tới các nút và văn bản.
+S02 có hai nút chế độ Atlas 3D và Sơ đồ SVG trên đầu vùng xem. Atlas đặt bảng lớp và thông tin nhanh cạnh mô hình trên Desktop và dưới mô hình trên Mobile. SVG đặt bộ chọn hệ trước sơ đồ, thẻ học liệu cạnh sơ đồ trên Desktop và bên dưới trên Mobile. Hình và hotspot dùng cùng `viewBox`. Chọn bằng danh sách tương đương chọn hotspot. Khi xóa lựa chọn hoặc hủy biểu mẫu, trả focus về điều khiển đã mở. P02 và S03 giữ bố cục trình xem cơ quan.
 
 ```text
-S02 / S03 desktop
-[Điều hướng / Hệ cơ quan / Tên cơ quan]
-[Hệ, lớp, tìm cấu trúc] [Mô hình 3D]                [Một cấu trúc]
-[Danh sách cấu trúc]   [Điều khiển và góc nhìn]    [Vị trí, chức năng, nguồn]
-                       [Trạng thái tải hoặc lỗi]
+S02 · Atlas 3D
+[Atlas 3D | Sơ đồ SVG]
+[Mô hình và tooltip neo theo cơ quan] [Lớp hiển thị / Thông tin nhanh]
+[Thu nhỏ / Phóng to / Đặt lại]
 
-S02 / S03 mobile
-[Tên hệ hoặc cơ quan]
+S02 · Sơ đồ SVG
+[Atlas 3D | Sơ đồ SVG]
 [Chọn hệ]
-[Vùng xem: tỷ lệ 4:3, giữ kích thước khi tải]
-[Điều khiển thiết yếu] [Tùy chọn hiển thị]
-[Tìm và chọn cấu trúc]
-[Tên / Vị trí / Chức năng / Nguồn]
-[Đánh dấu đã thuộc / Mở học liệu nếu phù hợp]
+[Hình và hotspot theo viewBox] [Danh sách / Chi tiết / Hành động học liệu]
+
+S03 · Mô hình chi tiết
+[Tên cơ quan]
+[Mô hình / Điều khiển / Hoạt ảnh] [Danh sách cấu trúc / Đánh dấu đã thuộc]
 ```
 
 Ở màn hình trung bình, chuyển thẻ chi tiết xuống dưới và giữ danh sách cùng vùng xem nếu đủ chỗ. Vùng xem desktop dành chiều cao khoảng 420–640 px tùy viewport. Mobile ngắn hoặc ngang cho cuộn cả trang. Tải/rỗng/lỗi giữ vùng xem và điều khiển thay thế ở cùng vị trí. Ở 320 px, xếp điều khiển thành nhiều hàng. Toàn màn hình có lối thoát luôn nhìn thấy.

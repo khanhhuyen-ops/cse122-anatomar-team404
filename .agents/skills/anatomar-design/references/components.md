@@ -21,15 +21,17 @@ Dùng [token chung](design-system.md) và bố cục theo [mẫu trang](layout.m
 | Thành phần | Cấu tạo và biến thể | Hành vi và trạng thái |
 | --- | --- | --- |
 | Thẻ hệ / cơ quan | Ảnh hoặc SVG, tên tiếng Việt, số cơ quan hoặc mô tả ngắn, liên kết đến hệ/mô hình. | Liên kết chính có tên rõ. Ảnh có kích thước dự kiến. Mẫu công khai, chi tiết sinh viên, chưa có ảnh. Hiển thị nguồn khi mở chi tiết. |
-| Vùng atlas và thanh điều khiển | Canvas 3D, bộ chọn hệ/lớp, góc nhìn, zoom và hoạt ảnh. | Giữ kích thước khi tải. Điều khiển HTML, trạng thái để bên ngoài canvas. Đồng bộ bằng ID giữa mô hình và danh sách. [Đặc tả trình xem](viewer-3d.md). |
-| Tooltip 3D | Một tên tiếng Việt, chữ sáng trên nền tối đặc, gần con trỏ. Viền hover nhẹ trên hình học đang thấy. | Chỉ hiện khi có hit hợp lệ. Tránh con trỏ, mô và điều khiển. Rời hit hoặc bấm Escape sẽ ẩn. Chạm dùng chi tiết bên dưới viewer. |
+| Vùng atlas và thanh điều khiển | Canvas toàn thân, lớp giải phẫu, điều khiển camera và bảng thông tin nhanh. | Giữ kích thước khi tải. Các điều khiển HTML dùng được cùng nội dung đọc thay thế. [Đặc tả trình xem](viewer-3d.md). |
+| Chế độ Sơ đồ SVG | Bóng cơ thể, bộ chọn hệ, hotspot trong hệ tọa độ `viewBox` và danh sách cơ quan. | Hình, danh sách, tình trạng và chi tiết dùng cùng ID. Mỗi hotspot có biến thể Mặc định, Hover, Đã chọn và hai tình trạng học liệu. Bàn phím và chạm dùng cùng hành động chọn. |
+| Tooltip Atlas 3D | Tên, hệ, vị trí, chức năng. Nền tối đặc và phủ xanh ngọc bán trong suốt trên phần bề mặt đang thấy. | Neo theo điểm chiếu của cơ quan. Rời bề mặt ẩn cả tooltip và highlight. Mobile chạm để mở, chạm lại hoặc đóng để ẩn. |
 | Danh sách và chi tiết cấu trúc | Tên, hệ, mô tả, vị trí, chức năng và nguồn của một cấu trúc. | Chọn từ danh sách tương đương click hoặc chạm hình học đã ánh xạ. Chọn mới thay mục đang học. Chi tiết giữ sau khi di chuột, chuyển focus hoặc thay camera. |
 | Thẻ học liệu cơ quan | Tên cơ quan, hệ, trạng thái học liệu và một hành động chính. | «Xem mô hình» khi có mô hình được phép xem. «Chưa có học liệu» và «Gửi đề xuất học liệu» khi thiếu. Thẻ có lối đóng. Khi đang kiểm tra hoặc lỗi, giữ tên và cơ quan đã chọn. |
 | Dấu đã thuộc cơ quan | Nút «Đánh dấu đã thuộc» và trạng thái xác nhận «Đã thuộc», với hành động «Bỏ đánh dấu». | Đang lưu, thành công, lỗi có thử lại. Tính tiến độ sau khi thao tác đã lưu. Nút giữ focus khi nhãn đổi. |
 | Thẻ ghi nhớ | Bộ đếm, mặt gợi nhớ có tên/hình, nút «Hiện đáp án», mặt vị trí/chức năng, hai nút đánh giá. | Chuyển mặt bằng click và bàn phím. Trình đọc màn hình chỉ đọc mặt đang mở. Giảm chuyển động đổi nội dung ngay. Rỗng, đang ôn, lưu lỗi, kết thúc lượt. |
 | Câu hỏi và bảng câu | `fieldset` và radio cho câu một đáp án. Bảng câu là nhóm nút có số và trạng thái. | Có chưa trả lời, đã chọn, đang mở. Đáp án và giải thích xuất hiện ở trang kết quả. Khi chuyển câu, đưa focus tới tiêu đề câu. |
 | Chi tiết kết quả | Điểm, số đúng/tổng, lựa chọn đã chọn, đáp án và giải thích. Có bộ lọc «Tất cả / Cần xem lại» nếu danh sách dài. | Đúng/sai/bỏ trống có nhãn chữ. S06 giữ dữ liệu lượt đã nộp. Có «Làm lại» và «Xem lại hệ cơ quan». |
-| Editor học liệu SVG | Chọn mẫu, chọn cơ quan, điểm chú thích, tọa độ hoặc nút dịch điểm, vùng xem trước và danh sách. | Bản nháp, chưa lưu, thừa/thiếu liên kết, tọa độ ngoài hình, xem trước, chờ duyệt. Có nút lên/xuống cho thứ tự và thay thế cho kéo điểm. |
+| Editor học liệu SVG | Chọn mẫu, chọn cơ quan, danh sách nhiều chú thích, tọa độ hoặc nút dịch điểm và bản xem trước. | Thêm, sửa, xóa từng chú thích. Bản xem trước đọc cùng bản nháp. Kiểm tra liên kết, phạm vi tọa độ và ưu tiên phím cho tác vụ kéo hoặc sắp thứ tự. |
+| Editor trắc nghiệm | Danh sách câu, bốn phương án A–D, một đáp án đúng và lời giải thích cho từng câu. | Có thêm, sửa, xác nhận xóa, lưu nháp, xem trước và gửi duyệt. Form và bản xem trước đọc cùng câu trong bản nháp. |
 
 ## Dữ liệu, báo cáo và xử lý
 
@@ -51,6 +53,6 @@ Dùng [token chung](design-system.md) và bố cục theo [mẫu trang](layout.m
 | Lỗi ghi dấu | «Chưa lưu được dấu đã thuộc.» → «Thử lại» |
 | Form chưa lưu | «Các thay đổi trong biểu mẫu chưa được lưu.» → «Ở lại» hoặc «Rời trang» |
 | Thành công gửi chủ đề | «Đã gửi đề xuất.» + mã tra cứu và trạng thái «Đang chờ» |
-| Thành công gửi đề xuất từ atlas | «Đã gửi đề xuất», «Đang chờ phản hồi» và «Quay lại atlas». Sinh viên theo dõi phản hồi trong Thông báo. |
+| Thành công gửi đề xuất từ SVG | «Đã gửi đề xuất», «Đang chờ phản hồi» và «Quay lại sơ đồ». Sinh viên theo dõi phản hồi trong Thông báo. |
 
 Từng thành phần được kiểm tra ở trạng thái nghỉ, focus và lỗi, với nhãn tiếng Việt dài, bàn phím và viewport hẹp. [Yêu cầu tiếp cận](accessibility.md).

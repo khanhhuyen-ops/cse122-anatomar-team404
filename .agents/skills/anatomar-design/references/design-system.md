@@ -34,6 +34,13 @@ Các tên dưới đây là tên CSS custom properties dự kiến. Dùng token 
 
 Dùng nhãn văn bản cho mọi trạng thái. Bảng và dashboard dùng màu trạng thái trên nhãn nhỏ hoặc thanh tiến độ. Trong biểu đồ, thêm nhãn, hình dạng hoặc họa tiết và bảng số liệu tương ứng.
 
+| Mẫu giao diện | Quy tắc dùng token trong lượt hoàn thiện prototype |
+| --- | --- |
+| Chuyển Atlas 3D / Sơ đồ SVG | Nút đang chọn dùng `--selected` và `--primary`. Nút còn lại dùng `--surface`, có đường viền. Focus theo nền hiện tại. |
+| Trường và lựa chọn A–D | Trường dùng `--control-border`. Chỉ đọc dùng `--surface-muted`. Lỗi có chữ giải thích và viền `--danger`. Mỗi nhóm đáp án có một trạng thái đã chọn. |
+| Hộp thoại và ngăn chi tiết | Nền `--surface`, bo `--radius-panel`, hành động tối thiểu `--target-min`. Xác nhận lưu trữ, vô hiệu hóa hoặc từ chối dùng `--danger`. |
+| Hotspot SVG | Mặc định vòng nhỏ, Hover mở rộng vòng, Đã chọn có vòng đậm. Dấu kiểm xanh ngọc chỉ có học liệu, dấu trừ hổ phách chỉ chưa có học liệu. Kèm nhãn trạng thái bằng chữ ở chi tiết. Dùng ID và tọa độ trong cùng `viewBox` với hình. |
+
 Thẻ hệ cơ quan dùng nền dịu và chữ đậm theo chủ đề. Tuần hoàn dùng `#FBE7EA` / `#8C2F3D`, hô hấp dùng `#E5F0FB` / `#194D7B`, thần kinh dùng `#F0EAFB` / `#5A4791`, xương khớp dùng `#D9F1E8` / `#086458` và tiêu hóa dùng `#FFF0D3` / `#714600`. Mỗi thẻ có tên hệ bằng chữ và biểu tượng. Ý nghĩa của nhãn quy trình vẫn tuân theo bảng trạng thái.
 
 ## Màu vùng atlas
@@ -46,7 +53,7 @@ Thẻ hệ cơ quan dùng nền dịu và chữ đậm theo chủ đề. Tuần 
 | `--atlas-muted` | `#BED3DA` | Chú thích phụ và đường dẫn nhãn |
 | `--atlas-border` | `#72909E` | Biên điều khiển trên nền tối |
 | `--atlas-focus` | `#86DCF2` | Viền focus của nút trong vùng tối |
-| `--atlas-selection` | `#79E4C8` | Viền cấu trúc đang chọn, nền nhãn chọn |
+| `--atlas-selection` | `#79E4C8` | Lớp phủ 60% trên phần bề mặt cơ quan đang thấy ở Atlas, màu nhấn tooltip và viền cấu trúc ở trình xem chi tiết |
 | `--atlas-on-selection` | `#0C221E` | Chữ trên nền nhãn chọn |
 
 Giữ màu mô theo dữ liệu đã duyệt. Mọi đường chỉ dẫn phải đọc được ở cả vùng mô sáng và tối bằng đường viền hai tông hoặc nhãn có nền đặc. Ở sơ đồ SVG dùng viền, ký hiệu và danh sách tên để bổ sung cho màu. Thứ tự lớp và cách chọn nằm trong [trình xem 3D](viewer-3d.md).

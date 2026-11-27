@@ -1,10 +1,10 @@
 # Trình xem 3D
 
-X01 và S02 có mô hình 3D toàn thân. P02 xem mô hình mẫu. S03 xem cơ quan với điều khiển HTML và diễn giải bằng văn bản. Mỗi trình xem có một lựa chọn đang học. Khi cần đọc mà chưa có 3D, dùng danh sách cấu trúc và chi tiết dạng văn bản. T06/A04 dùng cùng trình xem ở chế độ xem trước. T05 tiếp tục dùng SVG cho học liệu riêng. [Màn hình](../../../../design/screen-list.md).
+X01 và S02 có Atlas 3D toàn thân để quan sát và xem thông tin nhanh. S02 có chế độ Sơ đồ SVG với cùng ID cơ quan để chọn học liệu và gửi đề xuất. P02 xem mô hình mẫu. S03 xem cấu tạo, điều khiển hoạt ảnh và đánh dấu đã thuộc. Dùng SVG, danh sách hoặc văn bản khi 3D lỗi hay tải chậm. T06/A04 dùng trình xem để xem trước. T05 biên tập SVG và chú thích. [Màn hình](../../../../design/screen-list.md).
 
-## Lớp giải phẫu toàn thân
+## Lớp hiển thị toàn thân
 
-- Bảng lớp điều khiển Hệ xương khớp, Hệ cơ, Nội tạng, Động mạch, Tĩnh mạch, Hệ thần kinh và Da. Mỗi lớp có ô chọn riêng. Mặc định hiện Hệ xương khớp và Nội tạng.
+- Bảng lớp điều khiển Xương và sụn, Cơ vân và gân, Nội tạng, Động mạch, Tĩnh mạch, Cấu trúc thần kinh và Da. Mỗi lớp có ô chọn riêng. Mặc định hiện Xương và sụn và Nội tạng. Dùng `visualLayerId` để điều khiển lớp. Hệ và nhánh giải phẫu đọc từ danh mục trong `db.json`.
 - Màn rộng đặt bảng lớp bên cạnh mô hình. Màn hẹp đặt bảng lớp dưới vùng xem. Bật hoặc tắt lớp giữ góc nhìn hiện tại. «Đặt lại góc nhìn» trả camera về mặt trước và giữ các lớp đang hiện.
 - Kéo ngang trong vùng xem để quay đủ vòng 360° theo cả hai chiều. Kéo dọc để nghiêng góc nhìn, giới hạn gần hai cực để giữ hướng lên của cơ thể. Góc nhìn dừng tại vị trí người học thả tay. Ba nút «Thu nhỏ», «Phóng to» và «Đặt lại góc nhìn» đặt dưới mô hình. Cách kéo trực tiếp và nhóm nút riêng tham chiếu trình xem mô hình của Giaiphau3D. [Mẫu phổi trái](https://app.giaiphau3d.com/respiratory-system/left-lung).
 - Các hình minh họa trong Figma được kết xuất lại từ bản GLB giản lược của Human Anatomy 3D, dựa trên Z-Anatomy và BodyParts3D. Bản kết xuất của lớp Nội tạng bỏ mẫu thận có giấy phép khác. [Nguồn và giấy phép mô hình](https://github.com/SeemaBansal1/3d-human-body-anatomy#credits-and-licences).
@@ -17,22 +17,22 @@ X01 và S02 có mô hình 3D toàn thân. P02 xem mô hình mẫu. S03 xem cơ q
 4. Nếu cấu trúc nằm trong lớp vừa ẩn, giữ thẻ chi tiết và hiển thị «Cấu trúc nằm trong lớp đang ẩn» kèm «Hiện lớp». Nếu mô hình không ánh xạ được cấu trúc đó, giữ lựa chọn trong danh sách và giải thích phạm vi mô hình.
 5. Khi đổi cơ quan, dừng hoạt ảnh và về góc nhìn mặc định của cơ quan mới. «Đặt lại góc nhìn» đặt camera mặc định, giữ cơ quan, lựa chọn, lớp và trạng thái phát. «Xóa lựa chọn» chỉ bỏ cấu trúc đang chọn.
 
-Tại S02, nhấn mesh thuộc lớp đang hiện để chọn cơ quan theo ID và hiển thị thẻ học liệu. Đồng bộ vùng tô sáng, tên và hệ với lựa chọn trong danh sách. Khi có mô hình 3D đã xuất bản trong phạm vi người học, thẻ có nút «Xem mô hình». Khi đã xác nhận không có, hiện «Chưa có học liệu» và «Gửi đề xuất học liệu» để mở biểu mẫu với cơ quan và hệ hiện tại. Trạng thái đang kiểm tra hoặc lỗi vẫn giữ lựa chọn. Các thao tác kéo, cuộn và chụm không mở thẻ. [Luồng chọn cơ quan và gửi đề xuất](../../../../design/user-flow.md#f02--định-vị-cơ-quan-và-khám-phá-mô-hình).
+Tại S02, Atlas 3D cung cấp thông tin nhanh ngay trong vùng xem và bảng tên cơ quan. Sơ đồ SVG cung cấp trạng thái học liệu và các hành động «Xem mô hình 3D» hoặc «Gửi đề xuất học liệu» sau khi chọn hotspot. Hai chế độ đọc cùng ID giải phẫu. S03 giữ lựa chọn riêng cho cấu trúc của mô hình chi tiết. [Luồng chọn cơ quan và gửi đề xuất](../../../../design/user-flow.md#f02--định-vị-cơ-quan-và-khám-phá-mô-hình).
 
 ## Object Picking và tooltip động
 
 | Trạng thái | Hành vi |
 | --- | --- |
-| Rê vào hình học hợp lệ | Hiện duy nhất tên tiếng Việt của thực thể gần camera nhất đang thấy trên tia. Làm nổi nhẹ các mesh hiện của cùng ID bằng viền xanh ngọc mảnh, giữ màu mô. Hover giữ nguyên nội dung và focus của thẻ chi tiết. |
-| Rê sang đối tượng khác, vùng trống hoặc rời vùng xem | Thay tooltip và viền cùng lúc khi ID đổi. Xóa tooltip và hiệu ứng hover khi không còn giao điểm hợp lệ, khi rời vùng xem hoặc bấm Escape. Sau Escape, giữ tooltip đóng đến khi con trỏ di chuyển hoặc gặp một ID khác. Khôi phục trạng thái hiển thị theo lớp, chế độ và lựa chọn hiện hành. |
-| Click chuột hoặc chạm ngắn | Phân biệt click/tap khi thả với kéo, cuộn, chụm, pan hoặc `pointercancel`. Tính lại hit tại điểm thả theo cảnh hiện tại rồi cập nhật chi tiết bằng ID. Chạm mở chi tiết hiện có, dưới vùng xem trên mobile, và không giữ tooltip trên canvas. Click/tap vùng trống giữ chi tiết đang đọc. |
-| Xoay, zoom, pan hoặc quán tính camera | Ẩn hover khi bắt đầu thao tác và giữ lựa chọn. Khi điều khiển dừng, tính lại hit theo camera mới nếu con trỏ chuột còn ở trong canvas và có thể hover. Chạm/kéo đa điểm không phát sinh click. |
+| Rê vào hình học hợp lệ tại Atlas | Phủ xanh ngọc 60% lên toàn bộ phần bề mặt đang thấy của mesh cùng ID, theo đường biên thực và độ sâu. Tooltip ghi tên, hệ, vị trí và chức năng của cơ quan gần camera nhất trên tia. |
+| Rê sang đối tượng khác, vùng trống hoặc rời vùng xem | Đổi đồng thời tooltip và lớp phủ khi ID đổi. Rời hit hợp lệ hoặc bấm Escape thì ẩn cả hai. |
+| Chạm ngắn tại Atlas | Tính hit tại điểm thả. Mở ngay tooltip và lớp phủ của một cơ quan. Chạm cơ quan khác thay cả hai, chạm lại hoặc bấm đóng để ẩn. Phân biệt với kéo, cuộn, chụm, pan và `pointercancel`. |
+| Xoay, zoom, pan hoặc quán tính camera | Ẩn thông tin xem nhanh khi bắt đầu thao tác. Khi dừng, desktop tính lại hit nếu con trỏ còn trong canvas. Trình xem S03 giữ cấu trúc đang đọc. |
 | Đặt lại góc nhìn, đổi lớp hoặc hệ | Hủy hit tạm cũ ngay. Tính lại sau khi đồng bộ camera, kích thước canvas, lớp và bộ lọc hiện hành. Khi lớp được chọn bị ẩn, chỉ giữ chi tiết với trạng thái «Cấu trúc nằm trong lớp đang ẩn». |
 | Chạy, tạm dừng hoặc tua lại hoạt ảnh | Dùng hình học sau khi cập nhật pose và camera ở khung hiện tại, kể cả khi chuột đứng yên. Xóa hoặc đổi hover khi cấu trúc dịch khỏi tia. Nếu tài nguyên biến dạng mà đường picking chưa hỗ trợ pose hiện tại, dùng danh sách để chọn trong lúc phát. |
 | Chuyển model, lỗi, tải hoặc dùng ảnh chờ | Xóa hover ngay, loại kết quả từ phiên model cũ. Giữ lựa chọn khi ID hợp lệ trong phạm vi mới, hoặc giải thích trong danh sách khi chưa có hình học tương ứng. |
 
-- Đặt tooltip cách con trỏ khoảng 12–16 px và chừa tối thiểu 8 px với mép vùng xem. Ưu tiên phía còn trống, lật sang phía khác khi gần mép. Tránh điểm hit, vùng chiếu của cấu trúc đang trỏ và các điều khiển. Nếu thiếu chỗ, giữ highlight và tên ở danh sách, ẩn tooltip. Tooltip không nhận sự kiện con trỏ, không giữ focus và không đưa mỗi lần rê vào vùng đọc của trình đọc màn hình.
-- Tách hover tạm khỏi ID đang học. Canvas chỉ làm nổi một thực thể tại một thời điểm. Khi có hover, vẽ hiệu ứng nhẹ cho ID đang trỏ. Khi hover kết thúc, khôi phục viền rõ hơn của ID đang chọn nếu vẫn thấy. Viền bám bề mặt đang thấy. Highlight áp dụng theo thực thể để mesh khác dùng chung material giữ màu mô.
+- Neo tooltip vào điểm chiếu của cơ quan. Canh cách điểm neo khoảng 12–16 px và cách mép vùng xem ít nhất 8 px. Ưu tiên phía còn trống, lật phía khi gần mép. Tránh hình và điều khiển. Tooltip hover bỏ qua sự kiện con trỏ. Bản tap có nút đóng.
+- Atlas chỉ phủ một cơ quan mỗi lần. Lớp phủ dùng lại geometry và chỉ hiển thị khi có hit hợp lệ. Cập nhật theo thực thể để giữ màu gốc ở các mesh dùng chung material. S03 quản lý highlight và lựa chọn cấu trúc của trình xem chi tiết.
 - Quy đổi tọa độ con trỏ theo khung canvas hiện tại rồi raycast bằng camera hiện tại. Kiểm tra giao điểm theo khoảng cách tăng dần. Bỏ qua lớp chưa tải hoặc đang ẩn, mesh và tổ tiên bị ẩn, phần vật liệu không được vẽ, vùng đã bị cắt và mesh phụ như đèn hiệu, nền, lưới hoặc sprite. Một bề mặt giải phẫu kín đang che phía trước mà chưa có ánh xạ phải trả về không có lựa chọn tại tia đó để tránh gán tên của cơ quan phía sau. Chế độ xuyên lớp, nếu có, phải dùng cùng quy tắc xuyên lớp cho hình và picking. [Raycaster](https://threejs.org/docs/pages/Raycaster.html).
 
 ## Ánh xạ hình học và kiểm tra tài nguyên
@@ -48,14 +48,14 @@ Mỗi thực thể có `id`, `nameVi`, `systemId`, `descriptionVi`, và `parentI
 | `Human-Organ3D/models/heart.glb`, `stomach.glb` | Mỗi tệp có 1 mesh, 1 primitive. Scene graph hiện không định danh phần bên trong. | Có thể chọn toàn bộ cơ quan sau khi duyệt nguồn. Muốn chọn buồng tim, mạch hoặc vùng dạ dày phải xác minh ranh giới hình học và chuẩn bị asset tương ứng. |
 | `Human-Organ3D/models/kidney.glb`, `divide_within_-_medical.glb` | Lần lượt có 12 và 10 mesh, tên kỹ thuật và cùng một material trong mỗi tệp. Các node mesh không có `extras` giải phẫu. | Số mesh không đủ để kết luận số thực thể. Đối chiếu từng mảnh bằng lớp hình học và nguồn trước khi chọn theo cấu trúc. |
 
-Các ID minh họa dưới đây là đề xuất cho bộ dữ liệu AnatomAR. Chúng chưa được thêm vào `db.json`.
+Các ID bên dưới có trong `db.json`. Bảng kiểm kê ghi node gốc, ID cấu trúc và quan hệ cha trong danh mục khi đã xác định. [Bảng đối chiếu nguồn](../../../../assets/data/anatomy-source-audit.csv).
 
 | ID | Tên · Hệ · Mô tả | Ví dụ ánh xạ ở atlas toàn thân |
 | --- | --- | --- |
-| `organ.heart` | Tim · Hệ tuần hoàn · Bơm máu qua hệ mạch. | `organs`: `Right atrium`, `Left atrium`, `Right ventricle`, `Left ventricle` cùng về Tim. Vùng giải phẫu khác như mạch và van do danh mục quy định cụ thể. |
-| `organ.lung-left` | Phổi trái · Hệ hô hấp · Trao đổi khí ở bên trái cơ thể. | `organs`: `Superior lobe of left lung`, `Inferior lobe of left lung` cùng về Phổi trái. |
-| `organ.lung-right` | Phổi phải · Hệ hô hấp · Trao đổi khí ở bên phải cơ thể. | `organs`: `Superior lobe of right lung`, `Middle lobe of right lung`, `Inferior lobe of right lung` cùng về Phổi phải. |
-| `bone.sternum-body` | Thân xương ức · Hệ xương khớp · Phần giữa của xương ức ở trước lồng ngực. | `skeleton`: `Body of sternum`. |
+| `organ.heart` | Tim · Hệ tuần hoàn · Bơm máu qua hệ mạch. | Mỗi buồng tim trong `organs` có ID riêng và `parentId` trỏ tới Tim. Dùng tổ tiên `organ.heart` cho tooltip cấp cơ quan. |
+| `organ.lung-left` | Phổi trái · Hệ hô hấp · Trao đổi khí ở bên trái cơ thể. | `organs`: hai thùy của phổi trái có ID riêng và cùng trỏ tới Phổi trái. |
+| `organ.lung-right` | Phổi phải · Hệ hô hấp · Trao đổi khí ở bên phải cơ thể. | `organs`: ba thùy của phổi phải có ID riêng và cùng trỏ tới Phổi phải. |
+| `bone.sternum-body` | Thân xương ức · Hệ xương · Phần giữa của xương ức ở trước lồng ngực. | `skeleton`: `Body of sternum`. |
 
 Nếu một mesh chứa nhiều thực thể, ưu tiên tách tại nguồn hoặc gán từng primitive hay vùng tam giác đã xác minh theo phiên bản hình học. Thành phần liên thông, biên vật liệu và nguồn gốc mesh là dữ liệu để đối chiếu. Khi đổi bản xuất do đơn giản hóa, nén hoặc sắp xếp lại chỉ số, kiểm tra lại ánh xạ theo vùng. Khi ranh giới chưa xác minh, giữ thực thể chung nếu đúng nghĩa giải phẫu hoặc dùng danh sách và mô tả cho các mục con. Không suy đoán theo tọa độ màn hình, tên material, số thứ tự hay phần chữ trùng trong tên mesh.
 
@@ -102,14 +102,14 @@ Hoạt ảnh minh họa một quá trình, ví dụ cơ quan chuyển động th
 
 | Ca thử | Kết quả chấp nhận |
 | --- | --- |
-| Rê từ Tim sang Phổi trái, Phổi phải rồi vùng trống | Mỗi lần chỉ có tên và viền của hit hiện tại. Bảng giữ ID đã chọn. Vùng trống, rời canvas hoặc Escape tắt tooltip và viền hover. |
+| Rê từ Tim sang Phổi trái, Phổi phải rồi vùng trống | Một tooltip và một lớp phủ theo bề mặt của hit hiện tại. Vùng trống, rời canvas hoặc Escape tắt cả hai. |
 | Chọn Tim, chọn Phổi trái rồi xóa lựa chọn | Thẻ chỉ hiển thị Phổi trái sau lần chọn thứ hai. Xóa lựa chọn đưa thẻ về trạng thái chờ chọn và bỏ viền chọn. |
 | Rê lên nhiều mesh thuộc Tim hoặc hai thùy Phổi trái | Mọi mesh cùng cơ quan mở cùng bản ghi ở atlas. Không nhấp nháy tooltip khi con trỏ đi qua đường nối giữa các mesh của cùng ID. |
 | Hai lớp chồng nhau trước camera | Mô đang thấy phía trước thắng. Tắt lớp phía trước hoặc cắt khuất giao điểm thì chỉ mặt hiện hợp lệ được chọn. Mesh phụ và mesh ẩn không nhận tên. Bề mặt giải phẫu kín chưa ánh xạ không làm lộ nhãn cơ quan phía sau. |
 | Rotate, zoom, pan, resize, đổi hướng màn hình và reset khi chuột đứng yên | Tooltip tắt trong thao tác camera, sau đó phản ánh hit mới. Kiểm tra cả khi canvas nằm lệch trên trang hoặc trang đang cuộn. Tooltip tránh hình và không tràn mép. ID đã chọn vẫn giữ. |
 | Ẩn lớp vừa chọn, chuyển hệ và đổi model nhanh | Bỏ tooltip và viền của hình học cũ. Bảng giữ ID và trạng thái phù hợp, hoặc về trạng thái chọn cấu trúc khi ID không còn thuộc ngữ cảnh. Tải xong muộn không ghi đè model hiện hành. |
 | Phát, tạm dừng, về đầu và đổi góc khi đang phát | Hit và viền bám đúng pose đang hiển thị. Rê đứng yên khi cơ quan đi qua tia đổi hoặc tắt tooltip. Reset giữ trạng thái phát. |
-| Chạm Tim rồi Phổi trái, kéo một ngón, chụm hoặc pan hai ngón | Chạm ngắn mở chi tiết đúng ID và thay lựa chọn trước. Các cử chỉ điều khiển giữ nguyên lựa chọn. Danh sách mở được cùng bản ghi. |
+| Chạm Tim rồi Phổi trái, chạm lại, kéo một ngón hoặc chụm | Chạm ngắn xem nhanh đúng ID. Chạm lại ẩn. Cử chỉ camera giữ điều khiển riêng. Danh sách mở được thông tin tương đương. |
 | WebGL lỗi, dữ liệu thiếu, chọn bằng bàn phím và giảm chuyển động | Thông tin, đường thay thế và trạng thái khôi phục đúng như đặc tả. Chỉ lựa chọn có chủ đích mới cập nhật nội dung cho trình đọc màn hình. |
 
 Hình minh họa Figma được đối chiếu với các tia mẫu trên GLB. Ở góc trước, tia của Tim chạm `Right ventricle` và tia của Phổi trái chạm `Superior lobe of left lung`. Ở góc nghiêng, tia minh họa vẫn chạm thùy trên phổi trái. Khi bật xương và nội tạng, tia minh họa chạm `Body of sternum` trước `Right ventricle`. Các vị trí này dùng để kiểm tra ảnh kết xuất. Figma thể hiện trạng thái và luồng thành phần. Kiểm thử liên tục về độ sâu, pose và cử chỉ cần chạy trên viewer Three.js khi triển khai. [Bảng trạng thái Figma](https://www.figma.com/design/jzAM858NL0lg4GnAU2SP64/AnatomAR?node-id=70-1020).

@@ -2,7 +2,7 @@
 
 ## Điều hướng và trạng thái
 
-- Dùng đường dẫn tương đối trong `pages/`. Lưu `system`, `organ`, `structure`, `view`, truy vấn, bộ lọc và trang đang xem vào URL khi chúng cần dùng cho quay lại hoặc chia sẻ. Ví dụ `student-organ-model.html?organ=heart&structure=left-ventricle&view=2d`.
+- Dùng đường dẫn tương đối trong `pages/`. Lưu `system`, `organ`, `structure`, `view`, truy vấn và bộ lọc vào URL khi cần chia sẻ hoặc quay lại. Ví dụ `student-system-view.html?system=circulatory&organ=organ.heart&view=svg`. S02 SVG giữ hệ và cơ quan đang học. Atlas giữ camera và lớp trong phiên. Hover hoặc tap xem nhanh thuộc trạng thái tạm của Atlas.
 - Hộp thoại, thông báo tạm, dữ liệu nhập chưa gửi, mã tra cứu đề xuất và mật khẩu nằm ngoài URL. Bản nháp trắc nghiệm chỉ mở với đúng tài khoản. Liên kết thông báo kiểm tra lại quyền bản ghi.
 - Giữ lịch sử Back/Forward có ý nghĩa. Thay đổi hệ, cơ quan hoặc chế độ là điều hướng có thể quay lại. Gõ từ khóa chưa áp dụng và điều chỉnh camera chỉ là trạng thái tạm. Khôi phục bộ lọc, vùng cuộn và tiêu điểm khi quay về danh sách.
 - Trang báo truy cập X08 cho thiếu quyền hoặc hết phiên. X09 cho bản ghi không còn hoặc riêng tư ngoài phạm vi. Đích đăng nhập lại phải là đường dẫn nội bộ được phép.
