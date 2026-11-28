@@ -6,9 +6,9 @@ AnatomAR hỗ trợ dạy và học giải phẫu cơ thể người trong học
 
 [Tài liệu yêu cầu dự án](../.agents/skills/AnatomAR-project-requirements.md) là căn cứ về chức năng, tên tệp, phạm vi vai trò và minh chứng. Brief thiết kế bổ sung yêu cầu hoạt ảnh cơ quan 3D, giao diện tiếng Việt và ưu tiên HTML, CSS, JavaScript thuần, SVG, Three.js, API JSON mô phỏng.
 
-- **Cốt lõi** gồm 16 tệp nền tảng, 9 trang dùng chung và các màn hình bổ sung cần để hoàn thành luồng. [Bảng kiểm kê](screen-list.md) ghi CRUD, trạng thái, luồng và phụ trách theo yêu cầu §§08–09, 15.
-- **Cách vận hành đề xuất** gồm phạm vi tài khoản và lớp, phân công duyệt học liệu và đề xuất chủ đề, cách tính tiến độ, chấm điểm, cách giả lập phiên và lưu dữ liệu. Các quyết định này cụ thể hóa luồng để nhóm triển khai và có thể điều chỉnh khi duyệt.
-- **Mở rộng** gồm ba ý tưởng AI ở §12, đặc tả ở cuối [luồng người dùng](user-flow.md). Chế độ tối toàn trang, PWA và cá nhân hóa lộ trình ở ngoài phạm vi MVP. Vùng 3D có nền tối cố định như một phần định hướng hình ảnh.
+- **Cốt lõi** gồm 32 màn hình hiện có, trong đó có 16 tệp nền tảng, 9 trang dùng chung và 7 trang bổ sung để hoàn tất luồng. Giữ bốn vai trò, mã, tên tệp và bố cục Desktop/Mobile. Dùng hộp thoại, tab hoặc ngăn chi tiết trong các trang hiện có cho các trạng thái bổ sung. [Bảng kiểm kê](screen-list.md).
+- **Nghiệp vụ MVP** gồm danh mục 11 hệ, Atlas, SVG tương tác, bài học cơ quan, thẻ theo nhóm, quiz theo bộ, tiến độ cá nhân, lớp tham gia bằng mã, biên tập và duyệt học liệu, tài nguyên, cấu hình mẫu và đề xuất đến khi hoàn tất. Dùng chung dịch vụ mock, form có kiểm tra và trạng thái tải/rỗng/thành công/lỗi. [Luồng người dùng](user-flow.md).
+- **Ngoài MVP** gồm ba ý tưởng AI ở §12, chế độ tối toàn trang, PWA, cá nhân hóa và tích hợp dịch vụ thật. Vùng 3D giữ nền tối như bản hiện tại.
 
 ## Định hướng hình ảnh
 
@@ -22,16 +22,16 @@ UI/UX Pro Max gợi ý tương phản cao, sắc xanh y khoa, vùng chạm rộn
 
 ## Vai trò và điều hướng
 
-| Vai trò hiển thị | Điểm bắt đầu | Nghiệp vụ | Phạm vi mặc định đề xuất |
+| Vai trò hiển thị | Điểm bắt đầu | Nghiệp vụ | Phạm vi |
 | --- | --- | --- | --- |
 | Khách (Visitor) | X01 · Trang chủ công khai | Xem tổng quan các hệ, khám phá mô hình mẫu, gửi đề xuất chủ đề và xem trạng thái. | Hệ công khai, mô hình mẫu đã xuất bản, đề xuất của mình qua mã tra cứu. |
 | Sinh viên (Student) | S01 · Bảng điều khiển | Tham gia lớp bằng mã được cung cấp, học theo hệ, khám phá mô hình, đánh dấu đã thuộc, ôn thẻ, làm trắc nghiệm và xem tiến độ. | Lớp mình tham gia, học liệu đã xuất bản và dữ liệu học của mình. |
-| Giảng viên (Teacher) | T01 · Bảng điều khiển | Tạo lớp, chia sẻ mã lớp, xem tiến độ, tạo và quản lý cơ quan/mô hình, dựng học liệu SVG, soạn trắc nghiệm và thẻ. | Học liệu mình phụ trách, mã và thành viên của lớp mình quản lý, tiến độ của sinh viên trong lớp. |
-| Quản trị viên (Admin) | A01 · Bảng điều khiển | Thêm và phân quyền tài khoản, vô hiệu hóa, cấu hình hệ và đề mục, quản lý thư viện mô hình, xử lý học liệu và đề xuất. | Tài khoản, danh mục, nội dung chờ xử lý và cấu hình. |
+| Giảng viên (Teacher) | T01 · Bảng điều khiển | Tạo lớp, chia sẻ mã, xem tiến độ, soạn và gửi duyệt bài cơ quan, SVG, bộ quiz, nhóm thẻ. Xử lý đề xuất được giao. | Học liệu mình sở hữu, mã và thành viên lớp mình quản lý, tiến độ theo quyền lớp và đề xuất mình đang xử lý. |
+| Quản trị viên (Admin) | A01 · Bảng điều khiển | Quản lý tài khoản, cấu hình 11 hệ và đề mục, tài nguyên và mẫu công khai. Giao người xử lý đề xuất, duyệt và xuất bản học liệu. | Tài khoản, tài nguyên, danh mục, cấu hình và hàng đợi. Báo cáo cá nhân lớp thuộc khu vực Giảng viên. |
 
 Tài khoản tự đăng ký nhận vai trò Sinh viên. Quản trị viên cấp vai trò và trạng thái tài khoản theo phạm vi đề xuất trong luồng F11. Các tài khoản Quản trị viên dùng để trình diễn có sẵn trong dữ liệu mẫu. Sau khi đăng nhập, «Khu vực của tôi» luôn về dashboard của phiên hiện tại. Những tài liệu riêng của lớp và tài khoản được lọc theo quyền của bản ghi. [Hợp đồng dữ liệu mô phỏng](../.agents/skills/anatomar-design/references/mock-data.md).
 
-T07 cấp mã duy nhất khi giảng viên tạo lớp thành công và cho sao chép để chia sẻ. Tại S01, sinh viên nhập mã trong mục «Lớp của tôi». Mã hợp lệ của lớp đang mở thêm sinh viên vào danh sách thành viên dùng chung cho T07 và báo cáo T04. [Luồng F08](user-flow.md#f08--tạo-lớp-tham-gia-bằng-mã-và-đọc-tiến-độ).
+T07 cấp mã duy nhất khi tạo lớp. Sinh viên có thể tham gia nhiều lớp từ «Lớp của tôi» ở S01. T07 và T04 đọc cùng danh sách thành viên. Gỡ khỏi lớp chấm dứt quyền xem qua lớp đó. Lớp lưu trữ giữ bản tóm tắt tại thời điểm lưu trữ. Học liệu đã xuất bản dùng chung cho sinh viên đã đăng nhập, kể cả khi chưa vào lớp. [Luồng F08](user-flow.md#f08--tạo-lớp-tham-gia-bằng-mã-và-đọc-tiến-độ).
 
 Bản Figma dùng mã mẫu `GP-C1-7K4Q` của lớp «Giải phẫu C1». Chạm trường mã để điền mẫu trong prototype. Các trạng thái mã sai, lớp đã lưu trữ và lỗi kết nối có frame riêng. Nút sao chép minh họa xác nhận; tạo mã duy nhất và ghi thành viên thuộc hợp đồng dữ liệu khi triển khai. [Trạng thái F08 Desktop](https://www.figma.com/design/jzAM858NL0lg4GnAU2SP64/AnatomAR?node-id=167-11953) · [Trạng thái F08 Mobile](https://www.figma.com/design/jzAM858NL0lg4GnAU2SP64/AnatomAR?node-id=167-12575).
 
@@ -39,7 +39,7 @@ Bản Figma dùng mã mẫu `GP-C1-7K4Q` của lớp «Giải phẫu C1». Chạ
 
 | Cách | Màn hình | Cách thể hiện |
 | --- | --- | --- |
-| Sơ đồ cơ thể tương tác SVG | S02 · Học theo hệ, T05 · Dựng học liệu SVG | Sinh viên chọn hệ và hotspot để đọc thông tin, mở mô hình đã xuất bản hoặc gửi đề xuất khi thiếu học liệu. Giảng viên tạo chú thích và gửi duyệt để sử dụng theo hệ. |
+| Sơ đồ cơ thể tương tác SVG | S02 · Học theo hệ, T05 · Dựng học liệu SVG | Sinh viên chọn hệ và hotspot để định vị, đọc thông tin nhanh, mở bài cơ quan đã xuất bản hoặc gửi đề xuất khi thiếu bài. Giảng viên tạo chú thích và gửi duyệt theo hệ. |
 | Mô hình 3D toàn thân | X01 · Trang chủ, S02 · Học theo hệ | Xoay, nghiêng góc nhìn, thu phóng, đặt lại, bật nhiều lớp và xem thông tin nhanh của cơ quan đang thấy. |
 | Mô hình cơ quan và hoạt ảnh | P02 · Mô hình mẫu, S03 · Mô hình cơ quan | Đổi góc nhìn, xoay, phóng to, chọn một cấu trúc và chủ động phát hoạt ảnh có sẵn. Danh sách và chi tiết bằng văn bản vẫn dùng khi 3D gặp lỗi. |
 | Thẻ ghi nhớ | S05 · Thẻ ghi nhớ | Nhớ trước khi hiện đáp án. Tự đánh giá «Đã thuộc» hoặc «Cần ôn lại» từng thẻ và ôn lại nhóm cần củng cố. |
@@ -51,8 +51,8 @@ Bản Figma dùng mã mẫu `GP-C1-7K4Q` của lớp «Giải phẫu C1». Chạ
 | --- | --- | --- |
 | Public | Khám phá, xem mẫu, gửi đề xuất | Điều hướng, tiêu đề, nội dung theo nhiệm vụ và lối quay về. |
 | Atlas 3D | Quan sát giải phẫu | Vùng xem toàn thân, lớp, camera, highlight bề mặt và tooltip thông tin nhanh. |
-| Sơ đồ SVG | Chọn cơ quan và học liệu | Chọn hệ bằng nút, chọn hotspot theo tọa độ của sơ đồ, đọc tình trạng và mở «Xem mô hình 3D» hoặc «Gửi đề xuất học liệu». |
-| Mô hình 3D chi tiết | Nghiên cứu cấu tạo | S03 có danh sách cấu trúc, hoạt ảnh nếu có và hành động đánh dấu đã thuộc. |
+| Sơ đồ SVG | Chọn cơ quan và học liệu | Bộ chọn hệ, hotspot hoặc danh sách tương đương. Thẻ chi tiết hiện «Xem học liệu» khi có bài, «Xem mô hình 3D» nếu có GLB, hoặc «Gửi đề xuất học liệu» khi thiếu bài. |
+| Chi tiết cơ quan | Nghiên cứu cấu tạo | S03 có văn bản, danh sách cấu trúc, các phương tiện đang dùng được, dấu đã thuộc và lối qua bộ quiz/nhóm thẻ liên quan. |
 | Auth | Đăng nhập, đăng ký, đặt lại mật khẩu | Một cột, nhãn trường, lỗi gần trường và hành động tiếp theo. |
 | Study | Học bằng thẻ hoặc trắc nghiệm | Một thẻ/câu mỗi lượt, chỉ báo tiến trình, điều khiển đi tiếp và phản hồi. |
 | Dashboard | Xem tiến độ và việc cần xử lý | Số liệu có mẫu số hoặc kỳ thống kê, liên kết đến danh sách liên quan. |
@@ -60,11 +60,13 @@ Bản Figma dùng mã mẫu `GP-C1-7K4Q` của lớp «Giải phẫu C1». Chạ
 
 Các mẫu và wireframe desktop/mobile nằm trong [bố cục](../.agents/skills/anatomar-design/references/layout.md). Cấu tạo và hành vi ở [thành phần](../.agents/skills/anatomar-design/references/components.md), [tương tác](../.agents/skills/anatomar-design/references/interaction.md) và [trình xem 3D](../.agents/skills/anatomar-design/references/viewer-3d.md).
 
+Tái sử dụng thanh điều hướng theo vai trò, cảnh báo tải/rỗng/lỗi, form, hộp thoại và ngăn chi tiết. S02/P02/S03 dùng thẻ thông tin cơ quan và trạng thái tài nguyên chung. T02–T08 và A02–A06 dùng cùng mẫu bảng, form và xác nhận khi phù hợp. T03/T08 dùng nhóm điều khiển lưu nháp, xem trước và gửi duyệt chung. S01/T04 dùng cùng thẻ tóm tắt tiến độ.
+
 ## Quy ước triển khai sau
 
 - Dùng tiếng Việt có dấu, câu ngắn và động từ cụ thể. Thống nhất «Hệ cơ quan», «Cơ quan», «Cấu trúc», «Lớp hiển thị», «Lớp học», «Thẻ ghi nhớ», «Trắc nghiệm». Dùng `vi-VN` khi hiển thị thời gian và số.
 - Dùng HTML ngữ nghĩa, CSS custom properties và JavaScript dạng module theo nhiệm vụ. SVG và Three.js dùng ID ổn định để nối hình minh họa với dữ liệu học. Giữ điều khiển là phần tử HTML.
-- Dữ liệu xuất phát từ `db.json`. Khi triển khai, để một module dữ liệu đọc JSON và áp dụng các thao tác ghi mô phỏng. Dùng tài khoản, mật khẩu và thông tin giả lập. [Mô hình dữ liệu](../.agents/skills/anatomar-design/references/mock-data.md).
+- Khi triển khai, mọi trang dùng `js/api.js` đọc dữ liệu gốc từ `db.json`, lưu thay đổi demo trong `localStorage` và giữ phiên bằng `sessionStorage`. Dịch vụ thống nhất xác thực, lọc bản ghi, kiểm tra nghiệp vụ, lỗi và thử lại. [Hợp đồng mock](../.agents/skills/anatomar-design/references/mock-data.md).
 - Thiết kế mô hình, chú thích và điều khiển theo [đặc tả trình xem](../.agents/skills/anatomar-design/references/viewer-3d.md). Ghi nguồn và giấy phép riêng của mỗi tài nguyên khi chọn dữ liệu cho sản phẩm.
 - Dùng WCAG 2.2 AA làm mục tiêu thiết kế. Kiểm tra bàn phím, trình đọc màn hình, zoom, giảm chuyển động và khả năng đọc chi tiết khi WebGL lỗi. [Đặc tả tiếp cận](../.agents/skills/anatomar-design/references/accessibility.md).
 
@@ -72,7 +74,33 @@ Các mẫu và wireframe desktop/mobile nằm trong [bố cục](../.agents/skil
 
 Danh mục dùng 11 hệ theo OpenStax và mã thuật ngữ FIPAT TA2. Atlas, hotspot SVG và mô hình chi tiết dùng chung `organId`. Mỗi cấu trúc có hệ chính, có thể có thêm liên kết chức năng hoặc ngữ cảnh với hệ khác. «Nội tạng» là công tắc hiển thị của Atlas. Danh mục công khai P01 có đủ 11 hệ. Mẫu SVG hiện có của S02 dùng Tim và Phổi trái. [Kết quả rà soát và đối chiếu tài nguyên](../docs/anatomy-audit.md).
 
+A03 cấu hình trình bày, đề mục và giảng viên phụ trách trên 11 ID và tên chuẩn cố định. S02 truyền ID hệ đang học và ID cơ quan qua S03, S04 và S05. S06 dùng ID lượt làm để mở kết quả theo phiên. Tiến độ S01/T04 dùng một dấu cho mỗi cặp sinh viên–cơ quan. Một bài thuộc nhiều hệ có thể đóng góp cho từng hệ và chỉ đếm một lần ở tổng hợp chung.
+
+### Nội dung và tài nguyên
+
+Một bài cơ quan đã xuất bản mở được ở S03 bằng nội dung có nguồn và cấu tạo đã duyệt. Ảnh, SVG minh họa, GLB và hoạt ảnh có tình trạng và quyền hiển thị riêng. Atlas và hotspot có thể giới thiệu một cơ quan đã định danh đang chờ bài học. Sơ đồ hệ xuất bản cần SVG và chú thích hợp lệ. Danh sách S02 và văn bản S03 vẫn dùng khi tài nguyên thiếu hoặc tải lỗi.
+
+T06, T05, T03 và T08 soạn bài cơ quan, sơ đồ, bộ quiz và nhóm thẻ theo phiên bản do một giảng viên sở hữu. A04 quản lý tài nguyên và giấy phép. A05 duyệt đúng bản gửi và cập nhật phiên bản đang công bố. Tiếp nhận đề xuất lưu công việc cần làm. Học liệu đáp ứng đã xuất bản đưa đề xuất sang «Đã hoàn tất» và cập nhật X07 cho sinh viên hoặc tra cứu P03 cho khách. [F09–F13](user-flow.md#f09--soạn-cơ-quan-trắc-nghiệm-sơ-đồ-và-thẻ).
+
 ## Duyệt và bàn giao
+
+Các mục bàn giao Figma bên dưới mô tả bản mẫu đã kiểm tra. Dùng đặc tả nghiệp vụ hiện tại cho trạng thái bổ sung như bài chỉ có văn bản, hoàn tất đề xuất và quyền trên bản ghi. Cập nhật các ví dụ tương ứng trong mockup hiện có trước khi nghiệm thu thiết kế cùng nhóm.
+
+### Các trường hợp nghiệm thu MVP
+
+| Trường hợp | Kết quả cần thấy |
+| --- | --- |
+| S02 → S03 → S04/S05 → S01 | Hotspot và danh sách mở cùng `organId`. Bài có văn bản vẫn học được khi thiếu GLB. Trở về đúng hệ. Một dấu cập nhật tiến độ ở các hệ liên quan và chỉ tính một lần trong tổng hợp. |
+| T07 → S01 → T04 | Mã hợp lệ thêm đúng một thành viên. Mã sai hoặc lớp lưu trữ giữ nguyên danh sách. Giảng viên lớp khác và giảng viên đã gỡ sinh viên không xem được tiến độ qua lớp đó. |
+| T03/T08 → A05 → S04/S05 | Gửi duyệt cả bộ/nhóm. Từ chối bản sửa giữ bản công bố trước. Xuất bản bản mới phục vụ lượt mới. Lượt dở và kết quả giữ phiên bản đã mở. |
+| S02/P03 → T01/A05 → X07/P03 | Tiếp nhận đề xuất giữ trạng thái đang chờ học liệu. Xuất bản đúng học liệu đã liên kết ghi hoàn tất và tạo một thông báo X07 cho sinh viên. P03 cho khách tra cứu hoàn tất và chỉ hiện lối đến mẫu công khai nếu được cấu hình. |
+| A04 → A06 → P02 | Tài nguyên sẵn sàng dùng trong học liệu. Mẫu công khai chỉ hiện phương tiện có quyền phù hợp. Lỗi tải phương tiện giữ phần văn bản. Lưu trữ tài nguyên đang được tham chiếu có cảnh báo phụ thuộc. |
+
+### Việc còn mở trước nghiệm thu
+
+- Chọn SVG, GLB, ảnh và clip sản phẩm có nguồn, kiểm giấy phép, ánh xạ cơ quan và xác minh các node đã đánh dấu. Bản mẫu cần tối thiểu đường học SVG tương tác, một mô hình cơ quan có thể xoay/zoom và các lượt ôn bằng thẻ/quiz. [Kiểm kê giải phẫu](../docs/anatomy-audit.md).
+- Chuẩn bị dữ liệu nghiệp vụ, kiểm thử quyền theo phiên, lớp, bài thiếu phương tiện, thay phiên bản và thông báo hoàn tất. Bộ nguyên mẫu Figma hiện minh họa các trạng thái đã dựng trước đợt rà soát tài liệu này.
+- Phương án hiện hành chia 32 màn hình cho hai thành viên. Đề gốc §15 mô tả nhóm ba người. Xác nhận phương án nộp bài với giảng viên và giữ lát cắt dọc riêng, PR đã review và video OBS theo từng màn hình đã duyệt. [Phân công nhóm](../docs/team-assignment.md).
 
 Tệp Figma chứa tổng quan và thành phần, thiết kế desktop và thiết kế mobile. Tên frame dùng mã trong bảng kiểm kê. Hình tim được tạo bằng ImageGen cho bản mô phỏng giao diện, chờ đối chiếu giải phẫu trước khi dùng làm học liệu. [Thiết kế trên Figma](https://www.figma.com/design/jzAM858NL0lg4GnAU2SP64/AnatomAR?node-id=0-1).
 

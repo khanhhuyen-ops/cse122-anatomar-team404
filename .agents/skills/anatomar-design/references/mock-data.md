@@ -1,76 +1,68 @@
 # Dữ liệu và trạng thái nghiệp vụ mô phỏng
 
-Thiết kế theo [yêu cầu dữ liệu §§10, 13](../../AnatomAR-project-requirements.md). `db.json` ở gốc là nguồn đọc ban đầu, với ID và thời điểm tạo/cập nhật. Chuẩn bị 5–8 bản ghi mẫu cho mỗi thực thể tối thiểu ở giai đoạn triển khai. Có thể đọc tệp qua một module dữ liệu và lưu thay đổi bản demo trong trình duyệt. JSON Server hoặc MockAPI có thể thay cho adapter nếu nhóm chọn. Dùng dữ liệu giả lập. Kiểm tra vai trò mô phỏng hành vi giao diện. Phiên, địa chỉ email và mật khẩu dùng cho demo trong môi trường học tập.
+Hợp đồng triển khai MVP theo [đề bài §§10, 13](../../AnatomAR-project-requirements.md) và [luồng F01–F13](../../../../design/user-flow.md). Dữ liệu giải phẫu hiện có trong [db.json](../../../../db.json). Các bảng dưới đây đặc tả phần dữ liệu nghiệp vụ cần thêm khi triển khai.
 
-## Thực thể tối thiểu
+## Một dịch vụ mock
 
-| Tập dữ liệu | Trường nghiệp vụ | Người xem hoặc sửa |
-| --- | --- | --- |
-| `users` | `id`, tên, email mẫu, vai trò, trạng thái hoạt động/vô hiệu hóa, tùy chọn hiển thị | Chủ tài khoản xem và sửa tên/tùy chọn. Quản trị viên tạo và quản lý tài khoản mẫu. |
-| `bodySystems` | ID, tên và thứ tự của 11 hệ theo OpenStax. Nội dung học có tóm tắt, đề mục, SVG minh họa và trạng thái riêng. | Khách xem danh mục công khai. Sinh viên xem học liệu đã xuất bản. Quản trị viên quản lý nội dung học. |
-| `organs` | Hệ, tên và tên gọi khác, vị trí, chức năng, cấu trúc, tọa độ SVG, tài sản và nguồn | Khách xem mẫu trong cấu hình. Sinh viên xem bản đã xuất bản. Giảng viên soạn bản mình phụ trách; quản trị viên duyệt. |
-| `organModels` | Mã cơ quan, loại tệp GLB/SVG/ảnh, đường dẫn, nguồn, giấy phép, văn bản thay thế và metadata xem | Cấu hình và lưu trữ qua A04. T06 chọn hoặc đề nghị liên kết tài nguyên. P02/S03 đọc tài nguyên của nội dung đang hiển thị. |
-| `quizQuestions` | Hệ, bộ câu hỏi, thứ tự, nội dung, lựa chọn, đáp án đúng và giải thích | Giảng viên soạn. Sinh viên nhận nội dung bài và lựa chọn, xem đáp án sau khi nộp. |
-| `quizAttempts` | Sinh viên, hệ, mã bài, bản câu hỏi cố định, đáp án đã chọn, trạng thái và kết quả | Sinh viên tạo, cập nhật khi nháp, nộp và xem lượt của mình. Giảng viên xem qua báo cáo lớp. |
-| `flashcards` | Hệ, cơ quan liên quan nếu có, nhóm, thứ tự, gợi nhớ, đáp án, metadata hình và trạng thái | Giảng viên soạn. Sinh viên đọc thẻ đã xuất bản. |
-| `memorizedMarkers` | Mã sinh viên, mã cơ quan, thời điểm đánh dấu và trạng thái hoạt động nếu lưu lịch sử | Sinh viên xem, đánh dấu và bỏ dấu của mình. Giảng viên đọc số liệu qua báo cáo lớp mình. |
+- Mọi trang dự kiến dùng chung `js/api.js`. Dịch vụ đọc `db.json` lúc khởi tạo kho demo, lưu thay đổi nghiệp vụ vào một kho `localStorage` có phiên bản schema và giữ phiên hiện tại trong `sessionStorage`. Các trang gọi cùng thao tác qua JavaScript bất đồng bộ. Dữ liệu demo đồng bộ qua điều hướng và đổi vai trò trong cùng trình duyệt. Phạm vi nghiệm thu mock là một tab thao tác tại một thời điểm.
+- Mỗi thao tác xác thực lại phiên, vai trò và phạm vi bản ghi. Lấy ID người thực hiện từ phiên. Bản ghi trả về chỉ chứa trường cần cho vai trò và màn hình. Tài khoản, mật khẩu và mã dùng cho demo đều giả lập. Kiểm tra quyền của mock mô tả hành vi frontend. Dịch vụ thật sẽ cần kiểm soát quyền ở máy chủ.
+- Mỗi lần ghi kiểm tra dữ liệu trên bản mới nhất rồi lưu một thay đổi thống nhất. Khi nghiệp vụ tạo nhiều kết quả, như xuất bản và hoàn tất đề xuất, các kết quả được ghi cùng lần. Thử lại cùng thao tác dùng lại `operationId`. Phiên bản hoặc trạng thái vừa đổi trả lỗi xung đột. Tải lại trước khi quyết định tiếp.
+- Kết quả thao tác trả dữ liệu hoặc mã lỗi, thông báo và lỗi theo trường khi có. `401` hết phiên, `403` sai vai trò ở khu vực riêng, `404` thiếu/đã ẩn/ngoài phạm vi bản ghi, `409` trùng hoặc xung đột, `422` đầu vào sai. Lỗi kết nối giữ đầu vào, cho thử lại và giữ dữ liệu đã xác nhận gần nhất nếu có. X08/X09 theo [F04](../../../../design/user-flow.md#f04--tài-khoản-phiên-và-thông-tin-cá-nhân).
 
-Thực thể giải phẫu dùng ID duy nhất, ổn định qua 3D, SVG, danh sách và chi tiết. `systemId` chỉ hệ chính. `systemIds` và `memberships` giữ liên kết qua nhiều hệ, với vai trò `primary`, `functional` hoặc `context`. `parentId` thể hiện quan hệ bộ phận. `anatomicalRelationships` giữ các quan hệ nối, dẫn lưu, phân nhánh hoặc đi qua. Tọa độ `x` và `y` chuẩn hóa theo `viewBox` thuộc sơ đồ SVG. Mỗi phiên bản mô hình khai báo `visualLayerId`, ánh xạ hình học đã xác minh tới ID thực thể, góc mặc định và clip nếu có. Nhiều mesh có thể trỏ cùng ID. [Đối chiếu các nguồn giải phẫu](../../../../docs/anatomy-audit.md).
+## Các tập dữ liệu và quyền
 
-## Dữ liệu bổ trợ đề xuất
+Mọi bản ghi nghiệp vụ có `id`, `createdAt` và `updatedAt`. Dùng ISO cho thời gian và `vi-VN` khi hiển thị. Chuẩn bị 5–8 bản ghi mẫu có ý nghĩa theo đề bài cho các thực thể nghiệp vụ ở giai đoạn triển khai. `bodySystems` giữ đầy đủ 11 mục. `organs` tiếp tục dùng danh mục đã kiểm kê.
 
-| Tập dữ liệu | Công dụng |
+| Tập dữ liệu | Trường và quy tắc chính |
 | --- | --- |
-| `classes` | Tên lớp, mã tham gia duy nhất `joinCode`, giảng viên phụ trách, danh sách ID sinh viên, trạng thái mở/lưu trữ. |
-| `quizzes` | Nhóm các câu hỏi theo hệ, phiên bản, tiêu đề và quy trình xuất bản. |
-| `flashcardReviews` | Lượt ôn theo sinh viên/hệ, vị trí đang xem, đánh giá từng thẻ và thời điểm hoàn thành. |
-| `visualLessons` | Sơ đồ/học liệu SVG theo hệ, mẫu SVG, danh sách chú thích, liên kết mô hình và phiên bản. |
-| `moderationRequests` | Loại nội dung, người gửi, bản cần duyệt, quyết định, lý do và thời điểm xử lý. |
-| `topicSuggestions` | Loại chủ đề, tên, lý do, trạng thái và phản hồi. Đề xuất công khai có mã tra cứu. Đề xuất từ S02 Sơ đồ SVG tham chiếu sinh viên, cơ quan, hệ và người nhận theo phạm vi phụ trách hoặc hàng đợi quản trị viên. |
-| `notifications` | Người nhận, hành động, bản ghi đích và thời điểm đọc. |
-| `publicSettings` | Hệ ưu tiên, thứ tự và danh sách mẫu công khai đang dùng. |
+| `users` | `displayName, email, role, status`, tùy chọn giảm chuyển động. Chủ phiên sửa tên/tùy chọn. A02 tạo/sửa sinh viên, giảng viên và trạng thái. Tài khoản quản trị mẫu chỉ đọc. |
+| `bodySystems` | 11 `id` và tên chuẩn cố định. A03 sửa cấu hình hiển thị, `teacherId` phụ trách đề xuất tùy chọn, đề mục, thứ tự và lưu trữ từng đề mục. |
+| `organs` | ID giải phẫu, tên, `systemId, systemIds, memberships, parentId`, nguồn TA2 khi có. T06 có thể đề xuất hồ sơ mới trong bản nháp. A05 đối chiếu, hợp nhất với ID hiện có nếu trùng hoặc đưa ID mới vào danh mục khi duyệt. |
+| `organModels` | Thư viện A04 của ảnh, SVG, GLB và hoạt ảnh. `kind, path` hoặc tham chiếu clip nội bộ, `author, sourceUrl, license, altText, publicUseAllowed, status`, ID giải phẫu/ánh xạ và mô tả clip khi có. Quản trị viên đăng ký, kiểm tra và lưu trữ. Giảng viên chọn tài nguyên sẵn sàng. |
+| `quizQuestions` | `quizId, versionId, order, promptVi, options, correctOptionId, explanationVi` và `organId` tùy chọn. A–D có ID ổn định trong câu. Đọc đáp án và giải thích ở S06 sau nộp. |
+| `quizAttempts` | `studentId, quizId, versionId, answers, status, submittedAt, result`. Một lượt đang làm cho mỗi sinh viên và bộ. Chỉ chủ lượt vào S06. T04 đọc tóm tắt theo quyền lớp. |
+| `flashcards` | `groupId, versionId, order, front, back`, `organId` và ảnh tùy chọn. Có ít nhất gợi nhớ và đáp án. Hình mang mô tả phù hợp. |
+| `memorizedMarkers` | Một bản ghi cho mỗi cặp `studentId, organId`, với `active, markedAt`. Chỉ sinh viên của phiên đặt hoặc bỏ dấu. Báo cáo dùng chung phép tính bên dưới. |
+| `classes` | `name, teacherId, joinCode, studentIds, status`. Giảng viên tạo lớp của mình. Mã duy nhất trong kho, kể cả lớp lưu trữ. Đổi tên giữ mã. Sinh viên có thể thuộc nhiều lớp. |
+| `organLessons`, `visualLessons`, `quizzes`, `flashcardGroups` | Mỗi bản ghi có `ownerId, publishedVersionId, archivedAt`. Mỗi `organId` có tối đa một bài cơ quan chưa lưu trữ. Các loại khác gắn một `systemId`. Mỗi hệ có tối đa một sơ đồ đang công bố và có thể có nhiều bộ quiz/nhóm thẻ. |
+| `contentVersions` | `contentType, contentId, versionNumber, state` và dữ liệu bản soạn. Mỗi học liệu có tối đa một bản đang soạn hoặc gửi duyệt. Bản bài cơ quan chứa vị trí, chức năng, cấu tạo, nguồn và các tham chiếu tài nguyên tùy chọn. Bản SVG chứa `svgAssetId` và `annotations`. Câu hỏi và thẻ gắn `versionId` trong tập dữ liệu tương ứng. |
+| `flashcardReviews` | `studentId, groupId, versionId`, tập thẻ, vị trí, đánh giá và trạng thái. Ưu tiên tiếp tục lượt dở của nhóm. Ôn lại giữ đúng tập «Cần ôn lại» của lượt vừa xong. |
+| `moderationRequests` | `contentType, contentId, versionId, submittedBy, status, reviewedBy, decidedAt, reviewReason`. A05 duyệt đúng phiên bản. Chủ sở hữu gửi, rút khi đang chờ và xem quyết định. |
+| `topicSuggestions` | `source, topicType, requestedName, note, systemId`, `organId` nếu đã định danh. Sinh viên gửi kèm hai ID từ S02. Đề xuất khách có tên tự do thì gắn ID phù hợp lúc tiếp nhận. Khách có `lookupCode`, sinh viên có `requesterId`. Lưu `assigneeId, status, responseVi`, tham chiếu `targetContentId` lúc liên kết và `fulfilledVersionId, fulfilledAt` lúc hoàn tất. |
+| `notifications` | `recipientId, event, entityId, readAt` và tham chiếu bản ghi đích. X07 lọc theo người nhận. Mỗi quyết định hoặc lần hoàn tất gửi một thông báo cho mỗi người nhận. |
+| `publicSettings` | Danh sách bài cơ quan mẫu đã xuất bản và thứ tự. A06 chọn mẫu. P01 và P02 cùng đọc cấu hình. P01 vẫn dùng đủ 11 hệ. |
 
-## Trường dùng trong prototype
+## ID, học liệu và tài nguyên
 
-| Màn hình | Trường và kiểm tra khi triển khai |
+- `systemId` trong URL là hệ đang học. `organs.systemId` là hệ chính trong danh mục. S02 và tiến độ dùng các liên hệ `primary` và `functional` trong `memberships` để xác định cơ quan của hệ. `context` dùng để tham chiếu giải phẫu. Một `organId` có thể thuộc nhiều hệ. `parentId` thể hiện cấu trúc con, còn `visualLayerId` điều khiển lớp Atlas.
+- Atlas ánh xạ node/mesh đã đối chiếu đến ID giải phẫu. S02 lấy cùng `organId` khi bấm hotspot hoặc chọn từ danh sách. `contentVersions.annotations[]` của SVG có `id, organId, labelVi, x, y`. `x, y` chuẩn hóa từ 0 đến 1 trong vùng vẽ của SVG. Hotspot có thể xuất hiện trước khi có bài cơ quan. S03 dùng `organId` đã chọn và `structureId` tùy chọn cho bộ phận.
+- Dịch vụ trả tình trạng bài học theo phiên bản đang công bố, riêng với tình trạng từng loại phương tiện. Tài nguyên có vòng đời «Nháp → Sẵn sàng → Lưu trữ». Trình xem phân biệt chưa gắn tài nguyên, đang tải, dùng được và lỗi tải. Ảnh, SVG minh họa của bài cơ quan, GLB và hoạt ảnh là tham chiếu tùy chọn. Tài nguyên gắn vào bản xuất bản phải đáp ứng loại, quyền và nguồn. Bài cơ quan có nội dung văn bản dùng được vẫn mở được khi thiếu phương tiện.
+- Bài SVG của hệ cần SVG nguồn và hotspot hợp lệ để xuất bản. Khi chưa có sơ đồ của hệ hoặc SVG tải lỗi, S02 cho chọn cơ quan từ danh sách. Khi thiếu GLB hoặc WebGL lỗi, S03 vẫn đọc nội dung và đặt dấu. Hoạt ảnh phụ thuộc clip/tệp tương thích với mô hình được chọn. Khi thiếu hoạt ảnh, mô hình tĩnh vẫn dùng được. A04 chặn lưu trữ tài nguyên còn tham chiếu từ bản hiện hành hoặc mẫu công khai. Thay tệp dùng bản ghi mới. Bản lịch sử giữ ID cũ.
+- T03 quản lý bộ và câu hỏi. T08 quản lý nhóm và thẻ. Gửi duyệt ở cấp bộ/nhóm. `organId` có thể gắn trên từng câu hoặc thẻ để lọc khi bước vào S04/S05 từ S02/S03. Khi mở bộ/nhóm, học trọn nội dung và thứ tự của phiên bản đã chọn.
+
+## Quyền và chuyển trạng thái
+
+| Nghiệp vụ | Quy tắc ghi và phản hồi |
 | --- | --- |
-| S02, T05 | `bodySystems.id`, `organs.id/systemId`, `visualLessons.annotations[]` gồm `id, organId, labelVi, x, y`. Tọa độ neo chuẩn hóa từ 0 đến 1 trong `viewBox`, quy đổi cùng hình. SVG kiểm tra mô hình đã xuất bản và đề xuất đang chờ theo `organId`. Atlas đọc tên, hệ, vị trí và chức năng. |
-| T03, S04, S06 | `quizQuestions` có `quizId, order, promptVi, options, correctOptionId, explanationVi`. `options` gồm bốn ID ổn định A–D và văn bản. Kết quả dùng bộ câu cố định trong `quizAttempts`. |
-| P03, S02, T01, A05 | `topicSuggestions` lưu `source, topicType, name, bodySystemId, organId, note, status, reply`. Khách có `lookupCode`. Sinh viên có `requesterId` và `assigneeId` khi phân công được. Quyền tra cứu giới hạn theo mã hoặc phiên của người gửi. |
-| S01, T07, T04 | `classes` lưu `id, name, joinCode, teacherId, studentIds, status`. T07 tạo mã tự động, hiển thị mã cho giảng viên phụ trách. S01 nhập mã và đọc danh sách lớp của phiên sinh viên. T04 dùng cùng `studentIds` khi lọc báo cáo. |
-| A02, X05 | `users` lưu `displayName, email, role, status`. X05 chỉnh `displayName`. A02 chỉnh quyền và trạng thái theo phạm vi quản trị. |
-| A04, T06 | `organModels` lưu `organId, fileType, path, author, sourceUrl, license, altText, status` cùng metadata 3D nếu có. Tài nguyên thiếu nguồn hoặc giấy phép ở bản nháp. |
-| A05, X07 | `moderationRequests` lưu `entityType, entityId, versionId, submittedBy, status, reviewReason`. `notifications` lưu mã yêu cầu và vai trò đích. Sinh viên chỉ nhận bản xem được khi phiên bản đã xuất bản. |
+| Đổi vai trò và vô hiệu hóa | Xử lý lớp mở của giảng viên trước khi đổi vai trò hoặc vô hiệu hóa. Đổi vai trò của sinh viên xóa ID khỏi danh sách thành viên đang mở trong cùng thao tác và giữ lịch sử học. Vô hiệu hóa sinh viên giữ danh sách lớp và lịch sử. Kiểm tra lại tài khoản ở mọi thao tác của phiên. |
+| Tham gia và báo cáo lớp | Sinh viên đang hoạt động nhập mã, dịch vụ bỏ khoảng trắng đầu/cuối và chuẩn hóa chữ hoa. Kiểm tra lớp mở, rồi ghi `studentId` đúng một lần. T07 thêm thủ công dùng cùng quy tắc thành viên. Chỉ chủ lớp sửa, gỡ hoặc lưu trữ. T04 kiểm tra chủ lớp và thành viên hiện tại của lớp mở. Lưu trữ giữ danh sách và tóm tắt tại thời điểm lưu trữ. Gỡ khỏi lớp mở chấm dứt quyền xem qua lớp đó. Dữ liệu cá nhân và quyền truy cập học liệu đã xuất bản vẫn dùng được theo phiên sinh viên. |
+| Quyền sở hữu | Chủ học liệu là giảng viên có `ownerId` trên bản ghi. Quản trị viên gán lại chủ ở A05. Giảng viên phụ trách hệ tại A03 nhận đề xuất theo hệ. Khi mất quyền xử lý, đề xuất đang chờ/đã tiếp nhận về A05. Giảng viên chỉ xem và xử lý đề xuất hiện được giao, cùng báo cáo lớp mình. |
+| Duyệt và xuất bản | Nháp → Chờ duyệt → Xuất bản hoặc Từ chối. Từ chối cần lý do. Chỉ chủ sở hữu rút yêu cầu đang chờ, trả bản về nháp và giữ yêu cầu đã hủy. Chỉ Quản trị viên xuất bản và lưu trữ bản hiện hành. Cập nhật `publishedVersionId` khi duyệt bản mới. Công chúng và sinh viên tiếp tục thấy bản hiện hành trước đó trong lúc bản sửa chờ duyệt, theo quyền xem. |
+| Đề xuất | Đang chờ → Đã tiếp nhận → Đã hoàn tất, hoặc Đang chờ → Bị từ chối. Tra cứu P03 bằng mã, tra cứu của sinh viên bằng phiên. Khi xuất bản học liệu đã liên kết và đúng phạm vi, ghi hoàn tất và một thông báo X07 cho sinh viên. Học liệu hiện hành đã đáp ứng có thể được A05 xác nhận. Khách theo dõi kết quả qua mã. Đề xuất đã tiếp nhận giữ trạng thái khi bản học liệu bị từ chối. Lặp gửi cùng sinh viên/cơ quan trả yêu cầu đang mở. |
+| Quiz và thẻ | Xác minh bộ/nhóm đang xuất bản khi bắt đầu. Ghim phiên bản đã chọn. Lượt đã mở có thể tiếp tục bằng phiên bản đó kể cả khi bộ/nhóm đã được thay thế hoặc lưu trữ. Dùng `attemptId` hoặc ID lượt ôn để cập nhật. Nộp lại cùng lượt trả kết quả đã ghi. «Làm lại» tạo lượt mới từ phiên bản đang công bố nếu còn. |
+| Dấu ghi nhớ | Đặt trạng thái theo `organId` bằng phiên Sinh viên. Yêu cầu lặp trả cùng trạng thái. Bản bài học lưu trữ giữ dấu lịch sử, rời tập tiến độ hiện hành. |
 
-Mã demo `AR-7DH3` trỏ đề xuất Hệ nội tiết. Nguyễn Hà thuộc Giải phẫu A1 và có đề xuất Phổi trái. Tim dùng `organ.heart`, Phổi trái dùng `organ.lung-left`. Bộ «Tim và hệ mạch» dùng câu về buồng tim nối động mạch chủ với đáp án D, Tâm thất trái. `db.json` hiện có danh mục và liên kết giải phẫu. Tài khoản, học liệu xuất bản và bản ghi nghiệp vụ của các ví dụ trên dùng dữ liệu riêng khi triển khai.
+## Tiến độ và lịch sử học
 
-## Chuyển trạng thái và kiểm tra
+S01 và T04 dùng cùng phép tính. Với mỗi hệ, mẫu số là tập `organId` duy nhất có bài cơ quan đang xuất bản và quan hệ `primary` hoặc `functional` với hệ. Tử số là các ID trong tập đã có dấu hoạt động của sinh viên. Tổng nhiều hệ hợp nhất các ID trước khi đếm. Tổng 0 hiện «Chưa có học liệu». Tổng dương phân biệt «Chưa học», «Đang học» và «Hoàn thành». Ảnh, SVG, GLB, hoạt ảnh, thẻ và quiz có trạng thái riêng. T04 ở lớp lưu trữ dùng tóm tắt đã chốt.
 
-| Đối tượng | Chuyển trạng thái và điều kiện |
-| --- | --- |
-| Tài khoản | Hoạt động ↔ Vô hiệu hóa. Tài khoản quản trị mẫu chỉ đọc. Trước khi khóa hoặc đổi vai trò giảng viên cần xử lý các lớp đang mở do họ phụ trách. Phiên của tài khoản vừa vô hiệu hóa mất hiệu lực khi kiểm tra lại. |
-| Lớp | Mở → Lưu trữ. `joinCode` là duy nhất trong kho dữ liệu, kể cả mã lớp đã lưu trữ. Khi tạo lớp, cấp mã và lưu bản ghi trong cùng thao tác. Chỉ lớp mở nhận thêm thành viên. Lớp lưu trữ và báo cáo giữ ở chế độ chỉ đọc. |
-| Học liệu | Bản nháp → Đang chờ → Đã xuất bản hoặc Bị từ chối. Sửa bản bị từ chối rồi gửi bản mới. Hủy gửi khi đang chờ trả phiên bản về nháp, yêu cầu duyệt ghi «Đã hủy». Phiên bản xuất bản trước tiếp tục xuất hiện đến khi bản mới được duyệt. |
-| Danh mục và tài nguyên | Nháp → Đang sử dụng/Đã xuất bản → Đã lưu trữ. Chặn lưu trữ khi còn nội dung xuất bản hoặc mẫu công khai đang tham chiếu. Giữ tham chiếu lịch sử phục vụ kết quả đã lưu. |
-| Đề xuất | Đang chờ → Đã chấp nhận hoặc Bị từ chối. Chỉ nhận một quyết định cho mỗi phiên bản. Tra cứu bằng mã trả nội dung và phản hồi dành cho khách. |
-| Trắc nghiệm | Đang làm → Đã nộp. Chỉ một bản nháp đang mở cho mỗi sinh viên và bài. Sau nộp, giữ bộ câu hỏi và kết quả của lượt. «Làm lại» tạo lượt riêng. |
-| Ôn thẻ | Đang ôn → Hoàn thành khi đã đánh giá mọi thẻ trong lượt. Mỗi đánh giá là «Đã thuộc» hoặc «Cần ôn lại». Lượt «Ôn lại thẻ cần ôn» dùng tập thẻ chưa thuộc của lượt vừa xong. |
-| Dấu ghi nhớ | Không có dấu ↔ Đã thuộc, duy nhất nhận diện theo cặp sinh viên–cơ quan. Dấu của cơ quan đã lưu trữ vẫn giữ trong lịch sử và tạm rời mẫu số hiện hành. |
+Điểm quiz lấy số đúng trên tổng số câu của phiên bản đã ghim. Câu bỏ trống tính 0. S06 trình bày số đúng, tổng, tỷ lệ, đáp án và giải thích. Đánh giá thẻ thuộc lượt ôn, lưu riêng với dấu ghi nhớ cơ quan. Bảng tiến độ hiển thị kết quả quiz và thẻ bên cạnh tiến độ cơ quan, kể cả khi chưa có lượt học.
 
-Thống kê mức ghi nhớ theo hệ lấy số cơ quan đang xuất bản đã đánh dấu chia cho tổng số cơ quan đang xuất bản trong hệ. Tổng bằng 0 hiển thị «Chưa có học liệu». Với tổng dương, 0 là «Chưa học», từ 1 đến dưới tổng là «Đang học», bằng tổng là «Hoàn thành». Thống kê ôn thẻ và điểm trắc nghiệm hiển thị riêng. Điểm lấy số câu đúng chia số câu của lượt, bỏ trống tính sai. Hiển thị số đúng/tổng và phần trăm làm tròn một lần khi trình bày, dùng timestamp ISO ở dữ liệu và định dạng `vi-VN` khi hiển thị.
+## Nhóm thao tác dùng chung
 
-## Giao diện dữ liệu và phản hồi
+- Phiên và tài khoản. Đăng nhập, đăng ký, đặt lại mật khẩu mẫu, đọc phiên, đổi vai trò/trạng thái, đăng xuất.
+- Danh mục và học liệu. Đọc hệ, chi tiết cơ quan, sơ đồ, mẫu công khai, bộ quiz, nhóm thẻ, trạng thái bài và tài nguyên. Cùng cơ chế tra theo ID cho Atlas, SVG, chi tiết và lối học tiếp.
+- Lớp và học tập. Tạo lớp, tham gia, thêm/gỡ thành viên, lưu trữ, đọc tiến độ, đặt dấu, bắt đầu/tiếp tục/nộp quiz và đánh giá thẻ.
+- Soạn, duyệt và đề xuất. Lưu nháp, xem trước, gửi/rút, duyệt/từ chối, lưu trữ, bàn giao chủ. Gửi, tra cứu, giao, tiếp nhận/từ chối, liên kết và hoàn tất đề xuất. Đọc và đánh dấu thông báo.
 
-Các tên HTTP mô tả hành vi adapter. Bản demo tĩnh có thể cung cấp các thao tác tương đương qua một module JavaScript nhỏ.
-
-| Thao tác | Đọc / ghi khái niệm | Kết quả để dựng giao diện |
-| --- | --- | --- |
-| Tải hệ và mô hình | `GET /bodySystems`, `GET /organs`, `GET /organModels` | Danh sách có thể rỗng, bản ghi chỉ đọc theo quyền, URL mô hình và nguồn. |
-| Gửi / tra cứu chủ đề | `POST /topicSuggestions`, tra cứu theo mã qua adapter hoặc theo phiên sinh viên | Khách nhận mã tra cứu. Sinh viên thấy người nhận, trạng thái và phản hồi của đề xuất của mình. Lỗi giữ bản nháp. Yêu cầu lặp của cùng sinh viên và cơ quan đang chờ dùng lại trạng thái đã có. |
-| Đánh dấu / bỏ dấu | Đặt trạng thái theo cặp mã sinh viên và cơ quan | Trạng thái hiện tại và thời điểm. Gửi lại cùng thao tác giữ cùng kết quả. |
-| Ôn, lưu và nộp quiz | Tạo lượt, cập nhật bản nháp, gửi xác nhận của lượt | Trạng thái và dữ liệu đã lưu. Đáp án đúng và giải thích của quiz xuất hiện ở kết quả sau nộp. |
-| Soạn nội dung và duyệt | Đọc hoặc sửa bản nháp, gửi `moderationRequests`, quyết định theo phiên bản | Trạng thái mới, lý do nếu bị từ chối, thông báo cho người soạn. |
-| Quản lý tài khoản / lớp / tài nguyên | Đọc danh sách, tạo/sửa theo vai trò, đổi trạng thái | Bản ghi sau thay đổi, hoặc lý do và danh sách tham chiếu đang chặn. |
-| Tham gia lớp bằng mã | Dùng ID sinh viên từ phiên đang hoạt động. Bỏ khoảng trắng hai đầu, chuẩn hóa chữ hoa, tìm đúng mã lớp mở rồi thêm ID vào `studentIds`. | Trả tên lớp và trạng thái tham gia. Lặp lại trả trạng thái đã tham gia và giữ một bản ghi thành viên. Mã sai hoặc lớp lưu trữ giữ nguyên thành viên. Việc kiểm tra trạng thái lớp và ghi thành viên được thực hiện trong cùng thao tác. |
-
-Quy ước lỗi gồm 401 (hết phiên), 403 (thiếu quyền), 404 (không có bản ghi hoặc ngoài phạm vi), 409 (trùng hoặc dữ liệu vừa đổi), 422 (trường không hợp lệ), lỗi mạng (thử lại). Nếu đang nộp, hiển thị đúng một kết quả cho cùng mã thao tác. Khi tải thất bại, giữ dữ liệu đang xem nếu có và thông báo dữ liệu chưa cập nhật. Dữ liệu demo cần mẫu cho cả bốn vai trò, rỗng, lỗi, vô hiệu hóa, chờ, từ chối, hoàn thành và đã hủy/lưu trữ.
+Mẫu Figma dùng `organ.heart`, `organ.lung-left`, đề xuất công khai `AR-7DH3` và lớp `GP-C1-7K4Q`. Demo cần có cả bài đã xuất bản chưa gắn GLB và cơ quan có hotspot chưa có bài học để kiểm tra hai nhánh của S02.
