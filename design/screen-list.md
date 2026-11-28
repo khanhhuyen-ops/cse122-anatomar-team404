@@ -30,7 +30,7 @@ CRUD dùng C (Tạo), R (Đọc), U (Sửa), D (Hủy/lưu trữ/vô hiệu hóa
 
 | Mã | Mục tiêu và nhiệm vụ | Giao diện · Tệp | CRUD / Trạng thái riêng | Luồng | Phụ trách |
 | --- | --- | --- | --- | --- | --- |
-| S01 | Xem mức ghi nhớ theo hệ và tiếp tục học | Bảng điều khiển · `student-dashboard.html` | R · Chưa học, đang học, hoàn thành, lần ôn gần nhất | F04, F05, F06, F07 | SV1 |
+| S01 | Xem tiến độ, tiếp tục học và tham gia lớp bằng mã giảng viên cung cấp | Bảng điều khiển · `student-dashboard.html` | R/C thành viên · Lớp của tôi, mã trống/sai, lớp đã lưu trữ, đã tham gia, thành công, lỗi có thể thử lại. Tiến độ gồm chưa học, đang học và hoàn thành | F04, F05, F06, F07, F08 | SV1 |
 | S02 | Atlas 3D quan sát và xem thông tin nhanh. Sơ đồ SVG chọn hệ và hotspot để mở học liệu hoặc gửi đề xuất. | Học theo hệ · `student-system-view.html` | Atlas R · Hover/tap, lớp đang ẩn. SVG R/C · Mặc định, hover, đã chọn, có/chưa có học liệu, đang gửi, đang chờ, lỗi gửi. | F02, F03, F05, F07 | SV1 |
 | S03 | Quan sát một cấu trúc, xoay, phóng to và đánh dấu đã thuộc | Mô hình cơ quan · `student-organ-model.html` | R/U, C/D của dấu ghi nhớ · Thiếu hoạt ảnh, chi tiết dạng văn bản, đã thuộc/bỏ đánh dấu | F02, F05, F06 | SV2 |
 | S04 | Chọn hệ, làm bài vị trí/chức năng và nộp | Trắc nghiệm ghi nhớ · `student-memory-quiz.html` | C/R, U bản nháp · Chưa làm, đang làm, nộp lỗi, hoàn thành | F07 | SV2 |
@@ -47,7 +47,7 @@ CRUD dùng C (Tạo), R (Đọc), U (Sửa), D (Hủy/lưu trữ/vô hiệu hóa
 | T04 | Chọn lớp, sinh viên, hệ và đọc tiến độ chi tiết | Tiến độ sinh viên · `teacher-student-progress.html` | R · Chưa có điểm hoặc dấu đã thuộc, dữ liệu của lớp mình | F05, F08 | SV2 |
 | T05 | Dựng SVG, thêm nhiều chú thích theo cơ quan, đổi vị trí, xóa điểm và xem trước | Dựng học liệu SVG · `teacher-visual-builder.html` | C/R/U/D · Nháp, nhiều chú thích, lỗi tọa độ, xác nhận xóa điểm, xem trước, chờ duyệt, lưu trữ bản | F09, F10 | SV2 |
 | T06 | Sửa cơ quan, cấu hình mô hình và kiểm tra ánh xạ hình học 3D | Biên tập cơ quan · `teacher-organ-editor.html` (bổ sung) | C/R/U · Chưa lưu, lỗi nguồn/tài nguyên, chờ duyệt, lý do từ chối | F09, F10 | SV2 |
-| T07 | Tạo lớp, chỉnh danh sách sinh viên và lưu trữ lớp | Quản lý lớp · `teacher-class-management.html` (bổ sung) | C/R/U/D (lưu trữ) · Đang hoạt động, không có thành viên, trùng thành viên, chỉ đọc | F08 | SV2 |
+| T07 | Tạo lớp có mã duy nhất, sao chép mã, quản lý thành viên và lưu trữ lớp | Quản lý lớp · `teacher-class-management.html` (bổ sung) | C/R/U/D (lưu trữ) · Đang mở, mã đã cấp, đã sao chép, không có thành viên, trùng thành viên, lớp lưu trữ chỉ đọc | F08 | SV2 |
 | T08 | Soạn hoặc sửa thẻ, xem hai mặt và gửi duyệt | Soạn thẻ ghi nhớ · `teacher-flashcard-builder.html` (bổ sung) | C/R/U/D (lưu trữ) · Nháp, đang chờ, bị từ chối, đã xuất bản | F06, F09, F10 | SV2 |
 
 ## Quản trị viên

@@ -7,8 +7,8 @@ Các mã màn hình trỏ đến [bảng kiểm kê](screen-list.md). Phạm vi 
 | Phạm vi | Điểm vào và trang trực thuộc |
 | --- | --- |
 | Công khai | X01 → P01 hệ cơ quan, P02 mô hình mẫu, P03 gửi hoặc tra cứu đề xuất. X02 đăng nhập → X03 đăng ký hoặc X04 đặt lại mật khẩu. |
-| Sinh viên | S01 → S02 học theo hệ. Atlas 3D mở thông tin nhanh tại chỗ. Sơ đồ SVG → chọn hệ và cơ quan → S03 mô hình chi tiết hoặc hộp thoại đề xuất → X07 Thông báo. S01/S02 → S04 → S06. S01/S03 → S05. |
-| Giảng viên | T01 → T02 cơ quan và mô hình → T06 biên tập. T01 → T03 câu hỏi, T05 sơ đồ SVG, T08 thẻ, T07 lớp → T04 tiến độ. Hộp thoại Đề xuất học liệu mở từ T01 hoặc X07. |
+| Sinh viên | S01 → Lớp của tôi → nhập mã lớp → xem lớp đã tham gia. S01 → S02 học theo hệ. Atlas 3D mở thông tin nhanh tại chỗ. Sơ đồ SVG → chọn hệ và cơ quan → S03 mô hình chi tiết hoặc hộp thoại đề xuất → X07 Thông báo. S01/S02 → S04 → S06. S01/S03 → S05. |
+| Giảng viên | T01 → T02 cơ quan và mô hình → T06 biên tập. T01 → T03 câu hỏi, T05 sơ đồ SVG, T08 thẻ hoặc T07 quản lý lớp. T07 → tạo lớp → sao chép mã, xem thành viên hoặc mở T04. Hộp thoại Đề xuất học liệu mở từ T01 hoặc X07. |
 | Quản trị viên | A01 → A02 tài khoản, A03 hệ cơ quan, A04 thư viện, A05 hàng đợi, A06 cấu hình công khai. A05 dùng ngăn chi tiết cho học liệu và đề xuất. |
 | Sau đăng nhập | Menu của phiên → X05 hồ sơ, X06 cài đặt, X07 thông báo, xác nhận đăng xuất → X01. X08 thiếu quyền hoặc hết phiên. X09 nội dung không còn truy cập được. |
 
@@ -75,9 +75,11 @@ Kết thúc lượt hiển thị số thẻ đã đánh giá và hành động �
 
 S06 hiển thị số đúng/tổng, tỷ lệ, đáp án đã chọn, đáp án đúng và giải thích, kể cả câu sai hoặc bỏ trống. «Làm lại» tạo lượt mới. «Xem lại hệ cơ quan» quay về S02 ở đúng hệ. Khi chưa từng làm, S01 hiển thị «Chưa có lượt làm» tại phần điểm.
 
-## F08 · Quản lý lớp và đọc tiến độ
+## F08 · Tạo lớp, tham gia bằng mã và đọc tiến độ
 
-**Giảng viên · T01 → T07 → T04.** Tạo lớp, nhập tên và lưu. Chọn các tài khoản sinh viên mẫu để thêm thành viên. Thao tác lặp lại báo sinh viên đã có trong lớp. Có thể sửa tên lớp, gỡ thành viên khỏi lớp đang mở sau xác nhận hoặc lưu trữ lớp. Lưu trữ giữ danh sách và báo cáo ở chế độ chỉ đọc.
+**Giảng viên · T01 → T07.** Chọn «Tạo lớp», nhập tên và lưu. Khi tạo thành công, lớp ở trạng thái «Đang mở» và hệ thống cấp một mã duy nhất. Hộp thoại hiển thị tên lớp, mã dạng chỉ đọc và nút «Sao chép mã» để giảng viên tự chia sẻ. Giảng viên có thể mở lại mã của lớp đang mở từ danh sách lớp mình phụ trách. Đổi tên lớp giữ cùng mã. Lớp đã lưu trữ giữ danh sách và báo cáo ở chế độ chỉ đọc và dừng nhận thành viên qua mã. Giảng viên vẫn có thể thêm tài khoản sinh viên từ danh sách hoặc gỡ thành viên theo quyền hiện có.
+
+**Sinh viên · S01 → Lớp của tôi.** Từ bảng điều khiển, chọn «Tham gia lớp», nhập hoặc dán mã giảng viên cung cấp, rồi xác nhận. Lớp đang mở với mã hợp lệ được thêm ngay vào danh sách và tên lớp xuất hiện trong xác nhận. Cùng thao tác cập nhật danh sách thành viên mà giảng viên xem tại T07 và dùng tại T04. Nếu đã là thành viên, hiện «Bạn đã tham gia lớp này» và giữ một mục trong danh sách. Mã trống, không hợp lệ hoặc lớp đã lưu trữ có thông báo tại form. Khi kết nối lỗi, giữ mã đã nhập để thử lại. Chỉ tài khoản Sinh viên đang hoạt động dùng luồng này.
 
 T04 yêu cầu giảng viên chọn một lớp mình quản lý, một sinh viên trong danh sách và hệ hoặc «Tất cả hệ». Báo cáo ghi tỷ lệ cơ quan đã thuộc theo hệ, tình hình ôn thẻ và lượt trắc nghiệm gần nhất. Giữ trạng thái «Chưa có dữ liệu» riêng với «0 câu đúng». Giảng viên có thể quay về T07 để cập nhật danh sách. Dữ liệu học cá nhân được giữ khi gỡ một sinh viên. Phạm vi xem sinh viên đó được cập nhật theo danh sách lớp.
 

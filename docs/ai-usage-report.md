@@ -37,3 +37,12 @@ Mỗi prompt làm việc trên AnatomAR có một mục riêng theo thứ tự t
 - **Phần nhóm tự sửa**. Nhóm xác định phạm vi và hai nguồn chuẩn. Chưa ghi nhận chỉnh sửa thủ công sau lượt này. Nhóm còn cần duyệt các tên Việt, kiểm hình học và bên của 123 node được đánh dấu, chuẩn bị tài nguyên cho các hệ còn thiếu và đối chiếu tọa độ hotspot trên SVG thực.
 - **Cách kiểm chứng**. Kiểm tra ID, cây cha–con, quan hệ nhiều hệ, mã TA2, liên kết nội bộ và 37 trang OpenStax. So sánh mã băm của 13 GLB, đối chiếu 2.229 node và liên kết của 408 mục JSON. Mở lại Figma Desktop, xuất hai khung P01 để kiểm đủ thẻ và bố cục, kiểm nhãn tại bốn khung Atlas, đối chiếu Tim/Phổi trái trên các trạng thái SVG và kiểm tra các đích liên kết sẵn có của P01.
 - **Điều học được**. Tách hệ cơ quan, nhánh giải phẫu và công tắc hiển thị giúp phát hiện sai nhóm do dùng tên lớp làm hệ. Mã TA2 và tên node hỗ trợ kiểm tra thuật ngữ. Xác nhận hình dạng, phạm vi và bên của một mesh cần thêm bằng chứng hình học.
+
+## 2026-11-28 · Tạo lớp và tham gia bằng mã
+
+- **Công cụ**. Codex, Figma MCP, Figma Desktop, plugin phát triển cục bộ, PowerShell và Git.
+- **Prompt chính**. Cho giảng viên tạo lớp có mã riêng và sinh viên nhập mã do giảng viên cung cấp để tham gia.
+- **Phần AI sinh**. Cập nhật T07 để hiển thị và sao chép mã lớp. Thêm mục «Lớp của tôi» và form nhập mã ở S01 trên Desktop/Mobile. Nối các trạng thái tạo lớp, nhập mã, xác nhận, tham gia lại và bổ sung đặc tả F08, sitemap, bảng màn hình, hợp đồng dữ liệu.
+- **Phần nhóm tự sửa**. Nhóm nêu rõ quy trình chia sẻ mã qua giảng viên. Chưa ghi nhận thay đổi thủ công sau lượt này. Nhóm cần triển khai sinh mã duy nhất, sao chép thật, kiểm quyền, lưu thành viên và kiểm thử đồng bộ S01/T07/T04.
+- **Cách kiểm chứng**. Kiểm tra các đích prototype F08 trên hai trang, đối chiếu mã lớp mẫu, xuất khung T07, S01 và các hộp thoại. Phát hiện và sửa nền thẻ tiến độ trên Mobile để nội dung nằm đúng trong thẻ. Bản Figma dùng mã và trạng thái mẫu.
+- **Điều học được**. Mã tham gia thuộc bản ghi lớp. Danh sách sinh viên ở T07 và báo cáo T04 cần đọc cùng dữ liệu thành viên với thao tác tham gia ở S01. Gửi lại cùng mã cần trả trạng thái đã tham gia và giữ một mục thành viên.

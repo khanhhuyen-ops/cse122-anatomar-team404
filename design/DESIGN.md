@@ -25,11 +25,15 @@ UI/UX Pro Max gợi ý tương phản cao, sắc xanh y khoa, vùng chạm rộn
 | Vai trò hiển thị | Điểm bắt đầu | Nghiệp vụ | Phạm vi mặc định đề xuất |
 | --- | --- | --- | --- |
 | Khách (Visitor) | X01 · Trang chủ công khai | Xem tổng quan các hệ, khám phá mô hình mẫu, gửi đề xuất chủ đề và xem trạng thái. | Hệ công khai, mô hình mẫu đã xuất bản, đề xuất của mình qua mã tra cứu. |
-| Sinh viên (Student) | S01 · Bảng điều khiển | Học theo hệ, khám phá mô hình, đánh dấu cơ quan đã thuộc, ôn thẻ, tự làm trắc nghiệm và xem tiến độ. | Học liệu đã xuất bản, dữ liệu học của mình. |
-| Giảng viên (Teacher) | T01 · Bảng điều khiển | Tạo và quản lý cơ quan/mô hình, dựng học liệu SVG, soạn trắc nghiệm và thẻ, quản lý lớp, xem tiến độ. | Học liệu mình phụ trách, danh sách lớp mình quản lý và tiến độ của sinh viên trong lớp. |
+| Sinh viên (Student) | S01 · Bảng điều khiển | Tham gia lớp bằng mã được cung cấp, học theo hệ, khám phá mô hình, đánh dấu đã thuộc, ôn thẻ, làm trắc nghiệm và xem tiến độ. | Lớp mình tham gia, học liệu đã xuất bản và dữ liệu học của mình. |
+| Giảng viên (Teacher) | T01 · Bảng điều khiển | Tạo lớp, chia sẻ mã lớp, xem tiến độ, tạo và quản lý cơ quan/mô hình, dựng học liệu SVG, soạn trắc nghiệm và thẻ. | Học liệu mình phụ trách, mã và thành viên của lớp mình quản lý, tiến độ của sinh viên trong lớp. |
 | Quản trị viên (Admin) | A01 · Bảng điều khiển | Thêm và phân quyền tài khoản, vô hiệu hóa, cấu hình hệ và đề mục, quản lý thư viện mô hình, xử lý học liệu và đề xuất. | Tài khoản, danh mục, nội dung chờ xử lý và cấu hình. |
 
 Tài khoản tự đăng ký nhận vai trò Sinh viên. Quản trị viên cấp vai trò và trạng thái tài khoản theo phạm vi đề xuất trong luồng F11. Các tài khoản Quản trị viên dùng để trình diễn có sẵn trong dữ liệu mẫu. Sau khi đăng nhập, «Khu vực của tôi» luôn về dashboard của phiên hiện tại. Những tài liệu riêng của lớp và tài khoản được lọc theo quyền của bản ghi. [Hợp đồng dữ liệu mô phỏng](../.agents/skills/anatomar-design/references/mock-data.md).
+
+T07 cấp mã duy nhất khi giảng viên tạo lớp thành công và cho sao chép để chia sẻ. Tại S01, sinh viên nhập mã trong mục «Lớp của tôi». Mã hợp lệ của lớp đang mở thêm sinh viên vào danh sách thành viên dùng chung cho T07 và báo cáo T04. [Luồng F08](user-flow.md#f08--tạo-lớp-tham-gia-bằng-mã-và-đọc-tiến-độ).
+
+Bản Figma dùng mã mẫu `GP-C1-7K4Q` của lớp «Giải phẫu C1». Chạm trường mã để điền mẫu trong prototype. Các trạng thái mã sai, lớp đã lưu trữ và lỗi kết nối có frame riêng. Nút sao chép minh họa xác nhận; tạo mã duy nhất và ghi thành viên thuộc hợp đồng dữ liệu khi triển khai. [Trạng thái F08 Desktop](https://www.figma.com/design/jzAM858NL0lg4GnAU2SP64/AnatomAR?node-id=167-11953) · [Trạng thái F08 Mobile](https://www.figma.com/design/jzAM858NL0lg4GnAU2SP64/AnatomAR?node-id=167-12575).
 
 ## Cách truyền đạt kiến thức (§11)
 

@@ -63,7 +63,7 @@ S04 và S05 dùng một cột, tiêu đề và tiến độ ở trên, câu hỏ
 
 | Vai trò | Sidebar / menu theo thứ tự | Vùng nội dung ưu tiên |
 | --- | --- | --- |
-| Sinh viên | Tổng quan, Học theo hệ, Thẻ ghi nhớ, Trắc nghiệm | Học tiếp, số cơ quan đã thuộc theo hệ, lượt học gần đây |
+| Sinh viên | Tổng quan, Học theo hệ, Thẻ ghi nhớ, Trắc nghiệm | Lớp của tôi và nút tham gia bằng mã, học tiếp, số cơ quan đã thuộc theo hệ, lượt học gần đây |
 | Giảng viên | Tổng quan, Quản lý mô hình, Học liệu SVG, Trắc nghiệm, Thẻ ghi nhớ, Lớp và tiến độ | Việc chờ xử lý, lớp, tiến độ theo hệ |
 | Quản trị viên | Tổng quan, Người dùng, Hệ cơ quan, Thư viện mô hình, Hàng đợi duyệt, Cấu hình | Hàng đợi, số liệu tài khoản và liên kết công việc |
 

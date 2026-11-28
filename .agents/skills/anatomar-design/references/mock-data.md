@@ -21,7 +21,7 @@ Thực thể giải phẫu dùng ID duy nhất, ổn định qua 3D, SVG, danh s
 
 | Tập dữ liệu | Công dụng |
 | --- | --- |
-| `classes` | Tên lớp, giảng viên phụ trách, danh sách ID sinh viên, trạng thái mở/lưu trữ. |
+| `classes` | Tên lớp, mã tham gia duy nhất `joinCode`, giảng viên phụ trách, danh sách ID sinh viên, trạng thái mở/lưu trữ. |
 | `quizzes` | Nhóm các câu hỏi theo hệ, phiên bản, tiêu đề và quy trình xuất bản. |
 | `flashcardReviews` | Lượt ôn theo sinh viên/hệ, vị trí đang xem, đánh giá từng thẻ và thời điểm hoàn thành. |
 | `visualLessons` | Sơ đồ/học liệu SVG theo hệ, mẫu SVG, danh sách chú thích, liên kết mô hình và phiên bản. |
@@ -37,7 +37,7 @@ Thực thể giải phẫu dùng ID duy nhất, ổn định qua 3D, SVG, danh s
 | S02, T05 | `bodySystems.id`, `organs.id/systemId`, `visualLessons.annotations[]` gồm `id, organId, labelVi, x, y`. Tọa độ neo chuẩn hóa từ 0 đến 1 trong `viewBox`, quy đổi cùng hình. SVG kiểm tra mô hình đã xuất bản và đề xuất đang chờ theo `organId`. Atlas đọc tên, hệ, vị trí và chức năng. |
 | T03, S04, S06 | `quizQuestions` có `quizId, order, promptVi, options, correctOptionId, explanationVi`. `options` gồm bốn ID ổn định A–D và văn bản. Kết quả dùng bộ câu cố định trong `quizAttempts`. |
 | P03, S02, T01, A05 | `topicSuggestions` lưu `source, topicType, name, bodySystemId, organId, note, status, reply`. Khách có `lookupCode`. Sinh viên có `requesterId` và `assigneeId` khi phân công được. Quyền tra cứu giới hạn theo mã hoặc phiên của người gửi. |
-| T07, T04 | `classes` lưu `name, teacherId, studentIds, status`. Gán theo ID tài khoản hoạt động, kiểm tra trùng trong cùng lớp. |
+| S01, T07, T04 | `classes` lưu `id, name, joinCode, teacherId, studentIds, status`. T07 tạo mã tự động, hiển thị mã cho giảng viên phụ trách. S01 nhập mã và đọc danh sách lớp của phiên sinh viên. T04 dùng cùng `studentIds` khi lọc báo cáo. |
 | A02, X05 | `users` lưu `displayName, email, role, status`. X05 chỉnh `displayName`. A02 chỉnh quyền và trạng thái theo phạm vi quản trị. |
 | A04, T06 | `organModels` lưu `organId, fileType, path, author, sourceUrl, license, altText, status` cùng metadata 3D nếu có. Tài nguyên thiếu nguồn hoặc giấy phép ở bản nháp. |
 | A05, X07 | `moderationRequests` lưu `entityType, entityId, versionId, submittedBy, status, reviewReason`. `notifications` lưu mã yêu cầu và vai trò đích. Sinh viên chỉ nhận bản xem được khi phiên bản đã xuất bản. |
@@ -49,7 +49,7 @@ Mã demo `AR-7DH3` trỏ đề xuất Hệ nội tiết. Nguyễn Hà thuộc Gi
 | Đối tượng | Chuyển trạng thái và điều kiện |
 | --- | --- |
 | Tài khoản | Hoạt động ↔ Vô hiệu hóa. Tài khoản quản trị mẫu chỉ đọc. Trước khi khóa hoặc đổi vai trò giảng viên cần xử lý các lớp đang mở do họ phụ trách. Phiên của tài khoản vừa vô hiệu hóa mất hiệu lực khi kiểm tra lại. |
-| Lớp | Mở → Lưu trữ. Một sinh viên chỉ xuất hiện một lần trong mỗi lớp. Lớp lưu trữ và báo cáo giữ ở chế độ chỉ đọc. |
+| Lớp | Mở → Lưu trữ. `joinCode` là duy nhất trong kho dữ liệu, kể cả mã lớp đã lưu trữ. Khi tạo lớp, cấp mã và lưu bản ghi trong cùng thao tác. Chỉ lớp mở nhận thêm thành viên. Lớp lưu trữ và báo cáo giữ ở chế độ chỉ đọc. |
 | Học liệu | Bản nháp → Đang chờ → Đã xuất bản hoặc Bị từ chối. Sửa bản bị từ chối rồi gửi bản mới. Hủy gửi khi đang chờ trả phiên bản về nháp, yêu cầu duyệt ghi «Đã hủy». Phiên bản xuất bản trước tiếp tục xuất hiện đến khi bản mới được duyệt. |
 | Danh mục và tài nguyên | Nháp → Đang sử dụng/Đã xuất bản → Đã lưu trữ. Chặn lưu trữ khi còn nội dung xuất bản hoặc mẫu công khai đang tham chiếu. Giữ tham chiếu lịch sử phục vụ kết quả đã lưu. |
 | Đề xuất | Đang chờ → Đã chấp nhận hoặc Bị từ chối. Chỉ nhận một quyết định cho mỗi phiên bản. Tra cứu bằng mã trả nội dung và phản hồi dành cho khách. |
@@ -71,5 +71,6 @@ Các tên HTTP mô tả hành vi adapter. Bản demo tĩnh có thể cung cấp 
 | Ôn, lưu và nộp quiz | Tạo lượt, cập nhật bản nháp, gửi xác nhận của lượt | Trạng thái và dữ liệu đã lưu. Đáp án đúng và giải thích của quiz xuất hiện ở kết quả sau nộp. |
 | Soạn nội dung và duyệt | Đọc hoặc sửa bản nháp, gửi `moderationRequests`, quyết định theo phiên bản | Trạng thái mới, lý do nếu bị từ chối, thông báo cho người soạn. |
 | Quản lý tài khoản / lớp / tài nguyên | Đọc danh sách, tạo/sửa theo vai trò, đổi trạng thái | Bản ghi sau thay đổi, hoặc lý do và danh sách tham chiếu đang chặn. |
+| Tham gia lớp bằng mã | Dùng ID sinh viên từ phiên đang hoạt động. Bỏ khoảng trắng hai đầu, chuẩn hóa chữ hoa, tìm đúng mã lớp mở rồi thêm ID vào `studentIds`. | Trả tên lớp và trạng thái tham gia. Lặp lại trả trạng thái đã tham gia và giữ một bản ghi thành viên. Mã sai hoặc lớp lưu trữ giữ nguyên thành viên. Việc kiểm tra trạng thái lớp và ghi thành viên được thực hiện trong cùng thao tác. |
 
 Quy ước lỗi gồm 401 (hết phiên), 403 (thiếu quyền), 404 (không có bản ghi hoặc ngoài phạm vi), 409 (trùng hoặc dữ liệu vừa đổi), 422 (trường không hợp lệ), lỗi mạng (thử lại). Nếu đang nộp, hiển thị đúng một kết quả cho cùng mã thao tác. Khi tải thất bại, giữ dữ liệu đang xem nếu có và thông báo dữ liệu chưa cập nhật. Dữ liệu demo cần mẫu cho cả bốn vai trò, rỗng, lỗi, vô hiệu hóa, chờ, từ chối, hoàn thành và đã hủy/lưu trữ.
