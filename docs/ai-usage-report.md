@@ -46,3 +46,12 @@ Mỗi prompt làm việc trên AnatomAR có một mục riêng theo thứ tự t
 - **Phần nhóm tự sửa**. Nhóm nêu rõ quy trình chia sẻ mã qua giảng viên. Chưa ghi nhận thay đổi thủ công sau lượt này. Nhóm cần triển khai sinh mã duy nhất, sao chép thật, kiểm quyền, lưu thành viên và kiểm thử đồng bộ S01/T07/T04.
 - **Cách kiểm chứng**. Kiểm tra các đích prototype F08 trên hai trang, đối chiếu mã lớp mẫu, xuất khung T07, S01 và các hộp thoại. Phát hiện và sửa nền thẻ tiến độ trên Mobile để nội dung nằm đúng trong thẻ. Bản Figma dùng mã và trạng thái mẫu.
 - **Điều học được**. Mã tham gia thuộc bản ghi lớp. Danh sách sinh viên ở T07 và báo cáo T04 cần đọc cùng dữ liệu thành viên với thao tác tham gia ở S01. Gửi lại cùng mã cần trả trạng thái đã tham gia và giữ một mục thành viên.
+
+## 2026-11-28 · Đồng bộ đặc tả trước khi triển khai MVP
+
+- **Công cụ**. Codex, PowerShell, Python và Git.
+- **Prompt chính**. Đối chiếu bộ đặc tả và đề CSE122. Thống nhất điều hướng, quyền, lớp, duyệt học liệu, ID, phương tiện, đề xuất và dữ liệu mock. Giữ các trang đã duyệt và hoãn AI tùy chọn. Phạm vi cập nhật tài liệu hiện có.
+- **Phần AI sinh**. Chốt quyền theo vai trò và bản ghi, tạo lớp và tham gia theo mã, phiên bản học liệu, bộ quiz và nhóm thẻ, tiến độ theo cơ quan, điều kiện xuất bản và hoàn tất đề xuất kèm thông báo. Cập nhật điều hướng, thành phần dùng chung, hợp đồng mock và các trường hợp nghiệm thu.
+- **Phần nhóm tự sửa**. Nhóm cung cấp đề gốc và yêu cầu thiết kế. Chưa ghi nhận chỉnh sửa thủ công sau lượt này. Nhóm cần xác nhận phương án hai thành viên, chuẩn bị học liệu và dữ liệu mẫu, đối chiếu các trạng thái mới trong Figma, triển khai và kiểm thử.
+- **Cách kiểm chứng**. So sánh mã màn hình, tên tệp và phân công của 32 dòng với bản trước. Kiểm đủ 16 tên tệp nền tảng, 9 trang dùng chung, 4 vai trò, 13 mã luồng, 11 hệ và 8 tập dữ liệu tối thiểu. Kiểm liên kết Markdown nội bộ, `git diff --check` và xác nhận đề gốc cùng `db.json` giữ nội dung hiện có. Đây là rà soát tài liệu.
+- **Điều học được**. Định danh giải phẫu, phiên bản đã xuất bản và khả năng tải tài nguyên là ba điều kiện khác nhau. Dùng chung phép tính tiến độ và ghi xuất bản cùng kết quả đề xuất để các vai trò đọc trạng thái nhất quán.

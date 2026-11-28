@@ -17,7 +17,7 @@ X01 và S02 có Atlas 3D toàn thân để quan sát và xem thông tin nhanh. S
 4. Nếu cấu trúc nằm trong lớp vừa ẩn, giữ thẻ chi tiết và hiển thị «Cấu trúc nằm trong lớp đang ẩn» kèm «Hiện lớp». Nếu mô hình không ánh xạ được cấu trúc đó, giữ lựa chọn trong danh sách và giải thích phạm vi mô hình.
 5. Khi đổi cơ quan, dừng hoạt ảnh và về góc nhìn mặc định của cơ quan mới. «Đặt lại góc nhìn» đặt camera mặc định, giữ cơ quan, lựa chọn, lớp và trạng thái phát. «Xóa lựa chọn» chỉ bỏ cấu trúc đang chọn.
 
-Tại S02, Atlas 3D cung cấp thông tin nhanh ngay trong vùng xem và bảng tên cơ quan. Sơ đồ SVG cung cấp trạng thái học liệu và các hành động «Xem mô hình 3D» hoặc «Gửi đề xuất học liệu» sau khi chọn hotspot. Hai chế độ đọc cùng ID giải phẫu. S03 giữ lựa chọn riêng cho cấu trúc của mô hình chi tiết. [Luồng chọn cơ quan và gửi đề xuất](../../../../design/user-flow.md#f02--định-vị-cơ-quan-và-khám-phá-mô-hình).
+Tại S02, Atlas 3D cung cấp thông tin nhanh ngay trong vùng xem và bảng tên cơ quan. Sơ đồ SVG hoặc danh sách cùng mở thẻ theo `organId`. Bài đã xuất bản mở S03 bằng «Xem học liệu», hoặc «Xem mô hình 3D» khi có GLB dùng được. Cơ quan chưa có bài có nút «Gửi đề xuất học liệu». S03 giữ `structureId` riêng khi chọn bộ phận. [Luồng chọn cơ quan và gửi đề xuất](../../../../design/user-flow.md#f02--định-vị-cơ-quan-và-khám-phá-mô-hình).
 
 ## Object Picking và tooltip động
 
@@ -85,6 +85,7 @@ Hoạt ảnh minh họa một quá trình, ví dụ cơ quan chuyển động th
 | Trạng thái | Hiển thị và khôi phục |
 | --- | --- |
 | Chưa bắt đầu | Ảnh tĩnh nếu có, «Mở mô hình 3D» và thông tin cấu trúc. |
+| Chưa gắn mô hình | Bài cơ quan vẫn mở. Hiện danh sách cấu trúc, văn bản, ảnh/SVG nếu có và dấu đã thuộc ở S03. |
 | Đang tải hoặc giải mã | Giữ tỷ lệ vùng xem, ghi «Đang tải mô hình…». Chỉ hiện phần trăm khi biết tổng tải. Danh sách và chi tiết vẫn đọc được. |
 | Sẵn sàng | Góc mặc định, điều khiển tương ứng tài nguyên. Focus giữ ở phần tử vừa thao tác. |
 | Thiếu clip hoặc một lớp | Giữ phần đã sẵn sàng và ghi phần thiếu. Dùng ảnh hoặc văn bản mô tả quá trình nếu có. |

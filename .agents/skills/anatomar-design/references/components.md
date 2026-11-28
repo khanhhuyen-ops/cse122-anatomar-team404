@@ -25,7 +25,7 @@ Dùng [token chung](design-system.md) và bố cục theo [mẫu trang](layout.m
 | Chế độ Sơ đồ SVG | Bóng cơ thể, bộ chọn hệ, hotspot trong hệ tọa độ `viewBox` và danh sách cơ quan. | Hình, danh sách, tình trạng và chi tiết dùng cùng ID. Mỗi hotspot có biến thể Mặc định, Hover, Đã chọn và hai tình trạng học liệu. Bàn phím và chạm dùng cùng hành động chọn. |
 | Tooltip Atlas 3D | Tên, hệ, vị trí, chức năng. Nền tối đặc và phủ xanh ngọc bán trong suốt trên phần bề mặt đang thấy. | Neo theo điểm chiếu của cơ quan. Rời bề mặt ẩn cả tooltip và highlight. Mobile chạm để mở, chạm lại hoặc đóng để ẩn. |
 | Danh sách và chi tiết cấu trúc | Tên, hệ, mô tả, vị trí, chức năng và nguồn của một cấu trúc. | Chọn từ danh sách tương đương click hoặc chạm hình học đã ánh xạ. Chọn mới thay mục đang học. Chi tiết giữ sau khi di chuột, chuyển focus hoặc thay camera. |
-| Thẻ học liệu cơ quan | Tên cơ quan, hệ, trạng thái học liệu và một hành động chính. | «Xem mô hình» khi có mô hình được phép xem. «Chưa có học liệu» và «Gửi đề xuất học liệu» khi thiếu. Thẻ có lối đóng. Khi đang kiểm tra hoặc lỗi, giữ tên và cơ quan đã chọn. |
+| Thẻ học liệu cơ quan | Tên, hệ, tình trạng bài đã xuất bản và tình trạng phương tiện riêng. Dùng tại S02/P02/S03 theo quyền xem. | «Xem học liệu» khi có bài. Có thể dùng «Xem mô hình 3D» nếu GLB được phép dùng. «Gửi đề xuất học liệu» khi thiếu bài. Lỗi tải từng phương tiện giữ bài và cơ quan đang chọn. |
 | Dấu đã thuộc cơ quan | Nút «Đánh dấu đã thuộc» và trạng thái xác nhận «Đã thuộc», với hành động «Bỏ đánh dấu». | Đang lưu, thành công, lỗi có thử lại. Tính tiến độ sau khi thao tác đã lưu. Nút giữ focus khi nhãn đổi. |
 | Thẻ ghi nhớ | Bộ đếm, mặt gợi nhớ có tên/hình, nút «Hiện đáp án», mặt vị trí/chức năng, hai nút đánh giá. | Chuyển mặt bằng click và bàn phím. Trình đọc màn hình chỉ đọc mặt đang mở. Giảm chuyển động đổi nội dung ngay. Rỗng, đang ôn, lưu lỗi, kết thúc lượt. |
 | Câu hỏi và bảng câu | `fieldset` và radio cho câu một đáp án. Bảng câu là nhóm nút có số và trạng thái. | Có chưa trả lời, đã chọn, đang mở. Đáp án và giải thích xuất hiện ở trang kết quả. Khi chuyển câu, đưa focus tới tiêu đề câu. |
@@ -37,10 +37,10 @@ Dùng [token chung](design-system.md) và bố cục theo [mẫu trang](layout.m
 
 | Thành phần | Cấu tạo và biến thể | Hành vi và trạng thái |
 | --- | --- | --- |
-| Tóm tắt tiến độ | Tên hệ, số đã thuộc/tổng, nhãn trạng thái, thanh tiến độ. Thẻ số liệu có kỳ hoặc phạm vi. | Tổng bằng 0 hiện «Chưa có học liệu». Số liệu có thể đọc bằng văn bản và nhất quán giữa S01/T04. |
+| Tóm tắt tiến độ | Tên hệ, số `organId` đã thuộc/tổng bài cơ quan hiện hành, nhãn và thanh tiến độ. Quiz và thẻ có số liệu riêng. | S01/T04 dùng cùng phép tính từ dịch vụ mock. Tổng bằng 0 hiện «Chưa có học liệu». Lớp lưu trữ hiển thị thời điểm chốt báo cáo. |
 | Bảng và phân trang | Caption hoặc tiêu đề, tiêu đề cột, dòng dữ liệu, nút thao tác có tên bản ghi. | Thể hiện thứ tự sắp xếp, giữ bộ lọc khi chuyển trang. Hàng mới/chờ/từ chối có nhãn. Trên mobile dùng danh sách có nhãn hoặc vùng cuộn có tên nếu cần so sánh cột. |
 | Danh sách thông báo | Tóm tắt sự kiện, thời gian, trạng thái chưa đọc và đường dẫn tới bản ghi. | Thông báo đã đọc còn truy cập được. Liên kết cũ có đường quay về. Huy hiệu số đi kèm tên «Thông báo chưa đọc». |
-| Hàng đợi duyệt | Hai nhóm «Học liệu gửi duyệt» và «Đề xuất chủ đề». Mỗi mục có dữ liệu, trạng thái, người gửi nếu phù hợp, quyết định và lý do. | Từ chối yêu cầu lý do. Duyệt, hủy hay từ chối chỉ chuyển trạng thái khi đã lưu. Xử lý xung đột và thử lại ở cùng mục. |
+| Hàng đợi duyệt | Hai nhóm «Học liệu gửi duyệt» và «Đề xuất chủ đề». Học liệu có phiên bản gửi. Đề xuất có người xử lý, trạng thái, học liệu đáp ứng và phản hồi. | Cùng hộp thoại xác nhận và nhập lý do. Công bố phiên bản theo quyền. Hoàn tất đề xuất sau khi kết quả xuất bản được ghi. Xung đột giữ ngữ cảnh và cho tải lại. |
 | Form CRUD | Nhóm thông tin, quan hệ hệ/cơ quan, nguồn hoặc quyền, cuối form là hành động. | Có tạo/sửa/xem chỉ đọc. Chưa lưu có xác nhận rời trang. Lưu trữ/vô hiệu hóa hiển thị tác động và bản ghi phụ thuộc. |
 
 ## Nhãn mẫu

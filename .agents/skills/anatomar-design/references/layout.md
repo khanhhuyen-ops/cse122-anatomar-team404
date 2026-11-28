@@ -38,11 +38,11 @@ S02 · Atlas 3D
 S02 · Sơ đồ SVG
 [Atlas 3D | Sơ đồ SVG]
 [Chọn hệ]
-[Hình và hotspot theo viewBox] [Danh sách / Chi tiết / Hành động học liệu]
+[Hình và hotspot theo viewBox] [Danh sách / Bài đã xuất bản / Tài nguyên]
 
 S03 · Mô hình chi tiết
 [Tên cơ quan]
-[Mô hình / Điều khiển / Hoạt ảnh] [Danh sách cấu trúc / Đánh dấu đã thuộc]
+[Phương tiện sẵn có] [Danh sách cấu trúc / Đã thuộc / Quiz / Thẻ]
 ```
 
 Ở màn hình trung bình, chuyển thẻ chi tiết xuống dưới và giữ danh sách cùng vùng xem nếu đủ chỗ. Vùng xem desktop dành chiều cao khoảng 420–640 px tùy viewport. Mobile ngắn hoặc ngang cho cuộn cả trang. Tải/rỗng/lỗi giữ vùng xem và điều khiển thay thế ở cùng vị trí. Ở 320 px, xếp điều khiển thành nhiều hàng. Toàn màn hình có lối thoát luôn nhìn thấy.

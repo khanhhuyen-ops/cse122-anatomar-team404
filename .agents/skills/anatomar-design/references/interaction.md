@@ -2,10 +2,11 @@
 
 ## Điều hướng và trạng thái
 
-- Dùng đường dẫn tương đối trong `pages/`. Lưu `system`, `organ`, `structure`, `view`, truy vấn và bộ lọc vào URL khi cần chia sẻ hoặc quay lại. Ví dụ `student-system-view.html?system=circulatory&organ=organ.heart&view=svg`. S02 SVG giữ hệ và cơ quan đang học. Atlas giữ camera và lớp trong phiên. Hover hoặc tap xem nhanh thuộc trạng thái tạm của Atlas.
-- Hộp thoại, thông báo tạm, dữ liệu nhập chưa gửi, mã tra cứu đề xuất và mật khẩu nằm ngoài URL. Bản nháp trắc nghiệm chỉ mở với đúng tài khoản. Liên kết thông báo kiểm tra lại quyền bản ghi.
+- Dùng đường dẫn tương đối trong `pages/`. `system`, `organ`, `structure`, `quiz`, `group`, `attempt`, `class` và `student` trong URL lần lượt mang ID từ cùng dịch vụ mock. `view` dùng `svg` hoặc `atlas`. Ví dụ `student-system-view.html?system=circulatory&organ=organ.heart&view=svg`. Mở S02 theo hệ mặc định vào SVG. Atlas giữ camera/lớp trong phiên và hover/tap là trạng thái tạm.
+- S03 về S02 với `system`, `organ` và `view=svg`. S04/S05 mở theo hệ và cơ quan khi có. Bộ quiz dùng `quiz`, nhóm thẻ dùng `group`. Bộ lọc cơ quan chọn nội dung liên quan trong danh sách, sau đó dùng toàn bộ bản đã chọn. S06 đọc `attempt` và khôi phục hệ từ lượt đó. T04 kiểm tra cặp `class` và `student`. X07 kiểm tra lại quyền trước khi mở bản ghi.
+- Hộp thoại, thông báo tạm, dữ liệu nhập chưa gửi, mã lớp, mã tra cứu và mật khẩu nằm ngoài URL. Chỉ lưu các đích điều hướng nội bộ trong bảng kiểm kê. Đích học tiếp hoặc quay lại được kiểm tra theo bản ghi hiện hành. Khi đích cũ đã ẩn, cung cấp lối về danh sách của hệ hoặc dashboard đúng vai trò.
 - Giữ lịch sử Back/Forward có ý nghĩa. Thay đổi hệ, cơ quan hoặc chế độ là điều hướng có thể quay lại. Gõ từ khóa chưa áp dụng và điều chỉnh camera chỉ là trạng thái tạm. Khôi phục bộ lọc, vùng cuộn và tiêu điểm khi quay về danh sách.
-- Trang báo truy cập X08 cho thiếu quyền hoặc hết phiên. X09 cho bản ghi không còn hoặc riêng tư ngoài phạm vi. Đích đăng nhập lại phải là đường dẫn nội bộ được phép.
+- X08 dành cho hết phiên hoặc sai vai trò của khu vực. X09 dành cho bản ghi thiếu, đã ẩn hoặc ngoài phạm vi bản ghi khi người dùng đã vào đúng khu vực. Sau đăng nhập, đích không hợp lệ trở về dashboard của phiên.
 
 ## Các trạng thái quan sát được
 
